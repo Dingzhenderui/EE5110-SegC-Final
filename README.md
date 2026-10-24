@@ -1,5 +1,7 @@
 # EE5110 Segment C：自主机器人抓取与杂乱场景
 
+**观看界面：双击 `OPEN_DEMO.cmd`，输入菜单序号。** 新增 [分段素材与演示界面指南](docs/DEMO_EDITING_GUIDE.md)，本地 `deliverables/editing_materials/` 按基础要求、拓展和对比分别存放 15 段未倍速处理的 MP4，可直接导入剪辑软件；同名 ZIP 便于整体复制。拓展的交互窗口使用 `demo_viewer.py`，默认完成后保持画面，支持空格暂停和鼠标调整视角。
+
 ## v3.0.0：全部具体拓展方向
 
 新入口 `exploration_main.py` 已覆盖密集遮挡、真正的弹性软体及被动铰接物、未见不规则形状、力/接触反馈、实际夹爪故障恢复、相关深度误差和随机化物理。逐项运行、假设及交付入口见 [拓展交付指南](docs/EXPLORATION_HANDOVER.md)。v2.1 引擎和证据保留原状。

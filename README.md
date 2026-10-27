@@ -2,12 +2,18 @@
 
 本项目使用 **MuJoCo 3.15.0、Python 3.12、Franka Panda 机械臂**。包含公开 YCB 数据集的基础抓取流水线，以及密集遮挡、软体/铰接、未见形状、力反馈、故障恢复、受损感知六类独立拓展实验。
 
-当前完整交付分支：[`feature/demo-materials-and-viewer`](https://github.com/m13961023616-pixel/EE5110-SegC/tree/feature/demo-materials-and-viewer)。本分支包含源码、模型/纹理及许可证、报告、视频、提交 ZIP、15 段剪辑素材和原始实验/录制输出。**下载时请选择此分支，不能用旧 main 代替。**
+当前综合报告/视频工作分支：`feature/final-latex-report-video`，基于完整分支 `feature/demo-materials-and-viewer@f65ee0c`。已核对该基点包含远端其余全部9个分支。核心引擎和历史证据不改写；新增英文10页LaTeX综合报告、635词讲稿、300秒镜头/字幕及无配音预览，交付说明见 [`docs/FINAL_DELIVERY.md`](docs/FINAL_DELIVERY.md)。本分支保留源码、模型/纹理及许可证、历史报告/视频、15段素材和原始实验输出。
 
 ## 先按用途找文件
 
 | 想做什么 | 打开哪个文件 |
 |---|---|
+| 看最新完整主报告 | [`output/pdf/EE5110_Final_Report.pdf`](output/pdf/EE5110_Final_Report.pdf)，英文10页，整合基线与两批实验。 |
+| 修改LaTeX/上传Overleaf | [`docs/final_report/`](docs/final_report/)；主文件`report.tex`，图/表全部本地化。 |
+| 录制5分钟英文口播 | [`docs/final_video/NARRATION_EN.md`](docs/final_video/NARRATION_EN.md)，635词、10段、300秒。 |
+| 按镜头剪辑/导入字幕 | [`docs/final_video/EDITING_GUIDE_ZH.md`](docs/final_video/EDITING_GUIDE_ZH.md)、`shot_list.csv`和`narration.srt`。 |
+| 直接审看5分钟字幕预览 | [`deliverables/EE5110_5min_captioned_preview.mp4`](deliverables/EE5110_5min_captioned_preview.mp4)，未录音，需另加口播。 |
+| 看详细代码审读 | [`docs/CODE_REVIEW_ZH.md`](docs/CODE_REVIEW_ZH.md)，含调用链、结果边界和改进建议。 |
 | 打开交互演示界面 | 双击 [`OPEN_DEMO.cmd`](OPEN_DEMO.cmd)，输入菜单序号并按 Enter。 |
 | 自己剪视频 | [`deliverables/editing_materials/`](deliverables/editing_materials/)；整体下载用 [`editing_materials.zip`](deliverables/editing_materials.zip)。 |
 | 了解每段视频的内容和界面操作 | [`docs/DEMO_EDITING_GUIDE.md`](docs/DEMO_EDITING_GUIDE.md)。 |
@@ -25,7 +31,7 @@
 可以在此分支点 **Code → Download ZIP** 并解压，或克隆：
 
 ```powershell
-git clone --branch feature/demo-materials-and-viewer https://github.com/m13961023616-pixel/EE5110-SegC.git
+git clone --branch feature/final-latex-report-video https://github.com/m13961023616-pixel/EE5110-SegC.git
 Set-Location EE5110-SegC
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt

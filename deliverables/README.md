@@ -4,6 +4,9 @@
 
 | 文件/目录 | 作用 |
 |---|---|
+| `EE5110_5min_captioned_preview.mp4` | 新300秒英文字幕预览，1280×720/25fps，**无口播**；实际录音后合成最终视频。 |
+| `EE5110_LaTeX_Source.zip` | 自包含10页主报告LaTeX、图表和编译说明，可直接上传Overleaf。 |
+| `EE5110SegC_review_kit_v3.1.0.zip` | 当前报告/源码/模型/证据/讲稿/字幕/素材及预览审阅包，明确未录音。 |
 | `editing_materials/` | 优先用于自行剪辑：15 段独立原速视频、分析图、CSV 轨迹、开发日志和清单。 |
 | `editing_materials.zip` | 与上一目录对应的整套素材压缩包，约 24.6 MB。 |
 | `editing_materials/00_README.md` | 每段视频对应的内容、剪辑提示和界面启动方法。 |
@@ -18,6 +21,6 @@
 | `EE5110SegC_submission_v3.0.0.zip` | v3.0 当时验证通过的提交快照：源码、模型/许可证、两份报告、拓展介绍视频和证据，约 26.6 MB。 |
 | `EE5110SegC_submission_v2.1.0.zip` | v2.1 历史提交快照，约 23.0 MB；保留用于复现上一阶段。 |
 
-两个 submission ZIP 保持已验证时的原始内容。后加的交互菜单、剪辑导出工具和本次文件导航以当前分支源码为准，不能把历史 ZIP 当成最新分支的完整副本。下载完整当前项目请下载本分支的 Code → Download ZIP 或克隆分支。
+旧版 submission ZIP 保持已验证时的原始内容。当前优先阅读`docs/FINAL_DELIVERY.md`；3.1最终提交包需要小组录音后显式指定视频生成，review kit不是已配音成片。旧快照不能代替最新分支。
 
 操作说明以 [当前演示指南](../docs/DEMO_EDITING_GUIDE.md) 为准，完整文件导航见 [根 README](../README.md)。

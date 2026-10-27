@@ -1,0 +1,136 @@
+{
+  "v2": {
+    "baseline_clutter": [
+      54,
+      60
+    ],
+    "local_clutter": [
+      58,
+      60
+    ],
+    "baseline_dense": [
+      26,
+      30
+    ],
+    "local_dense": [
+      29,
+      30
+    ]
+  },
+  "v3": {
+    "crowding_single": {
+      "successes": 5,
+      "trials": 6,
+      "wilson95": [
+        0.43649056343635395,
+        0.9699474141282697
+      ]
+    },
+    "crowding_active": {
+      "successes": 3,
+      "trials": 6,
+      "wilson95": [
+        0.18761280689940868,
+        0.8123871931005913
+      ]
+    },
+    "articulated": {
+      "successes": 6,
+      "trials": 6,
+      "wilson95": [
+        0.6096569663469354,
+        0.9999999999999999
+      ]
+    },
+    "soft_fixed": {
+      "successes": 2,
+      "trials": 6,
+      "wilson95": [
+        0.09676933255921683,
+        0.7000116786584712
+      ]
+    },
+    "soft_adaptive": {
+      "successes": 6,
+      "trials": 6,
+      "wilson95": [
+        0.6096569663469354,
+        0.9999999999999999
+      ]
+    },
+    "novel_prior": {
+      "successes": 11,
+      "trials": 12,
+      "wilson95": [
+        0.6461140782014047,
+        0.9851352905492264
+      ]
+    },
+    "novel_points": {
+      "successes": 11,
+      "trials": 12,
+      "wilson95": [
+        0.6461140782014047,
+        0.9851352905492264
+      ]
+    },
+    "force_fixed": {
+      "successes": 10,
+      "trials": 12,
+      "wilson95": [
+        0.5519636426153274,
+        0.9530358523851776
+      ]
+    },
+    "force_adaptive": {
+      "successes": 12,
+      "trials": 12,
+      "wilson95": [
+        0.7574992425007574,
+        1.0
+      ]
+    },
+    "recovery_single": {
+      "successes": 0,
+      "trials": 6,
+      "wilson95": [
+        0.0,
+        0.3903430336530645
+      ]
+    },
+    "recovery_retry": {
+      "successes": 6,
+      "trials": 6,
+      "wilson95": [
+        0.6096569663469354,
+        0.9999999999999999
+      ]
+    },
+    "sensor_single": {
+      "successes": 6,
+      "trials": 12,
+      "wilson95": [
+        0.2537781703934222,
+        0.7462218296065778
+      ]
+    },
+    "sensor_raw_fusion": {
+      "successes": 1,
+      "trials": 12,
+      "wilson95": [
+        0.014864709450773478,
+        0.35388592179859524
+      ]
+    },
+    "sensor_robust": {
+      "successes": 9,
+      "trials": 12,
+      "wilson95": [
+        0.46768966087934005,
+        0.9110599603710386
+      ]
+    }
+  },
+  "v2_source_sha256": "0f386f1f87282a2e9485fc9254487ca93a4f58c04f614627816926a1300005b9",
+  "v3_source_sha256": "9f59c29b6dc0a62c15d10249788590491010c02d32f9ed1baf884d871e08c418"
+}

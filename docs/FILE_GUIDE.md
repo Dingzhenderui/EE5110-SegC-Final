@@ -147,3 +147,16 @@
 | `outputs/**/run.log` | 对应实验命令的终端输出。 |
 
 缓存、`.venv`、本机工具/凭据、临时解压副本与原始课程附件不属于上传交付内容。原始实验/视频与 `docs/validation` 的副本不能重复计入样本。
+# 新增综合报告和5分钟视频材料（2026-10-27）
+
+| 路径 | 用途 |
+|---|---|
+| `docs/CODE_REVIEW_ZH.md` | 主干/扩展源码调用链、机制、实验结论和局限的详细审读。 |
+| `docs/FINAL_DELIVERY.md` | 最新交付物导航、运行、录音与打包说明。 |
+| `docs/final_report/report.tex` | 10页综合主报告LaTeX；同目录为自包含图表/编译说明。 |
+| `docs/final_video/storyboard.json` | 300秒/23镜头唯一时间轴，生成讲稿/字幕/切点表。 |
+| `docs/final_video/NARRATION_EN.md` | 635词完整英文口播；SRT为录音前的字幕草稿。 |
+| `scripts/build_final_report.py` | 从冻结数据生成图表/表格，调用LaTeX编译并检查10页。 |
+| `scripts/build_final_video_materials.py` | 校验素材哈希和时间轴，生成讲稿/SRT/CSV；可生成严格300秒无口播预览。 |
+| `scripts/package_submission.py --version 3.1.0` | 显式选择最终视频或review kit，补齐GUI/报告源码/素材并验证SHA-256。 |
+| `docs/validation/report_delivery/` | 本次编译/审片/证据/独立解压验证记录；不是新增正式随机实验。 |

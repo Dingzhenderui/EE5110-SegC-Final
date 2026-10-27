@@ -1,0 +1,19 @@
+\begin{tabularx}{\linewidth}{@{}p{45mm}cp{25mm}Y@{}}
+\toprule Condition & Complete & 95\% Wilson (\%) & Failure counts \\
+\midrule
+Crowding / single & 5/6 & 43.6--97.0 & planning fail: 1 \\
+Crowding / active & 3/6 & 18.8--81.2 & planning fail: 1, place fail: 2 \\
+Passive hinge & 6/6 & 61.0--100.0 & None \\
+Soft / fixed preload & 2/6 & 9.7--70.0 & slip detected: 4 \\
+Soft / force regulation & 6/6 & 61.0--100.0 & None \\
+Novel / box prior & 11/12 & 64.6--98.5 & slip detected: 1 \\
+Novel / measured points & 11/12 & 64.6--98.5 & slip detected: 1 \\
+Rigid / fixed preload & 10/12 & 55.2--95.3 & slip detected: 2 \\
+Rigid / force regulation & 12/12 & 75.7--100.0 & None \\
+Fault / one attempt & 0/6 & 0.0--39.0 & grasp fail: 6 \\
+Fault / checked retry & 6/6 & 61.0--100.0 & None \\
+Depth / single packet & 6/12 & 25.4--74.6 & perception fail: 6 \\
+Depth / raw fusion & 1/12 & 1.5--35.4 & planning fail: 11 \\
+Depth / robust fusion & 9/12 & 46.8--91.1 & slip detected: 3 \\
+\bottomrule
+\end{tabularx}

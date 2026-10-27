@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-27",
+  "base_revision": "f65ee0c55c2a90bd4695514dcebf9d4d328efefe",
+  "branch": "feature/final-latex-report-video",
+  "python": "3.12.4",
+  "existing_tests_passed": 49,
+  "candidate_episodes_audited": 180,
+  "exploratory_episodes_audited": 126,
+  "new_sampling_claimed": false,
+  "engine_modified": false,
+  "report_pages": 10,
+  "preview_duration_s": 300,
+  "preview_resolution": [
+    1280,
+    720
+  ],
+  "preview_fps": 25,
+  "preview_audio": false,
+  "narration_words": 635,
+  "shots": 23,
+  "srt_blocks": 61,
+  "preview_full_decode": "passed",
+  "preview_visual_samples": 20,
+  "report_visual_review": "all 10 pages; no clipped text or overflowing boxes",
+  "artifacts": {
+    "output/pdf/EE5110_Final_Report.pdf": {
+      "bytes": 713203,
+      "sha256": "98af68141b2a127f002c71998495c19329670ef5a11ee0c5e1b21db848a17b66"
+    },
+    "deliverables/EE5110_LaTeX_Source.zip": {
+      "bytes": 905190,
+      "sha256": "5ef3864d47aa38cdf278f2a99bcab8e8e7dd099d0a55a5fb53e2515c49179857"
+    },
+    "deliverables/EE5110_5min_captioned_preview.mp4": {
+      "bytes": 4448638,
+      "sha256": "80de76cab567eee56e36d1dade6a4d51c447c10fdf4d3236fb513cd6bfce4c1a"
+    },
+    "deliverables/EE5110SegC_review_kit_v3.1.0.zip": {
+      "bytes": 49155184,
+      "sha256": "303b041a465d7ca412fc1649562cc9303da6de8a4d6264e51b494d6f06f20966"
+    }
+  },
+  "package_manifest_entries": 413,
+  "isolated_smoke_results": {
+    "dense": "1/1",
+    "soft_adaptive": "1/1",
+    "recovery_retry": "1/1"
+  },
+  "final_package_hashes_verified": true,
+  "isolated_core_evidence_media_match": 223,
+  "comparison_json_check": "LF-normalized comparison content; original source bytes preserved"
+}

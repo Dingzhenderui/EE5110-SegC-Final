@@ -1,0 +1,69 @@
+{
+  "duration_s": 300,
+  "words": 635,
+  "overall_wpm": 127.0,
+  "captions": 61,
+  "shots": 23,
+  "chapters": [
+    {
+      "start_s": 0,
+      "end_s": 15,
+      "words": 31,
+      "target_wpm": 124.0
+    },
+    {
+      "start_s": 15,
+      "end_s": 40,
+      "words": 52,
+      "target_wpm": 124.8
+    },
+    {
+      "start_s": 40,
+      "end_s": 70,
+      "words": 58,
+      "target_wpm": 116.0
+    },
+    {
+      "start_s": 70,
+      "end_s": 100,
+      "words": 56,
+      "target_wpm": 112.0
+    },
+    {
+      "start_s": 100,
+      "end_s": 145,
+      "words": 96,
+      "target_wpm": 128.0
+    },
+    {
+      "start_s": 145,
+      "end_s": 185,
+      "words": 84,
+      "target_wpm": 126.0
+    },
+    {
+      "start_s": 185,
+      "end_s": 220,
+      "words": 75,
+      "target_wpm": 128.6
+    },
+    {
+      "start_s": 220,
+      "end_s": 245,
+      "words": 58,
+      "target_wpm": 139.2
+    },
+    {
+      "start_s": 245,
+      "end_s": 280,
+      "words": 79,
+      "target_wpm": 135.4
+    },
+    {
+      "start_s": 280,
+      "end_s": 300,
+      "words": 46,
+      "target_wpm": 138.0
+    }
+  ]
+}

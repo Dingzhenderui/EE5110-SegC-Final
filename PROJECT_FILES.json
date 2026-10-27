@@ -2,13 +2,13 @@
   "schema_version": 1,
   "scope": "Every staged branch file except this self-referential manifest",
   "text_hashing": "LF canonicalization only when normalization=lf; other files use exact bytes",
-  "file_count": 733,
-  "total_bytes_in_git": 289043970,
+  "file_count": 768,
+  "total_bytes_in_git": 346028355,
   "files": [
     {
       "path": ".gitattributes",
-      "bytes_in_git": 383,
-      "sha256": "84ac8c4d190aa416b3437891ede7b77cab579b4e64f4969039a16e44e836966d",
+      "bytes_in_git": 419,
+      "sha256": "6d1eb8b8afb76e9bec082864f10a1cd64343c30719dd8d81d05dcb0eae171901",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
@@ -28,8 +28,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes_in_git": 345,
-      "sha256": "ee1f34a32f2719c470637f45e1fcbdd79a5c12614405102354986db04b09a40e",
+      "bytes_in_git": 441,
+      "sha256": "b30da4d1bc3cb4189f39dbe58cb81fcd7ee70fa45a0acd0e7a9f7c7377a03fd7",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
@@ -42,8 +42,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes_in_git": 9590,
-      "sha256": "8d8db8303dae1cf11b0b38def4ee6182cb11c279e3f4aac9aa81ecd1fbfde41b",
+      "bytes_in_git": 10224,
+      "sha256": "1b006ab7d24198120d5262ae2450502fcd547caab63a261f074d5d48b14f5dfb",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
@@ -63,15 +63,15 @@
     },
     {
       "path": "PROGRESS.md",
-      "bytes_in_git": 14722,
-      "sha256": "01a7e6e7ee384318b04c7b33c499db3427b18b6695134d75afb853e25fe8ba58",
+      "bytes_in_git": 16078,
+      "sha256": "ff8a500ce93f829d0493461ea63844f1cd5f8894b50345a86e3c15cad36173b0",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
     {
       "path": "README.md",
-      "bytes_in_git": 10365,
-      "sha256": "f6283e0204e012bc658399e1df6245cb92b23feb0fd992b1017b6b676f0599e0",
+      "bytes_in_git": 11383,
+      "sha256": "59e14d14adaea3004b9215378cc9c6ae53e8652221225708ed2ed27a3709e9dd",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
@@ -972,6 +972,13 @@
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
     {
+      "path": "deliverables/EE5110SegC_review_kit_v3.1.0.zip",
+      "bytes_in_git": 49155184,
+      "sha256": "303b041a465d7ca412fc1649562cc9303da6de8a4d6264e51b494d6f06f20966",
+      "normalization": "none",
+      "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
+    },
+    {
       "path": "deliverables/EE5110SegC_submission_v2.1.0.zip",
       "bytes_in_git": 23049451,
       "sha256": "4cdc88e00737159471ede0df31df077dce60f87ff08e6c20fe09a87397f76218",
@@ -986,9 +993,23 @@
       "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
     },
     {
+      "path": "deliverables/EE5110_5min_captioned_preview.mp4",
+      "bytes_in_git": 4448638,
+      "sha256": "80de76cab567eee56e36d1dade6a4d51c447c10fdf4d3236fb513cd6bfce4c1a",
+      "normalization": "none",
+      "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
+    },
+    {
+      "path": "deliverables/EE5110_LaTeX_Source.zip",
+      "bytes_in_git": 905190,
+      "sha256": "5ef3864d47aa38cdf278f2a99bcab8e8e7dd099d0a55a5fb53e2515c49179857",
+      "normalization": "none",
+      "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
+    },
+    {
       "path": "deliverables/README.md",
-      "bytes_in_git": 2235,
-      "sha256": "3a766f9062d6d8be56952c56ec3dfbb3c322df70c0cafdca3e2b923e42f06328",
+      "bytes_in_git": 2573,
+      "sha256": "3ed2ab00f7258af7a21e8708dc18c2e5d88363e04641fa6f2e8a10e5777378b8",
       "normalization": "none",
       "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
     },
@@ -1476,6 +1497,13 @@
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
     {
+      "path": "docs/CODE_REVIEW_ZH.md",
+      "bytes_in_git": 6780,
+      "sha256": "3d9f1fb3451d35cb45484e976c3ea9cb862a0d43cc63fc08aa1a23ee8c3cfdb0",
+      "normalization": "lf",
+      "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
+    },
+    {
       "path": "docs/DEMO_EDITING_GUIDE.md",
       "bytes_in_git": 7952,
       "sha256": "784e412958d5fde8ebf0b9fcb0466c562ac5818061167e09bdfb53dd83e65154",
@@ -1491,8 +1519,15 @@
     },
     {
       "path": "docs/FILE_GUIDE.md",
-      "bytes_in_git": 12297,
-      "sha256": "790c47632c102a79cf6a98930789c749af583ebf0efe5bfcacc05ba3b984ec57",
+      "bytes_in_git": 13430,
+      "sha256": "d01e3c5aa261fc40126aeb0da3dcbca54ff0a3bf7eae0605d78e1d669c5750dc",
+      "normalization": "lf",
+      "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
+    },
+    {
+      "path": "docs/FINAL_DELIVERY.md",
+      "bytes_in_git": 3930,
+      "sha256": "48e103f64659f83554cd4d24f130b2e505d3b2993c2d80eab6c2d975aedd138d",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
@@ -1516,6 +1551,181 @@
       "sha256": "e3d32fc86e1048deb79fded3786cb3843cbbcc8102c985d8bd319d0d056fce14",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
+    },
+    {
+      "path": "docs/final_report/README.md",
+      "bytes_in_git": 1691,
+      "sha256": "036a1c7b22fdabb6c4528ffa27fa9a90cd743ffd35f1779af0a3e60b9d6e83ba",
+      "normalization": "lf",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/evidence_summary.json",
+      "bytes_in_git": 2555,
+      "sha256": "41e0caa5c93b61a01fd524d30f4b6a083a2797f102cacde7129b330cd894c34f",
+      "normalization": "lf",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/figures/candidate_results.pdf",
+      "bytes_in_git": 17266,
+      "sha256": "adc95493af6c38f9ac28de16fc43f5537a4a5d8469c981881fa2e8f18e31f94d",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/figures/candidate_results.png",
+      "bytes_in_git": 41782,
+      "sha256": "8e550d33584b8383d74fcdef4c9c69ae4cd64d457418778602f02ae766ce72d6",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/figures/corrupted_points.png",
+      "bytes_in_git": 149405,
+      "sha256": "8846bbcd9018e1463152656f354b8f0361ad590fcf03685199c28dbfd2c1923f",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/figures/exploration_results.pdf",
+      "bytes_in_git": 21705,
+      "sha256": "71963c38d87c5e6767209cac2a8014bc2f357523b923f43d43c5ed707e412244",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/figures/exploration_results.png",
+      "bytes_in_git": 98013,
+      "sha256": "0780e09e6796658b7d47a5cddf0bd3aa8ae92d6e3205820459641d5160d795c1",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/figures/hinge.png",
+      "bytes_in_git": 77517,
+      "sha256": "31f1f6a39ada6ec93bed0799034c3ac6b85e318b425da93474133dbb3aba5054",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/figures/inclined.png",
+      "bytes_in_git": 54896,
+      "sha256": "0cc56f338e532e6a26d0aff6629238597af7a624d1c7fa07f5d5d3f1192d6a43",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/figures/novel.png",
+      "bytes_in_git": 76297,
+      "sha256": "e44c1407430c1cc0c803c6762f0cbe3fc58b88b20dd6a18593a79235241a327d",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/figures/pipeline.pdf",
+      "bytes_in_git": 23590,
+      "sha256": "ffde674f7ead78ad80a7a9a2112b3f23bf77594d73065180e748539c206c6574",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/figures/recovery_place.png",
+      "bytes_in_git": 71662,
+      "sha256": "9cfbd958b6bddc17e9d05d1e695e88d457d01fcaab71d539401137e909071c35",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/figures/rejected.png",
+      "bytes_in_git": 84273,
+      "sha256": "b073e32e788e9d2a606fe2993f7a23dccfee28f7abecf433e894a96bc026a63a",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/figures/soft_grasp.png",
+      "bytes_in_git": 75825,
+      "sha256": "efbcc645a552d0c7586bbeff68309953e182fb0a163c1cf4d0ef523030e4b92f",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/figures/soft_trace.png",
+      "bytes_in_git": 62327,
+      "sha256": "93cdba20ffe8976e1413b89553ca4a8cb6459bb4ae812f9b771451cc5a002ea6",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/figures/workcell.png",
+      "bytes_in_git": 75710,
+      "sha256": "1f0ebcfe98e5403c65255592518638e1ee51a4bbf332620558411698e8f2d834",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/report.pdf",
+      "bytes_in_git": 713203,
+      "sha256": "98af68141b2a127f002c71998495c19329670ef5a11ee0c5e1b21db848a17b66",
+      "normalization": "none",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/report.tex",
+      "bytes_in_git": 33827,
+      "sha256": "c5f6859c7fc1713a50c5c4a8fd146cf9926f58a858d1c2b0f980af1267e13bda",
+      "normalization": "lf",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_report/results_table.tex",
+      "bytes_in_git": 1000,
+      "sha256": "3e135b758378d8d40616606e688c8b84d0b3a53d4909351dcb67e16ac4c63fc5",
+      "normalization": "lf",
+      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
+    },
+    {
+      "path": "docs/final_video/EDITING_GUIDE_ZH.md",
+      "bytes_in_git": 6104,
+      "sha256": "714dd1f4c4d29e6da3a14dd113762905f318d53ad20ed36ae93ef0d6118efad6",
+      "normalization": "lf",
+      "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
+    },
+    {
+      "path": "docs/final_video/NARRATION_EN.md",
+      "bytes_in_git": 5782,
+      "sha256": "26b61346f9ddfa9f5df9735fa774ce52a56dbed3e64e98dd76da05120eafacb7",
+      "normalization": "lf",
+      "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
+    },
+    {
+      "path": "docs/final_video/narration.srt",
+      "bytes_in_git": 6588,
+      "sha256": "7bfe98e558c8678910b6cd61c666a30d907a5856a8951783100b3d92a2d0464a",
+      "normalization": "lf",
+      "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
+    },
+    {
+      "path": "docs/final_video/shot_list.csv",
+      "bytes_in_git": 2314,
+      "sha256": "889463ca1732a90a57698410ac141f03b623552a54da1acf09fecd75bd3b11dd",
+      "normalization": "lf",
+      "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
+    },
+    {
+      "path": "docs/final_video/storyboard.json",
+      "bytes_in_git": 10183,
+      "sha256": "d958eeeeccccec26f9bdbe333aaa178557e91143cf59595202057edf6e8ebc65",
+      "normalization": "lf",
+      "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
+    },
+    {
+      "path": "docs/final_video/timing_check.json",
+      "bytes_in_git": 1109,
+      "sha256": "9bc7fb82a691442c069cd2efee5e801974e39fb2c713dbea7f6126437127a790",
+      "normalization": "lf",
+      "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
     },
     {
       "path": "docs/images/baseline_failure_v2.1.0.png",
@@ -1850,6 +2060,20 @@
       "path": "docs/validation/editing_materials/visualization_metadata.json",
       "bytes_in_git": 23634,
       "sha256": "c672fa7cb947d0239710647dc2db12584529f0252d4a981ab6a7f4c68ff689e1",
+      "normalization": "lf",
+      "purpose": "按版本保留的实验/开发验证证据，包含失败而非只保留成功"
+    },
+    {
+      "path": "docs/validation/report_delivery/README.md",
+      "bytes_in_git": 1892,
+      "sha256": "128ef9373125ee4aa5f60cb4d36eb0cff6858dfb72353025e835437f079111c4",
+      "normalization": "lf",
+      "purpose": "按版本保留的实验/开发验证证据，包含失败而非只保留成功"
+    },
+    {
+      "path": "docs/validation/report_delivery/verification.json",
+      "bytes_in_git": 1688,
+      "sha256": "9b3df5cbb039469e9afe7e8e808904dd4eacc8bdd8a099f63830409d2e5b8c94",
       "normalization": "lf",
       "purpose": "按版本保留的实验/开发验证证据，包含失败而非只保留成功"
     },
@@ -3056,6 +3280,13 @@
       "sha256": "62ab524d8f1cd827a32f3d74fb9e8754ed2b42749a82246da2271f4509cac9a9",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
+    },
+    {
+      "path": "output/pdf/EE5110_Final_Report.pdf",
+      "bytes_in_git": 713203,
+      "sha256": "98af68141b2a127f002c71998495c19329670ef5a11ee0c5e1b21db848a17b66",
+      "normalization": "none",
+      "purpose": "报告 PDF；最新报告位于 output/pdf，旧版本报告位于 docs/report"
     },
     {
       "path": "output/pdf/exploration_report_v3.0.0.pdf",
@@ -4858,8 +5089,22 @@
     },
     {
       "path": "scripts/build_file_inventory.py",
-      "bytes_in_git": 6013,
-      "sha256": "1b946287ab2d274bae63a460a1d92c66497ad372d9e7b611e70c770b8630947a",
+      "bytes_in_git": 6307,
+      "sha256": "d63d568d75dd9acf63504f12767d8d7bbf2a71d3c830074ce8fef979bf9f1549",
+      "normalization": "lf",
+      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+    },
+    {
+      "path": "scripts/build_final_report.py",
+      "bytes_in_git": 9450,
+      "sha256": "fd2664b4db68f12b25d410d65bd3ada65941226744daac04bb5cae895f9c9dfd",
+      "normalization": "lf",
+      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+    },
+    {
+      "path": "scripts/build_final_video_materials.py",
+      "bytes_in_git": 12835,
+      "sha256": "1c45195248ca7bffa8c619d496bf594fd73a15aba8ddcd72003abf267354a0b9",
       "normalization": "lf",
       "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
     },
@@ -4963,8 +5208,8 @@
     },
     {
       "path": "scripts/package_submission.py",
-      "bytes_in_git": 3858,
-      "sha256": "ad28aefe86ccbc7d38be4a12eadd508d16750b39019ff786753fc586b139d25f",
+      "bytes_in_git": 9924,
+      "sha256": "ea4ed72890e743d308d3e40027035b4df9b9a26aa20454b9e28fba26724dc36c",
       "normalization": "lf",
       "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
     },

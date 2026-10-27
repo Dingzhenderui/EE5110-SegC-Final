@@ -27,6 +27,10 @@ def purpose(path):
         return '按版本保留的实验/开发验证证据，包含失败而非只保留成功'
     if path.startswith('docs/images/'):
         return '报告及讲解用的实际仿真截图、数据曲线或点云图'
+    if path.startswith('docs/final_report/'):
+        return '10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明'
+    if path.startswith('docs/final_video/'):
+        return '5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明'
     if path.startswith(('docs/report/', 'output/pdf/')):
         return '报告 PDF；最新报告位于 output/pdf，旧版本报告位于 docs/report'
     if path.startswith(('robot_manipulation/', 'exploration/', 'scripts/', 'tests/')):

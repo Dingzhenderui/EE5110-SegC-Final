@@ -1,0 +1,279 @@
+1
+00:00:00,000 --> 00:00:04,839
+Our project studies autonomous robot manipulation beyond a
+successful grasp.
+
+2
+00:00:04,839 --> 00:00:12,581
+Using a Franka Panda in MuJoCo, we ask where a complete pick-and-
+place pipeline breaks, and which
+
+3
+00:00:12,581 --> 00:00:15,000
+targeted changes recover the task.
+
+4
+00:00:15,000 --> 00:00:22,212
+The baseline loads six public YCB models and supports seeded random
+object selection and placement.
+
+5
+00:00:22,212 --> 00:00:29,904
+The robot proposes grasps, checks motion, closes its fingers, lifts,
+transports and physically releases the object.
+
+6
+00:00:29,904 --> 00:00:33,750
+We evaluate repeated randomized trials and retain failures.
+
+7
+00:00:33,750 --> 00:00:40,000
+The object moves through simulated contact dynamics, without a
+robot-object weld or teleportation.
+
+8
+00:00:40,000 --> 00:00:46,207
+Our modules separate observation, candidate generation, inverse
+kinematics, collision checking and execution.
+
+9
+00:00:46,207 --> 00:00:54,483
+Success requires an eighty-millimeter lift, one-second hold,
+sustained bilateral contact, stable release and placement within
+fifty-five
+
+10
+00:00:54,483 --> 00:00:55,000
+millimeters.
+
+11
+00:00:55,000 --> 00:00:58,103
+Clutter tests also limit neighbor displacement.
+
+12
+00:00:58,103 --> 00:01:03,793
+Some observers use measured points, but planning still uses
+simulator geometry.
+
+13
+00:01:03,793 --> 00:01:10,000
+This is a controlled simulation study, rather than an end-to-end
+real-camera system.
+
+14
+00:01:10,000 --> 00:01:14,286
+First, a nearby can blocks the robot's palm.
+
+15
+00:01:14,286 --> 00:01:18,571
+The original candidates are safely rejected before motion.
+
+16
+00:01:18,571 --> 00:01:27,143
+In the same scene, we append a bounded family of inclined and offset
+grasps while preserving
+
+17
+00:01:27,143 --> 00:01:28,750
+all collision checks.
+
+18
+00:01:28,750 --> 00:01:31,964
+The new candidate completes the transfer.
+
+19
+00:01:31,964 --> 00:01:40,000
+This development example illustrates the mechanism; the separate
+paired experiment measures how often it helps.
+
+20
+00:01:40,000 --> 00:01:45,625
+Next, we replace the rigid target with a genuine three-dimensional
+elastic solid.
+
+21
+00:01:45,625 --> 00:01:53,125
+The controller measures normal force at both fingers and adjusts
+bounded preload using the weaker contact.
+
+22
+00:01:53,125 --> 00:01:59,688
+Fixed preload completes two of six soft-object tasks; force
+regulation completes six of six.
+
+23
+00:01:59,688 --> 00:02:07,188
+Under randomized rigid-object mass, friction and actuator delay,
+completion changes from ten of twelve to twelve
+
+24
+00:02:07,188 --> 00:02:08,125
+of twelve.
+
+25
+00:02:08,125 --> 00:02:13,750
+However, average peak elastic strain increases from about three-
+point-seven to four-point-nine percent.
+
+26
+00:02:13,750 --> 00:02:18,906
+The result supports retention within the tested limits, not reduced
+deformation.
+
+27
+00:02:18,906 --> 00:02:25,000
+The force and strain curves shown here are from an illustrative
+development run.
+
+28
+00:02:25,000 --> 00:02:28,333
+More observations do not automatically improve manipulation.
+
+29
+00:02:28,333 --> 00:02:34,048
+We add missing stripes, drift, outliers and calibration bias to
+synthetic depth.
+
+30
+00:02:34,048 --> 00:02:41,667
+A single packet completes six of twelve tasks, while raw twenty-
+four-packet fusion completes only one: accumulated
+
+31
+00:02:41,667 --> 00:02:44,048
+outliers can distort foreground geometry.
+
+32
+00:02:44,048 --> 00:02:51,667
+Requiring each voxel to receive support from three different packets
+raises completion to nine of twelve.
+
+33
+00:02:51,667 --> 00:02:55,476
+All remaining failures are wedge-shaped objects losing contact.
+
+34
+00:02:55,476 --> 00:03:03,095
+The bottleneck moves from obtaining usable geometry toward retaining
+the object, although shape and estimation effects
+
+35
+00:03:03,095 --> 00:03:05,000
+are not separately isolated.
+
+36
+00:03:05,000 --> 00:03:12,467
+For recovery, we inject a transient closure fault: the first
+commanded opening remains wider than the
+
+37
+00:03:12,467 --> 00:03:12,933
+target.
+
+38
+00:03:12,933 --> 00:03:16,667
+Missing bilateral contact triggers a real grasp failure.
+
+39
+00:03:16,667 --> 00:03:22,267
+The robot opens, performs a checked withdrawal, reobserves and
+physically grasps again.
+
+40
+00:03:22,267 --> 00:03:26,933
+The scene is initialized once and never reset between attempts.
+
+41
+00:03:26,933 --> 00:03:32,067
+All six first attempts fail, and all six retry episodes succeed.
+
+42
+00:03:32,067 --> 00:03:39,533
+This verifies recovery from the specified temporary fault, rather
+than a universal recovery rate for natural
+
+43
+00:03:39,533 --> 00:03:40,000
+failures.
+
+44
+00:03:40,000 --> 00:03:46,897
+Additional studies carry a freely hinged assembly and estimate
+grasps for procedural objects without supplying target
+
+45
+00:03:46,897 --> 00:03:47,328
+CAD.
+
+46
+00:03:47,328 --> 00:03:50,776
+The shape methods tie at eleven of twelve.
+
+47
+00:03:50,776 --> 00:03:57,672
+In stronger clutter, active observation actually falls from five of
+six to three of six because
+
+48
+00:03:57,672 --> 00:03:59,397
+of additional placement failures.
+
+49
+00:03:59,397 --> 00:04:05,000
+We keep these unfavorable results instead of presenting every
+extension as an improvement.
+
+50
+00:04:05,000 --> 00:04:08,987
+The candidate study contains one hundred eighty physical episodes.
+
+51
+00:04:08,987 --> 00:04:16,076
+Local alternatives change completion from fifty-four to fifty-eight
+out of sixty with three neighbors, and from
+
+52
+00:04:16,076 --> 00:04:19,620
+twenty-six to twenty-nine out of thirty with five.
+
+53
+00:04:19,620 --> 00:04:23,608
+The exploratory study separately contains one hundred twenty-six
+episodes.
+
+54
+00:04:23,608 --> 00:04:28,924
+We pair initial scenes and physics, preserve failures and report
+confidence intervals.
+
+55
+00:04:28,924 --> 00:04:32,025
+No comparison passes its stated statistical threshold.
+
+56
+00:04:32,025 --> 00:04:39,114
+Development footage is excluded from these denominators, and the two
+studies are never pooled into one
+
+57
+00:04:39,114 --> 00:04:40,000
+success rate.
+
+58
+00:04:40,000 --> 00:04:46,522
+Our main finding is that geometry, observation quality and contact
+retention must be evaluated together.
+
+59
+00:04:46,522 --> 00:04:52,174
+The deliverables include runnable source, frozen records, a ten-page
+report and reproduction instructions.
+
+60
+00:04:52,174 --> 00:04:55,217
+Forty-nine tests and both evidence audits pass.
+
+61
+00:04:55,217 --> 00:05:00,000
+Future work targets wedge stability, deformation-aware control and
+less ideal sensing.

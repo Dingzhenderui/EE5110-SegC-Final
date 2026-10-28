@@ -10,7 +10,7 @@ import os
 from pathlib import Path
 import shutil
 import subprocess
-import sys
+import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'docs/final_report'
@@ -36,8 +36,6 @@ def prepare_figures():
         'soft_trace.png': 'exploration_soft_trace.png',
         'corrupted_points.png': 'exploration_corrupted_points.png',
         'recovery_place.png': 'exploration_recovery_retry_place.png',
-        'hinge.png': 'exploration_articulated_lift.png',
-        'novel.png': 'exploration_novel_points_grasp.png',
     }
     for name, original in snapshots.items():
         shutil.copyfile(ROOT / 'docs/images' / original, destination / name)
@@ -137,21 +135,36 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--engine', help='Tectonic, pdflatex or xelatex executable')
     parser.add_argument('--figures-only', action='store_true')
+    parser.add_argument('--source-zip', action='store_true', help='Export self-contained Overleaf sources under output/packages')
     args = parser.parse_args()
     prepare_figures()
+    if args.source_zip:
+        target = ROOT/'output/packages/EE5110_LaTeX_Source.zip'
+        target.parent.mkdir(parents=True, exist_ok=True)
+        files = [SOURCE/name for name in ['report.tex', 'results_table.tex', 'README.md', 'evidence_summary.json']]
+        files.extend(p for p in (SOURCE/'figures').rglob('*') if p.is_file())
+        with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED) as archive:
+            for path in sorted(files):
+                archive.write(path, path.relative_to(SOURCE).as_posix())
+        with zipfile.ZipFile(target) as archive:
+            if archive.testzip() is not None:
+                raise ValueError('LaTeX source ZIP CRC check failed')
+        print(f'Exported Overleaf source: {target}')
     if args.figures_only:
         print(f'Prepared figures and evidence tables: {SOURCE}'); return
     engine = args.engine or next((shutil.which(n) for n in ['tectonic','pdflatex','xelatex'] if shutil.which(n)), None)
     if not engine:
         parser.error('Install a LaTeX engine or pass --engine; Overleaf can compile docs/final_report/report.tex')
+    build = ROOT/'outputs/report_build'
+    build.mkdir(parents=True, exist_ok=True)
     if 'tectonic' in Path(engine).name.lower():
-        command = [engine, '--keep-logs', '--untrusted', 'report.tex']
+        command = [engine, '--keep-logs', '--untrusted', '--outdir', str(build), 'report.tex']
         subprocess.run(command, cwd=SOURCE, check=True)
     else:
         for _ in range(2):
-            subprocess.run([engine, '-interaction=nonstopmode', '-halt-on-error', 'report.tex'], cwd=SOURCE, check=True)
+            subprocess.run([engine, '-interaction=nonstopmode', '-halt-on-error', '-output-directory', str(build), 'report.tex'], cwd=SOURCE, check=True)
     output = ROOT/'output/pdf/EE5110_Final_Report.pdf'; output.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(SOURCE/'report.pdf', output)
+    shutil.copyfile(build/'report.pdf', output)
     # Optional local rendering library; PDF creation itself does not depend on it.
     try:
         import pymupdf

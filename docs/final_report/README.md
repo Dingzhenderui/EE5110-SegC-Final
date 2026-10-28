@@ -1,6 +1,6 @@
 # 综合报告 LaTeX 源码
 
-`report.tex` 为唯一主文件，目标为 A4 单栏、10 页实质内容（没有独立空封面）。报告整合基线、180 次局部候选消融和126次拓展筛查，保留旧 PDF 与冻结引擎。
+`report.tex` 为唯一主文件，目标为 A4 单栏、10 页实质内容（没有独立空封面）。报告整合基线、180 次局部候选消融和126次拓展筛查，保留冻结引擎，旧PDF通过Git历史查看。
 
 ## 编译
 
@@ -20,7 +20,7 @@ Overleaf：把本文件夹的 `report.tex`、`results_table.tex` 和整个 `figu
 .venv\Scripts\python scripts/build_final_report.py --figures-only
 ```
 
-编译后 PDF：`output/pdf/EE5110_Final_Report.pdf`。`report.pdf` 是源目录旁的同内容编译副本。组员姓名/学号没有编造；如课程另需身份栏，修改 `\TeamLine`，填写真实组员信息后重新编译。
+编译后 PDF：`output/pdf/EE5110_Final_Report.pdf`。编译中间文件统一写入`outputs/report_build/`，不在源码目录重复保存PDF。用`--figures-only --source-zip`可按需导出`output/packages/EE5110_LaTeX_Source.zip`。组员姓名/学号没有编造；如课程另需身份栏，修改 `\TeamLine`，填写真实组员信息后重新编译。
 
 ## 页内容
 

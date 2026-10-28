@@ -18,11 +18,11 @@ def purpose(path):
     if path.startswith('assets/'):
         return '固定模型来源版本及逐文件 SHA-256 校验值'
     if path.startswith('deliverables/editing_materials/'):
-        return '独立原速剪辑素材、配套分析/日志或素材哈希清单'
+        return '独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation'
     if path.startswith('deliverables/'):
-        return '演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md'
+        return '最新版审片视频或交付物导航；ZIP按需生成到 output/packages，不纳入版本控制'
     if path.startswith('outputs/'):
-        return '原始实验、开发诊断或录制中间素材；分类见 outputs/README.md'
+        return '本地实验、录制、缓存与编译临时输出；仅目录说明受版本控制'
     if path.startswith('docs/validation/'):
         return '按版本保留的实验/开发验证证据，包含失败而非只保留成功'
     if path.startswith('docs/images/'):
@@ -31,10 +31,10 @@ def purpose(path):
         return '10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明'
     if path.startswith('docs/final_video/'):
         return '5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明'
-    if path.startswith(('docs/report/', 'output/pdf/')):
-        return '报告 PDF；最新报告位于 output/pdf，旧版本报告位于 docs/report'
+    if path.startswith('output/pdf/'):
+        return '唯一正式综合报告 PDF；历史报告通过 Git 历史查看'
     if path.startswith(('robot_manipulation/', 'exploration/', 'scripts/', 'tests/')):
-        return 'Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具'
+        return 'Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md'
     if name.startswith('requirements'):
         return 'Python 依赖版本清单；按核心仿真、视频和报告分开安装'
     if path.startswith('.github/workflows/'):

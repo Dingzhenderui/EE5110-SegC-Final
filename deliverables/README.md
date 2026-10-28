@@ -1,27 +1,12 @@
-# 视频、剪辑素材和提交包
+# 当前视频与原速素材
 
-本目录现在随完整分支上传，文件可直接下载。视频均由实际 MuJoCo 运行录制；开发演示与正式统计分开。
-
-| 文件/目录 | 作用 |
+| 内容 | 路径 |
 |---|---|
-| `EE5110_5min_reviewed_preview.mp4` | 当前推荐：完整时间轴检查后的300秒/54条字幕预览，1280×720/25fps，**无口播**；用当前讲稿录音。 |
-| `EE5110_5min_captioned_preview.mp4` | 初版预览，按词数估时，存在已记录的字幕/动作错位；保留对比，录音请使用上面的修订版。 |
-| `EE5110_LaTeX_Source.zip` | 自包含10页主报告LaTeX、图表和编译说明，可直接上传Overleaf。 |
-| `EE5110SegC_review_kit_v3.1.0.zip` | 当前报告/源码/模型/证据/讲稿/字幕/素材及预览审阅包，明确未录音。 |
-| `editing_materials/` | 优先用于自行剪辑：15 段独立原速视频、分析图、CSV 轨迹、开发日志和清单。 |
-| `editing_materials.zip` | 与上一目录对应的整套素材压缩包，约 24.6 MB。 |
-| `editing_materials/00_README.md` | 每段视频对应的内容、剪辑提示和界面启动方法。 |
-| `editing_materials/CLIP_INDEX.json` | 15 段的准确时长、源录像、倍速信息和 SHA-256。 |
-| `editing_materials/MANIFEST.json` | 素材包内文件的原始字节 SHA-256，不包含清单自身。 |
-| `editing_materials/01_baseline/` | 5 段：工作台、六种 YCB 物体随机摆放、候选姿态、完整抓放、六次随机试验。 |
-| `editing_materials/02_explorations/` | 7 段：密集遮挡、软体、铰接、未见形状、力反馈、故障恢复、稳健感知。 |
-| `editing_materials/03_comparisons/` | 3 段：原候选失败、同场景改进成功、五干扰物抓放。 |
-| `editing_materials/04_analysis_and_logs/` | 讲解用图、真实力/应变/关节轨迹及对应日志；用于解释机制。 |
-| `explorations_v3.0.0.mp4` | 七段拓展组成的介绍字幕视频，约 3 分 33 秒；物理片段标明 2 倍速。 |
-| `demo_v2.1.0.mp4` | 前一阶段介绍视频，约 2 分 20 秒，展示失败与改进及动态邻物。 |
-| `EE5110SegC_submission_v3.0.0.zip` | v3.0 当时验证通过的提交快照：源码、模型/许可证、两份报告、拓展介绍视频和证据，约 26.6 MB。 |
-| `EE5110SegC_submission_v2.1.0.zip` | v2.1 历史提交快照，约 23.0 MB；保留用于复现上一阶段。 |
+| 当前5分钟审片版，无口播 | `EE5110_5min_reviewed_preview.mp4` |
+| 15段原速视频及SHA-256 | `editing_materials/` |
+| 英文讲稿、字幕、镜头表 | `../docs/final_video/` |
+| 唯一10页主报告 | `../output/pdf/EE5110_Final_Report.pdf` |
 
-旧版 submission ZIP 保持已验证时的原始内容。当前优先阅读`docs/FINAL_DELIVERY.md`；3.1最终提交包需要小组录音后显式指定视频生成，review kit不是已配音成片。旧快照不能代替最新分支。
+当前目录只保留最新版和可重剪的原速素材。旧版视频、重复ZIP与重复分析图/日志已从工作树移除；历史内容可从Git恢复。分析图在`docs/images/`，正式记录及轨迹在`docs/validation/`。
 
-操作说明以 [当前演示指南](../docs/DEMO_EDITING_GUIDE.md) 为准，完整文件导航见 [根 README](../README.md)。
+提交包和Overleaf源码ZIP按需生成到`output/packages/`，不重复提交到Git。命令见[交付说明](../docs/FINAL_DELIVERY.md)。当前视频没有口播，录音前请打开[逐句讲稿](../docs/final_video/NARRATION_EN.md)。

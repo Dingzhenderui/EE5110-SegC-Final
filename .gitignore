@@ -1,22 +1,21 @@
 .venv/
 __pycache__/
-.idea/
-outputs/exploration_model_cache/
-outputs/mplconfig/
-outputs/submission_verification*/
-outputs/branch_verification*/
-outputs/remote_verification*/
-outputs/**/qa/
-outputs/**/qa-*.png
-outputs/**/concat.txt
-outputs/**/objects_concat.txt
-outputs/full_branch_*.zip
-.tools/
 *.py[cod]
 .pytest_cache/
+.idea/
+.tools/
 .env
 .env.*
 !.env.example
+
+# Runtime recordings, caches, build files and isolated verification are disposable.
+/outputs/*
+!/outputs/README.md
+/output/packages/
+/deliverables/*.zip
+
+# One published PDF lives in output/pdf; source-side compiler files are local.
+docs/final_report/report.pdf
 docs/final_report/*.log
 docs/final_report/*.aux
 docs/final_report/*.xdv

@@ -1,62 +1,51 @@
-# 综合报告与5分钟视频交付说明
+# 当前交付与重新生成
 
-本次以远端最新、包含所有旧分支的 `feature/demo-materials-and-viewer@f65ee0c` 为基础，新建 `feature/final-latex-report-video`，不修改冻结引擎，不覆盖历史交付文件。
+## 当前文件
 
-## 阅读顺序
+- 主报告：[EE5110_Final_Report.pdf](../output/pdf/EE5110_Final_Report.pdf)，英文10页。
+- 审片视频：[EE5110_5min_reviewed_preview.mp4](../deliverables/EE5110_5min_reviewed_preview.mp4)，300秒、无口播。
+- [635词讲稿](final_video/NARRATION_EN.md)、[54条字幕](final_video/narration.srt)、[23镜头时间表](final_video/shot_list.csv)、[全片检查记录](final_video/FULL_REVIEW_ZH.md)。
+- [LaTeX源码](final_report/README.md)，可直接上传Overleaf。
+- 完整源码/模型/冻结证据在当前项目；[文件指南](FILE_GUIDE.md)说明职责。
 
-1. `output/pdf/EE5110_Final_Report.pdf`：唯一综合主报告，英文10页，有完整基线、局部候选、软体/力控、受损感知、恢复和全部结果，含统计/局限。
-2. `docs/final_video/NARRATION_EN.md`：635词英文口播，300秒/10段。
-3. `docs/final_video/EDITING_GUIDE_ZH.md`：中文剪辑指南。
-4. `docs/final_video/shot_list.csv`：23镜头的素材源/切点/倍速/静帧时间；`narration.srt`：54段按画面确定时点的英文字幕。
-5. `deliverables/EE5110_5min_reviewed_preview.mp4`：严格300秒的字幕版预览，**没有口播音轨**。直接配上实际录音即可作为成片基础。
-6. `docs/CODE_REVIEW_ZH.md`：详细代码审读和结果边界。
-7. `docs/final_report/report.tex`：自包含LaTeX主文件；同目录含图/表和编译说明，可上传Overleaf。
+模型和源码不需要解压历史提交ZIP。先按[README](../README.md)建立Python3.12环境，安装`requirements.txt`，运行两个setup脚本，再用`demo_viewer.py`或主函数运行。Windows快捷入口`OPEN_DEMO.cmd`需要本项目`.venv`。
 
-## 运行
-
-已有Python3.12环境时，从项目根目录运行：
+## 可选构建依赖与命令
 
 ```powershell
-.venv\Scripts\python -m pip install -r requirements.txt
-.venv\Scripts\python scripts/setup_assets.py
-.venv\Scripts\python scripts/setup_ycb.py
-.venv\Scripts\python demo_viewer.py
-.venv\Scripts\python main.py --headless --balanced --task place --trials 6
-.venv\Scripts\python clutter_main.py --headless --scene dense --trials 3
-.venv\Scripts\python exploration_main.py --case sensor_robust --trials 3
-.venv\Scripts\python exploration_main.py --case soft_adaptive --trials 3
-.venv\Scripts\python exploration_main.py --case recovery_retry --trials 3
-```
-
-如果尚无`.venv`，先`py -3.12 -m venv .venv`。也可双击`OPEN_DEMO.cmd`；缺少Python/依赖时按界面提示安装。Windows/Linux均使用项目核心Python，LaTeX工具只影响编译，不影响机器人仿真。
-
-## 构建材料
-
-```powershell
+.venv\Scripts\python -m pip install -r requirements-report.txt -r requirements-video.txt
+# 重新生成图表、编译10页报告；需要本机LaTeX引擎
 .venv\Scripts\python scripts/build_final_report.py --engine tectonic
+# 只导出自包含Overleaf源码ZIP，无需编译器
+.venv\Scripts\python scripts/build_final_report.py --figures-only --source-zip
+# 检查15段原速素材的哈希、时长和完整解码
+.venv\Scripts\python scripts/prepare_editing_materials.py
+# 根据显式cue生成讲稿、字幕、镜头表；另加--render-preview可重剪
 .venv\Scripts\python scripts/build_final_video_materials.py
-.venv\Scripts\python scripts/build_final_video_materials.py --render-preview
 ```
 
-报告构建需matplotlib和LaTeX引擎；视频预览需Pillow/imageio-ffmpeg（requirements-video.txt）。预览使用Windows Arial字体；跨平台可换字体路径。脚本会校验所有使用素材的SHA-256、切点和完整300秒时间轴，拒绝越界或空洞；不修改冻结日志和源片。
+仿真/录像/编译临时文件写入被忽略的`outputs/`。最终报告只有`output/pdf/EE5110_Final_Report.pdf`；不在源码目录重复存PDF。当前审片版由本地原速素材生成，54条cue已按画面检查，但录音后仍需核对语音同步。实际组员身份在`report.tex`的`\TeamLine`中填写。
 
-## 打包与核验
+## 按需打包
 
-当前review kit有报告/源代码/全部必要模型和许可证/正式证据/运行说明/LaTeX/讲稿/字幕/预览；预览未录音这一状态会写进`START_HERE.txt`。全片审读和修改记录见`docs/final_video/FULL_REVIEW_ZH.md`。当前字幕按画面安排，录音后仍需校准语音。代码已修复旧包遗漏GUI入口的问题，历史打包选项不变。
+ZIP统一生成到`output/packages/`，不提交到Git。当前格式为3.1.0（也是默认值），旧格式请在相应Git版本中使用。
 
 ```powershell
-.venv\Scripts\python scripts/package_submission.py --version 3.1.0 --video deliverables/EE5110_5min_reviewed_preview.mp4 --review-kit
+# 无配音审阅包，明确标注不是最终口播成片
+.venv\Scripts\python scripts/package_submission.py --review-kit --video deliverables/EE5110_5min_reviewed_preview.mp4
+# 校验CRC、全文件SHA，并在独立解压目录实际运行dense/soft/recovery
+.venv\Scripts\python scripts/verify_submission.py
 ```
 
-小组录音、加音轨后再显式创建最终提交包：
+加入真实录音、合成最终视频后：
 
 ```powershell
-.venv\Scripts\python scripts/package_submission.py --version 3.1.0 --video deliverables/EE5110_Final_Demo.mp4
-.venv\Scripts\python scripts/verify_submission.py --archive deliverables/EE5110SegC_submission_v3.1.0.zip --extract-to outputs/submission_verification_final
+.venv\Scripts\python scripts/package_submission.py --video deliverables/EE5110_Final_Demo.mp4
+.venv\Scripts\python scripts/verify_submission.py --archive output/packages/EE5110SegC_submission_v3.1.0.zip --extract-to outputs/submission_verification_final
 ```
 
-使用全新空解压目录。验证包括CRC/全文件SHA、模型和两套证据审计，并实际执行dense、soft和recovery物理释放。主报告固定10页，组名/真实成员身份可通过`\TeamLine`添加；如果教师另有小组编号要求需在提交前据实填写。不要以旧v3.0的ZIP代替这次综合交付。
+独立验证目录必须为空。打包器明确选择视频，不会把文件名含preview的无配音视频自动当作最终视频。包内有主报告、视频、源码/GUI入口、模型/许可证、两套当前正式证据、LaTeX及剪辑材料，不包含环境/缓存或其他ZIP。
 
-## 证据解释
+## 正式证据
 
-本次49项功能测试和两套证据审计通过。180次候选消融和126次扩展筛查为既有冻结记录的重新核验，不是本次新跑306次试验。全报告/讲稿不把开发镜头计入正式分母；没有编造个人贡献。所有物理核心源码的冻结指纹保持不变。
+`docs/validation/v2.1.0`保留180次候选策略研究，`v3.0.0`保留126次拓展筛查。它们与开发演示分别统计。旧阶段的正式记录也保留，以支持历史审计；旧报告、旧视频和运行副本从工作树移除后仍可从Git历史恢复。

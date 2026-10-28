@@ -2,7 +2,7 @@
 
 ## 一、直接拿去剪辑的素材
 
-项目根目录下的 `deliverables/editing_materials/` 保存逐项视频；`deliverables/editing_materials.zip` 可整体复制到其他电脑。双击 MP4 即可播放，也可以导入剪映、Premiere 或 DaVinci Resolve。
+项目根目录下的 `deliverables/editing_materials/` 保存15段视频，可以整体复制到其他电脑。双击 MP4 即可播放，也可以导入剪映、Premiere 或 DaVinci Resolve。当前5分钟审片版及讲稿见[交付说明](FINAL_DELIVERY.md)。
 
 共 15 段独立 MP4，800×600、20 fps、无音轨。执行片段从原始录像导出，没有进行倍速处理，去掉了单段录像开头的 2 秒通用说明卡；保留顶部英文阶段栏，便于识别接近、提升、搬运、下降和任务结果。最终 v3 合成视频中的 2 倍速没有用于这里。所有素材都是开发演示，不进入原有 126/180 次正式实验分母。
 
@@ -24,7 +24,7 @@
 | 改进对比补充 | `03_comparisons/02_improved_grasps.mp4` | 与上一段完全相同的开发场景，增加候选后完成抓放。 |
 | 五干扰物补充 | `03_comparisons/03_five_distractors.mp4` | 另一段五动态干扰物中的完整抓放。 |
 
-`CLIP_INDEX.json` 列出每段标签、准确时长、源录像路径、去除片头长度和 SHA-256；`MANIFEST.json` 校验整套素材。`04_analysis_and_logs/` 包含实际力/应变/铰接角 CSV、对应图片、候选姿态、随机试验结果和演示日志。用于解释机制的曲线来自开发片段，正式成功率仍引用报告/`formal_126_comparison.json`。
+`CLIP_INDEX.json`列出标签、准确时长、历史源录像路径、去除片头长度和SHA-256；`MANIFEST.json`校验整套素材。源路径是制作时的记录，播放和校验现有素材不需要保留原始运行副本。实际力/应变/铰接角CSV及演示日志集中在`docs/validation/v3.0.0/demo/`，分析图在`docs/images/`，正式成功率取自`docs/validation/v3.0.0/comparison.json`。开发片段不计入正式统计。
 
 可按“工作台 → 数据集 → 候选 → 完整抓放 → 随机评估 → 各拓展 → 成功/失败对比”的顺序剪辑。课程要求带介绍的最终演示；分段素材本身没有补写解说或配音，可以自行加中文介绍。没有为开放性的“其他有意义拓展”虚构一个无穷尽的任务清单。
 
@@ -42,7 +42,7 @@
 在 PowerShell 中直接打开指定演示：
 
 ```powershell
-Set-Location 'C:\Users\86138\Desktop\segment c\EE5110-SegC'
+# 在本项目根目录执行
 .\.venv\Scripts\python.exe demo_viewer.py --case baseline
 .\.venv\Scripts\python.exe demo_viewer.py --case soft_adaptive
 .\.venv\Scripts\python.exe demo_viewer.py --case articulated
@@ -63,14 +63,26 @@ Set-Location 'C:\Users\86138\Desktop\segment c\EE5110-SegC'
 
 ## 三、重新导出与新电脑
 
-本机 `.venv` 已建立，直接双击启动即可。不要单独把 `.venv` 复制到别的电脑；新电脑按 [拓展交付指南](EXPLORATION_HANDOVER.md) 安装 Python 3.12、依赖和模型。交互窗口需要本机可用的图形桌面和 OpenGL 驱动，不需要浏览器或服务器。
+新电脑按[README](../README.md)安装Python3.12、依赖和模型，不要复制其他电脑的`.venv`。交互窗口需要可用的图形桌面和OpenGL驱动。
+
+通常只需要验证现有素材；可选生成素材ZIP：
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements-video.txt
+.\.venv\Scripts\python.exe scripts/prepare_editing_materials.py
+.\.venv\Scripts\python.exe scripts/prepare_editing_materials.py --archive
+```
+
+ZIP生成到`output/packages/editing_materials.zip`，不纳入Git。如确实需要重新录制并导出全部素材：
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -r requirements-video.txt
 .\.venv\Scripts\python.exe scripts/prepare_editing_materials.py --prepare-baseline
 .\.venv\Scripts\python.exe main.py --headless --object foam_brick --task place --fixed --seed 43 --trials 1 --video outputs/editing_materials/generated/pick_place.mp4 --output outputs/editing_materials/generated
 .\.venv\Scripts\python.exe main.py --headless --balanced --task place --seed 43 --trials 6 --video outputs/editing_materials/generated/random_trials.mp4 --output outputs/editing_materials/generated
-.\.venv\Scripts\python.exe scripts/prepare_editing_materials.py
+.\.venv\Scripts\python.exe scripts/record_exploration_demo.py
+.\.venv\Scripts\python.exe scripts/record_completion_demo.py
+.\.venv\Scripts\python.exe scripts/prepare_editing_materials.py --export-recordings
 ```
 
-导出脚本还依赖前一阶段已经生成的 `outputs/exploration_demo/*.mp4` 和 `outputs/completion_demo_v21/*.mp4`；若这些源文件不存在，先运行 `scripts/record_exploration_demo.py`、`scripts/record_completion_demo.py`。不要用 `*_2x.mp4` 替代原速源文件。导出会逐帧完整解码检查全部 15 段视频，并校验压缩包文件哈希。
+重新录制会在`outputs/`生成原始录像，显式导出会替换15段当前素材及其索引和哈希；不要用`*_2x.mp4`替代原速源文件。导出结束后逐帧完整解码检查15段视频。单纯校验不会重新运行物理演示或修改素材。

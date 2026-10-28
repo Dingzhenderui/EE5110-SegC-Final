@@ -1,6 +1,6 @@
 # 5分钟视频全时间轴检查与修订
 
-日期：2026-10-28。旧版为`EE5110_5min_captioned_preview.mp4`；修订版为`EE5110_5min_reviewed_preview.mp4`。旧片保留作对比，请录音时使用修订版及当前`NARRATION_EN.md`。
+日期：2026-10-28。旧版为`EE5110_5min_captioned_preview.mp4`；修订版为`EE5110_5min_reviewed_preview.mp4`。旧片通过Git历史`8ecb00b`查看；当前工作树只保留修订版。录音请使用修订版及当前`NARRATION_EN.md`。
 
 ## 实际检查范围
 

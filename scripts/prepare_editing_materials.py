@@ -120,57 +120,79 @@ def duration(path):
     h,m,s=map(float,match.groups());return h*3600+m*60+s
 
 
+def verify_materials(folder):
+    """Validate the canonical source clips without requiring disposable recordings."""
+    index = json.loads((folder/'CLIP_INDEX.json').read_text(encoding='utf-8'))
+    expected = {target for target, _, _, _ in CLIPS}
+    if {row['file'] for row in index['clips']} != expected:
+        raise ValueError('The source-clip index must contain all 15 required clips')
+    ff = imageio_ffmpeg.get_ffmpeg_exe()
+    for row in index['clips']:
+        path = folder/row['file']
+        if hashlib.sha256(path.read_bytes()).hexdigest() != row['sha256']:
+            raise ValueError('Changed source clip: '+row['file'])
+        if abs(duration(path)-row['duration_s']) > .06:
+            raise ValueError('Source duration mismatch: '+row['file'])
+        subprocess.run([ff,'-v','error','-i',str(path),'-f','null','-'],check=True)
+    manifest = json.loads((folder/'MANIFEST.json').read_text(encoding='utf-8'))
+    actual = {p.relative_to(folder).as_posix() for p in folder.rglob('*') if p.is_file() and p.name!='MANIFEST.json'}
+    if actual != set(manifest):
+        raise ValueError('Source-material manifest membership differs from the folder')
+    for name, digest in manifest.items():
+        if hashlib.sha256((folder/name).read_bytes()).hexdigest()!=digest:
+            raise ValueError('Source-material hash mismatch: '+name)
+    print(f'Verified {len(index["clips"])} original-speed clips, complete decode and {len(manifest)} hashes')
+
+
 def main():
     if hasattr(sys.stdout,'reconfigure'):
         sys.stdout.reconfigure(encoding='utf-8')
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--prepare-baseline',action='store_true')
+    parser.add_argument('--prepare-baseline',action='store_true',help='Record fresh baseline visualizations into outputs')
+    parser.add_argument('--export-recordings',action='store_true',help='Replace canonical clips from newly recorded outputs')
+    parser.add_argument('--archive',action='store_true',help='Also create an ignored source ZIP under output/packages')
     parser.add_argument('--output',type=Path,default=ROOT/'deliverables/editing_materials')
     args=parser.parse_args()
-    work=ROOT/'outputs/editing_materials/generated';work.mkdir(parents=True,exist_ok=True)
+    work=ROOT/'outputs/editing_materials/generated'
     if args.prepare_baseline:
+        work.mkdir(parents=True,exist_ok=True)
         generate_baseline_visuals(work)
         return
-    out=args.output;out.mkdir(parents=True,exist_ok=True)
-    ff=imageio_ffmpeg.get_ffmpeg_exe();records=[]
-    for target,label,source,trim in CLIPS:
-        source_path=(ROOT/'outputs/editing_materials'/source if source.startswith('generated/') else ROOT/'outputs'/source)
-        if not source_path.is_file():raise FileNotFoundError(source_path)
-        dest=out/target;dest.parent.mkdir(parents=True,exist_ok=True)
-        if trim:
-            subprocess.run([ff,'-hide_banner','-loglevel','error','-y','-ss',str(trim),'-i',str(source_path),
-                            '-an','-c:v','libx264','-crf','18','-pix_fmt','yuv420p','-movflags','+faststart',str(dest)],check=True)
-        else:shutil.copy2(source_path,dest)
-        # Decode every delivered frame, including videos exported from pre-existing recordings.
-        subprocess.run([ff,'-hide_banner','-loglevel','error','-i',str(dest),'-f','null','-'],check=True)
-        records.append({'file':target,'label':label,'duration_s':duration(dest),'playback_rate':1.,
-                        'source':source_path.relative_to(ROOT).as_posix(),'removed_intro_s':trim,
-                        'sha256':hashlib.sha256(dest.read_bytes()).hexdigest()})
-        print(f'{label}: {records[-1]["duration_s"]:.2f}s',flush=True)
-    auxiliary=out/'04_analysis_and_logs';auxiliary.mkdir(exist_ok=True)
-    for path in (ROOT/'docs/images').glob('exploration_*.png'):shutil.copy2(path,auxiliary/path.name)
-    for source in [work/'visualization_metadata.json',*work.glob('summary_*.json'),*work.glob('trials_*.jsonl')]:
-        shutil.copy2(source,auxiliary/source.name)
-    for source in (ROOT/'docs/validation/v3.0.0/demo').glob('*'):
-        if source.is_file():shutil.copy2(source,auxiliary/source.name)
-    for name in ('baseline_failure','local_recovery','dense_release'):
-        shutil.copy2(ROOT/'outputs/completion_demo_v21'/f'{name}.json',auxiliary/f'{name}.json')
-    shutil.copy2(ROOT/'docs/validation/v3.0.0/comparison.json',auxiliary/'formal_126_comparison.json')
-    shutil.copy2(ROOT/'docs/DEMO_EDITING_GUIDE.md',out/'00_README.md')
-    (out/'CLIP_INDEX.json').write_text(json.dumps({'generated_at':datetime.now().isoformat(),
-           'scope':'development_demonstrations_excluded_from_formal_studies','clips':records},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    manifest={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()
-              for p in sorted(out.rglob('*')) if p.is_file() and p.name!='MANIFEST.json'}
-    (out/'MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
-    archive=out.with_suffix('.zip')
-    with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
-        for path in sorted(out.rglob('*')):
-            if path.is_file():z.write(path,path.relative_to(out.parent).as_posix())
-    with zipfile.ZipFile(archive) as z:
-        assert z.testzip() is None
-        for name,expected in manifest.items():
-            assert hashlib.sha256(z.read(out.name+'/'+name)).hexdigest()==expected
-    print(f'Validated {len(records)} original-speed clips, {sum(r["duration_s"] for r in records):.2f}s; ZIP: {archive}')
+    out=args.output
+    if args.export_recordings:
+        # Re-recording is explicit: existing source clips are not silently replaced.
+        sources = [(target,label,ROOT/'outputs/editing_materials'/source if source.startswith('generated/')
+                    else ROOT/'outputs'/source,trim) for target,label,source,trim in CLIPS]
+        missing = [str(path) for _,_,path,_ in sources if not path.is_file()]
+        if missing:
+            parser.error('Record all source inputs first; missing: '+', '.join(missing))
+        out.mkdir(parents=True,exist_ok=True)
+        ff=imageio_ffmpeg.get_ffmpeg_exe();records=[]
+        for target,label,source,trim in sources:
+            dest=out/target;dest.parent.mkdir(parents=True,exist_ok=True)
+            if trim:
+                subprocess.run([ff,'-y','-v','error','-ss',str(trim),'-i',str(source),
+                                '-an','-c:v','libx264','-crf','18','-pix_fmt','yuv420p','-movflags','+faststart',str(dest)],check=True)
+            else:
+                shutil.copy2(source,dest)
+            records.append({'file':target,'label':label,'duration_s':duration(dest),'playback_rate':1.,
+                            'source':source.relative_to(ROOT).as_posix(),'removed_intro_s':trim,
+                            'sha256':hashlib.sha256(dest.read_bytes()).hexdigest()})
+        (out/'CLIP_INDEX.json').write_text(json.dumps({'generated_at':datetime.now().isoformat(),
+            'scope':'development_demonstrations_excluded_from_formal_studies','clips':records},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        manifest={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()
+                  for p in sorted(out.rglob('*')) if p.is_file() and p.name!='MANIFEST.json'}
+        (out/'MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
+    verify_materials(out)
+    if args.archive:
+        archive=ROOT/'output/packages/editing_materials.zip';archive.parent.mkdir(parents=True,exist_ok=True)
+        with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
+            for path in sorted(out.rglob('*')):
+                if path.is_file():z.write(path,path.relative_to(out.parent).as_posix())
+        with zipfile.ZipFile(archive) as z:
+            if z.testzip() is not None:raise ValueError('Source ZIP CRC check failed')
+        print('Source-material archive: '+str(archive))
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    main()

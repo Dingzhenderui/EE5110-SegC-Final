@@ -2,8 +2,8 @@
   "schema_version": 1,
   "scope": "Every staged branch file except this self-referential manifest",
   "text_hashing": "LF canonicalization only when normalization=lf; other files use exact bytes",
-  "file_count": 772,
-  "total_bytes_in_git": 350298932,
+  "file_count": 474,
+  "total_bytes_in_git": 123166702,
   "files": [
     {
       "path": ".gitattributes",
@@ -28,29 +28,29 @@
     },
     {
       "path": ".gitignore",
-      "bytes_in_git": 441,
-      "sha256": "b30da4d1bc3cb4189f39dbe58cb81fcd7ee70fa45a0acd0e7a9f7c7377a03fd7",
+      "bytes_in_git": 445,
+      "sha256": "524e93b8b60f78603776909eabb0fe04ba163ba3c1505f5c03228d315ba41728",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
     {
       "path": "AGENTS.md",
-      "bytes_in_git": 1900,
-      "sha256": "cf5e88fd800b2305f5cb81dc36907015b4ccc4aa406c5e246bc0ed5e79424900",
+      "bytes_in_git": 2162,
+      "sha256": "822fa7d350b6f34456c7750e4d8a0bb1c34993f2ef94770e50b1c18df44b35da",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes_in_git": 10856,
-      "sha256": "69db45c90104a046297fb0b957e232974f67dea0a94d91dc7b65ee6e5353c9b3",
+      "bytes_in_git": 11741,
+      "sha256": "6dcfaa98520524b2f946ba97986a28db4d6385097c5e1f725b50193e6bb55e8f",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
     {
       "path": "CONTRIBUTING.md",
-      "bytes_in_git": 2322,
-      "sha256": "de0c2587a48ef0bfdd1753f554757707e6976677dc48d606318cf75dfe6913b9",
+      "bytes_in_git": 2640,
+      "sha256": "e23bb4154369ed987eafa552f9c87fd87b5c9c0772c836d95d0888295e94e5a3",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
@@ -63,22 +63,15 @@
     },
     {
       "path": "PROGRESS.md",
-      "bytes_in_git": 16767,
-      "sha256": "8fdd23f719cc1a5686131c2478e003239d1ec1fed04ebaf8b0697a4bc08ad744",
+      "bytes_in_git": 1448,
+      "sha256": "10c6c2fa222f303a0688031d22e7114549a038d02ff7ae8f3b360f7a8448244d",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
     {
       "path": "README.md",
-      "bytes_in_git": 11381,
-      "sha256": "d7db91f2b83fd308dc9a19b1caaa45fce52dfc747ddc27f0fcdbf0c86e95da7d",
-      "normalization": "lf",
-      "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
-    },
-    {
-      "path": "README_HISTORY.md",
-      "bytes_in_git": 24270,
-      "sha256": "a22defbbd41e1e67487074258047426e61d494ed289959f1f6c694f4434f372a",
+      "bytes_in_git": 3854,
+      "sha256": "3bc336aa69eed42156d4b500b16aa9f4ed8b92f8c6c926205e3bfb0b7f4c72c8",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
@@ -972,522 +965,144 @@
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
     {
-      "path": "deliverables/EE5110SegC_review_kit_v3.1.0.zip",
-      "bytes_in_git": 49045458,
-      "sha256": "61fcc0fad98810d1fa2de2e8c957ade01d146ca5de3d354810ccb852832dc743",
-      "normalization": "none",
-      "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
-    },
-    {
-      "path": "deliverables/EE5110SegC_submission_v2.1.0.zip",
-      "bytes_in_git": 23049451,
-      "sha256": "4cdc88e00737159471ede0df31df077dce60f87ff08e6c20fe09a87397f76218",
-      "normalization": "none",
-      "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
-    },
-    {
-      "path": "deliverables/EE5110SegC_submission_v3.0.0.zip",
-      "bytes_in_git": 26554169,
-      "sha256": "5d0b6dc8cbd95c824f106522ca336cd05402cd6e3b0913d1bcdbf272ce35ef8a",
-      "normalization": "none",
-      "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
-    },
-    {
-      "path": "deliverables/EE5110_5min_captioned_preview.mp4",
-      "bytes_in_git": 4448638,
-      "sha256": "80de76cab567eee56e36d1dade6a4d51c447c10fdf4d3236fb513cd6bfce4c1a",
-      "normalization": "none",
-      "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
-    },
-    {
       "path": "deliverables/EE5110_5min_reviewed_preview.mp4",
       "bytes_in_git": 4336586,
       "sha256": "c7331efdd0d389dbd3df7a992bbe7af9378c223c8b7287858f8f91e72721d2ba",
       "normalization": "none",
-      "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
-    },
-    {
-      "path": "deliverables/EE5110_LaTeX_Source.zip",
-      "bytes_in_git": 905190,
-      "sha256": "5ef3864d47aa38cdf278f2a99bcab8e8e7dd099d0a55a5fb53e2515c49179857",
-      "normalization": "none",
-      "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
+      "purpose": "最新版审片视频或交付物导航；ZIP按需生成到 output/packages，不纳入版本控制"
     },
     {
       "path": "deliverables/README.md",
-      "bytes_in_git": 2766,
-      "sha256": "f5ba821a43f7fad7b4bb02f79733d6e09a521110dba96a38dd38c2fac70caec2",
+      "bytes_in_git": 804,
+      "sha256": "18dc80e4714e0856376d4d1ff5da968742d3fcb2d2cd845b01eceb35e56b0068",
       "normalization": "none",
-      "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
-    },
-    {
-      "path": "deliverables/demo_v2.1.0.mp4",
-      "bytes_in_git": 5656386,
-      "sha256": "43632284f456f7f4f0d93188afe5bd452cc79e1e3d9263dad46431624a005ddf",
-      "normalization": "none",
-      "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
-    },
-    {
-      "path": "deliverables/editing_materials.zip",
-      "bytes_in_git": 24580159,
-      "sha256": "b09c796ccf2eff85098802388d243af9281a26643d98edbf06741b9b2ab62d3f",
-      "normalization": "none",
-      "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
+      "purpose": "最新版审片视频或交付物导航；ZIP按需生成到 output/packages，不纳入版本控制"
     },
     {
       "path": "deliverables/editing_materials/00_README.md",
-      "bytes_in_git": 7952,
-      "sha256": "784e412958d5fde8ebf0b9fcb0466c562ac5818061167e09bdfb53dd83e65154",
+      "bytes_in_git": 1181,
+      "sha256": "f5157201d99b4e6abc8ef4843b37a84fe21382edd451d9346917ab453978c681",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/01_baseline/01_workcell.mp4",
       "bytes_in_git": 72559,
       "sha256": "59f39336688f2d5ff79abefe55da2a7e941163b1ec6fd9c2a12f6e14552407ac",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/01_baseline/02_random_YCB_objects.mp4",
       "bytes_in_git": 393946,
       "sha256": "7deef4bd52f153968a6786886cc6c36b3d052212743ce3ca23b7bd8fd89aac2d",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/01_baseline/03_grasp_candidates.mp4",
       "bytes_in_git": 105855,
       "sha256": "6496ebc4b4450a44fc9392a709a3806e6f18bebdc3bb6614f62b21173ea3e182",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/01_baseline/04_pick_and_place.mp4",
       "bytes_in_git": 1383014,
       "sha256": "e3c29d65b293701c7d56f355f3ff9620244f38577057fc51cda156166874e0ae",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/01_baseline/05_randomized_trials.mp4",
       "bytes_in_git": 4261793,
       "sha256": "4b46c2008c9f20fbb3bd0332b715b1ae7cd40f57099f36cb1c4698c573762e04",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/02_explorations/01_crowding_occlusion.mp4",
       "bytes_in_git": 2113143,
       "sha256": "bc2519657846285b0b0114e33364f2d4919cc9534d8e030fa52ca4a33d865bcb",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/02_explorations/02_deformable.mp4",
       "bytes_in_git": 1560337,
       "sha256": "4e3a61d9dd1ecfe80411da415e8af14d0f1cf2b3079c0e40cc419758ea443077",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/02_explorations/03_articulated.mp4",
       "bytes_in_git": 1585729,
       "sha256": "5c9ddf07751920e36eaaa028cdeebdf70ee82cd6b97a6091a391c32c3a606633",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/02_explorations/04_unseen_shapes.mp4",
       "bytes_in_git": 1589930,
       "sha256": "1c0f16e1d957b56dd2b2e4102e217e2b68a8826109b67aaa282503d985d75480",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/02_explorations/05_force_feedback.mp4",
       "bytes_in_git": 1657184,
       "sha256": "5bf992640c4c39baf6cd992c41cc8d28dc9a071bd6f98f0684c46f226377befe",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/02_explorations/06_failure_recovery.mp4",
       "bytes_in_git": 2418296,
       "sha256": "dda3fa610dd51d18cd268b4c230912881c0eb17b978d46efc798fdfc7b528c83",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/02_explorations/07_robust_sensing.mp4",
       "bytes_in_git": 1651192,
       "sha256": "56060e2f94e351f28a5b3be410c6143893913118db9dc967959312d6c4d45065",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/03_comparisons/01_rejected_grasps.mp4",
       "bytes_in_git": 189824,
       "sha256": "17b5698b85057d6777a5219d1afe8ea0e932b80783bad17f0371cba0b82d37d8",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/03_comparisons/02_improved_grasps.mp4",
       "bytes_in_git": 1451922,
       "sha256": "1eb529affe5f6d35a1d7399eb248744db78194ec1f2407107bb34cb72a9dcc82",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/03_comparisons/03_five_distractors.mp4",
       "bytes_in_git": 2150862,
       "sha256": "05d31fdd031dd73aa5e328d98ec3d339956c4fb7c99843d7221b71fecc4576ed",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/articulated.json",
-      "bytes_in_git": 5466,
-      "sha256": "a03d1078c51009c5f32b098c42927c8cd3c3c896eacd15bef62c3261457a08e3",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/articulated_trace.csv",
-      "bytes_in_git": 208714,
-      "sha256": "9063a20fb01575e424fbafb10f3d244f20e535d4200d086ab159a171602d14f1",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/baseline_failure.json",
-      "bytes_in_git": 29244,
-      "sha256": "9701a4857d79afa67eed610dccc936296e776cb700f10d3d4672e7e94c5e2543",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/crowding_single.json",
-      "bytes_in_git": 87925,
-      "sha256": "af222edd989f0413349d02a6e50d53e9109f39ea0b7f72806f9d0090f7ff6308",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/crowding_single_trace.csv",
-      "bytes_in_git": 219157,
-      "sha256": "e61445e5b9aedbd8a34eca3047ce3aa6cf2087ea9dc5e5011a35ef16fde90cbe",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/dense_release.json",
-      "bytes_in_git": 27228,
-      "sha256": "c8eca5c2ee89877580ad00801480a9a9947710765d26dc2c0b4835b0b5319e32",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_articulated_grasp.png",
-      "bytes_in_git": 76323,
-      "sha256": "50c5616a1103ddae310bf4f8905cd5a55bf6bc8ed25189c25ab3ac6e088e2a81",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_articulated_lift.png",
-      "bytes_in_git": 77517,
-      "sha256": "31f1f6a39ada6ec93bed0799034c3ac6b85e318b425da93474133dbb3aba5054",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_articulated_place.png",
-      "bytes_in_git": 71303,
-      "sha256": "2ae317e527ddea8d2fcc8d9f2e08ae757185844a37aa60ee03ba2366e9603c01",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_corrupted_points.png",
-      "bytes_in_git": 149405,
-      "sha256": "8846bbcd9018e1463152656f354b8f0361ad590fcf03685199c28dbfd2c1923f",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_crowding_place.png",
-      "bytes_in_git": 76032,
-      "sha256": "fcc1a216cb33be683500b1b8368fa6a66155568e429a18564e19844ff82c39cf",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_force_adaptive_grasp.png",
-      "bytes_in_git": 76248,
-      "sha256": "e8fdfc491776c2056244665d31fa02e53027a95865335acd11691708407288b4",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_force_adaptive_lift.png",
-      "bytes_in_git": 77086,
-      "sha256": "c87a97285e27b92446f7b9d1b5c3ae69cb6c076bf4d411eae96e8fbfa3cea270",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_force_adaptive_place.png",
-      "bytes_in_git": 71755,
-      "sha256": "669cd0c5b93bc43cf4f92242388e3e55a24c672d37fd57c8e8533b5af7fd8ca7",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_hinge_trace.png",
-      "bytes_in_git": 49628,
-      "sha256": "43d30d50eea204a091ae5fc29dc2cfbf3d6933e1d302e4421d1aaceb860b88af",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_novel_points_grasp.png",
-      "bytes_in_git": 76297,
-      "sha256": "e44c1407430c1cc0c803c6762f0cbe3fc58b88b20dd6a18593a79235241a327d",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_novel_points_lift.png",
-      "bytes_in_git": 77301,
-      "sha256": "2578ed3c8bab4eda42fd8c749cac76ee61343e8feea14ab559980383e9d30b1d",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_novel_points_place.png",
-      "bytes_in_git": 71401,
-      "sha256": "b15cfebfad7fd28b767e1a9e45ddd089a1a41086e8a10782866537665c5c775a",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_recovery_retry_grasp.png",
-      "bytes_in_git": 75888,
-      "sha256": "3d7468f0ad9ce5661a005d1d0b29b1874c2f332b73eda4d1636062f8831ae7e6",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_recovery_retry_lift.png",
-      "bytes_in_git": 77816,
-      "sha256": "68ce6378a8e4f6fd929b00cbbd9c44889f2ab8cd37183b3f4af650b472116c17",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_recovery_retry_place.png",
-      "bytes_in_git": 71662,
-      "sha256": "9cfbd958b6bddc17e9d05d1e695e88d457d01fcaab71d539401137e909071c35",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_sensor_robust_grasp.png",
-      "bytes_in_git": 76552,
-      "sha256": "0877740fa80740b7b1b7a771029a6aad6052fbc32f6fae81d275dc937c1bbc0c",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_sensor_robust_lift.png",
-      "bytes_in_git": 77479,
-      "sha256": "589a9510e45d6bb66e8f0051189eb4a48053e561e77e76415ff9832240443ae7",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_sensor_robust_place.png",
-      "bytes_in_git": 71765,
-      "sha256": "b605b3919ff2ffe3054607e93a9a1715ba0685cbb3b436d384145f2d32eec250",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_soft_adaptive_grasp.png",
-      "bytes_in_git": 75825,
-      "sha256": "efbcc645a552d0c7586bbeff68309953e182fb0a163c1cf4d0ef523030e4b92f",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_soft_adaptive_lift.png",
-      "bytes_in_git": 77314,
-      "sha256": "0df3c486a590942648463b8c23eb839a9a1f6f429cb8ba365052fee4edf5d1d7",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_soft_adaptive_place.png",
-      "bytes_in_git": 71639,
-      "sha256": "f8fa03105fe355f4d83e8b34fdf23ac8d8b821dcaef5d2e384712705a0e8f3dd",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_soft_trace.png",
-      "bytes_in_git": 62327,
-      "sha256": "93cdba20ffe8976e1413b89553ca4a8cb6459bb4ae812f9b771451cc5a002ea6",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/exploration_success_intervals.png",
-      "bytes_in_git": 102918,
-      "sha256": "5e4d15cbd443b9a587c79c01cc1cd1e0c0e8bf92922b167fd75215333ee6c388",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/force_adaptive.json",
-      "bytes_in_git": 5370,
-      "sha256": "dddc3b4b969388b5cd340823b9553ffe528758ce92f3d1ab40604d7668772cb0",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/force_adaptive_trace.csv",
-      "bytes_in_git": 191927,
-      "sha256": "a9008761438502e4fe1b4b5781f72e088bab368ed7b5410e64923a66ae28148a",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/formal_126_comparison.json",
-      "bytes_in_git": 21506,
-      "sha256": "7f4e9ed778d53125e68109bb3fb8762f898b9c6603821ada870e9b250b106031",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/local_recovery.json",
-      "bytes_in_git": 77518,
-      "sha256": "d7ddf580fed444bae41442a6020ed732d448ef050714061a1e87e79650f6c69d",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/novel_points.json",
-      "bytes_in_git": 8501,
-      "sha256": "a3a0e4c6119d30f0fd19f1d2562495dca80b521ce77e17f5fb9f963889f53369",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/novel_points_trace.csv",
-      "bytes_in_git": 184230,
-      "sha256": "638b069f586e9299737218d3d65acf6f043194ff666d767a7a38e1535c05e147",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/recovery_retry.json",
-      "bytes_in_git": 6461,
-      "sha256": "ce5df07aee4600821a68b43b820e26d645218530f4825ae3642cc97ffb60a3a0",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/recovery_retry_trace.csv",
-      "bytes_in_git": 274208,
-      "sha256": "acb30b9f0d50cb1b96a3ea91a7d724f73c45aaec3c29886765b36468b85844da",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/sensor_robust.json",
-      "bytes_in_git": 8498,
-      "sha256": "e9fbe86afd4de085306cb0aa101ca038d971d2baa16f14f9adf229f5c48311b7",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/sensor_robust_trace.csv",
-      "bytes_in_git": 193026,
-      "sha256": "496b4f1169279ab7d9f89afd4e531379665a3332409932639e044e808e09162f",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/soft_adaptive.json",
-      "bytes_in_git": 6353,
-      "sha256": "254d1a192ae1b192a95649c99361e036544c3ca40a471b9f517bde744e03efcc",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/soft_adaptive_trace.csv",
-      "bytes_in_git": 213845,
-      "sha256": "186c30fb2c731051edadea641651ea2ad231447bc64db6556e303e6be6285334",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/summary_20261025_031250_123140.json",
-      "bytes_in_git": 2113,
-      "sha256": "bb5f301b71b7649cd23c17a5bfdd4119ed0d5f3eccc3abb286898feabf3b2642",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/summary_20261025_031250_797537.json",
-      "bytes_in_git": 3132,
-      "sha256": "5a39008362ef525bd3c75657c14d0086290774cd446574987713d7920ccf3abd",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/trials_20261025_031250_123140.jsonl",
-      "bytes_in_git": 2175,
-      "sha256": "83fb9abd78bf2794ede452c1a1e016e40d2f518e4241b15e0bd5d2115d6584c9",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/trials_20261025_031250_797537.jsonl",
-      "bytes_in_git": 14637,
-      "sha256": "907ea2a24e07fab8743b85b053cf95732579a6d54788515d33b06c95368dcc30",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/editing_materials/04_analysis_and_logs/visualization_metadata.json",
-      "bytes_in_git": 24824,
-      "sha256": "b5789cc57142bd0dcdefc7450adb7ba69a950beb2ded8d89ccbc6fe67cbd9083",
-      "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/CLIP_INDEX.json",
       "bytes_in_git": 5585,
       "sha256": "b9ec04e3919beaad87e4ed327649799ae7587979f79c8c932db62aae4ac85b9a",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "deliverables/editing_materials/MANIFEST.json",
-      "bytes_in_git": 7569,
-      "sha256": "786662ad40f91f035e8769f50795725949348455f582c2daa9c1086e8b698df2",
+      "bytes_in_git": 1825,
+      "sha256": "f48fbdc62750476324a7d5ae6dc794f18c6e8cf5a9f275d5ad6f48cc36e76629",
       "normalization": "none",
-      "purpose": "独立原速剪辑素材、配套分析/日志或素材哈希清单"
-    },
-    {
-      "path": "deliverables/explorations_v3.0.0.mp4",
-      "bytes_in_git": 6194881,
-      "sha256": "7a775ccaea3a3dd710d508817259d11dbf43783a7920feb76604b7c380768ad5",
-      "normalization": "none",
-      "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
+      "purpose": "独立原速剪辑视频、索引或素材哈希清单；分析/日志集中于 docs/validation"
     },
     {
       "path": "demo_viewer.py",
@@ -1504,6 +1119,13 @@
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
     {
+      "path": "docs/CLEANUP.md",
+      "bytes_in_git": 2401,
+      "sha256": "d6daf20223a2c10443903dfc3bcd92be242b92118ef37f648761f87327e29b3c",
+      "normalization": "lf",
+      "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
+    },
+    {
       "path": "docs/CODE_REVIEW_ZH.md",
       "bytes_in_git": 6780,
       "sha256": "3d9f1fb3451d35cb45484e976c3ea9cb862a0d43cc63fc08aa1a23ee8c3cfdb0",
@@ -1512,57 +1134,36 @@
     },
     {
       "path": "docs/DEMO_EDITING_GUIDE.md",
-      "bytes_in_git": 7952,
-      "sha256": "784e412958d5fde8ebf0b9fcb0466c562ac5818061167e09bdfb53dd83e65154",
+      "bytes_in_git": 8338,
+      "sha256": "ef2307e3b4d6b5c2ac195028d0da836bf75bf3087f484212e7e512ba85dd7471",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
     {
       "path": "docs/EXPLORATION_HANDOVER.md",
-      "bytes_in_git": 6339,
-      "sha256": "36dabd73ff1705d71ac38eb08410dee48c402340d8e9194964907173b6632c85",
+      "bytes_in_git": 2459,
+      "sha256": "c2a607620f5a6193d99ffff107a37aa6f175814920ba863f35d9582cae2f170c",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
     {
       "path": "docs/FILE_GUIDE.md",
-      "bytes_in_git": 13430,
-      "sha256": "d01e3c5aa261fc40126aeb0da3dcbca54ff0a3bf7eae0605d78e1d669c5750dc",
+      "bytes_in_git": 5436,
+      "sha256": "697ad42cb213a3afb2798e777e57a3675244f972da05e4ca662c1584df17d373",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
     {
       "path": "docs/FINAL_DELIVERY.md",
-      "bytes_in_git": 4075,
-      "sha256": "88e4fc818321a88eaaf36079a30d0b0e3de6848036c228a265b789640ebdeabc",
-      "normalization": "lf",
-      "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
-    },
-    {
-      "path": "docs/FINAL_HANDOVER.md",
-      "bytes_in_git": 4925,
-      "sha256": "19ded81be5d228cdcaa9e5e2a0d7a2cd787666f2cbeec1adcc6f05c9f26b6340",
-      "normalization": "lf",
-      "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
-    },
-    {
-      "path": "docs/HANDOVER_v2.0.0.md",
-      "bytes_in_git": 33393,
-      "sha256": "9f23e238cf71a446a0cf9eaab859b5ff9ba39a5f8f9464dc4f95ed4eb4ce3a05",
-      "normalization": "lf",
-      "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
-    },
-    {
-      "path": "docs/V2_ROADMAP.md",
-      "bytes_in_git": 1425,
-      "sha256": "e3d32fc86e1048deb79fded3786cb3843cbbcc8102c985d8bd319d0d056fce14",
+      "bytes_in_git": 3287,
+      "sha256": "f502aaac9333606f029484383b1c4cf55fc59f7668f63145e75ce6b2a85f0798",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
     {
       "path": "docs/final_report/README.md",
-      "bytes_in_git": 1691,
-      "sha256": "036a1c7b22fdabb6c4528ffa27fa9a90cd743ffd35f1779af0a3e60b9d6e83ba",
+      "bytes_in_git": 1838,
+      "sha256": "1cf197fbca5662fbb31389386b2975dcf9bbce4349e59817fe43e59667676017",
       "normalization": "lf",
       "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
     },
@@ -1609,23 +1210,9 @@
       "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
     },
     {
-      "path": "docs/final_report/figures/hinge.png",
-      "bytes_in_git": 77517,
-      "sha256": "31f1f6a39ada6ec93bed0799034c3ac6b85e318b425da93474133dbb3aba5054",
-      "normalization": "none",
-      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
-    },
-    {
       "path": "docs/final_report/figures/inclined.png",
       "bytes_in_git": 54896,
       "sha256": "0cc56f338e532e6a26d0aff6629238597af7a624d1c7fa07f5d5d3f1192d6a43",
-      "normalization": "none",
-      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
-    },
-    {
-      "path": "docs/final_report/figures/novel.png",
-      "bytes_in_git": 76297,
-      "sha256": "e44c1407430c1cc0c803c6762f0cbe3fc58b88b20dd6a18593a79235241a327d",
       "normalization": "none",
       "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
     },
@@ -1672,13 +1259,6 @@
       "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
     },
     {
-      "path": "docs/final_report/report.pdf",
-      "bytes_in_git": 713203,
-      "sha256": "98af68141b2a127f002c71998495c19329670ef5a11ee0c5e1b21db848a17b66",
-      "normalization": "none",
-      "purpose": "10页英文综合报告的LaTeX源码、本地图表、数据摘要或编译说明"
-    },
-    {
       "path": "docs/final_report/report.tex",
       "bytes_in_git": 33827,
       "sha256": "c5f6859c7fc1713a50c5c4a8fd146cf9926f58a858d1c2b0f980af1267e13bda",
@@ -1694,15 +1274,15 @@
     },
     {
       "path": "docs/final_video/EDITING_GUIDE_ZH.md",
-      "bytes_in_git": 6381,
-      "sha256": "d2bd623bd7607d3120c6f9c7eebf8c7d2f6b0f7869855afec328e3cdf2bc4347",
+      "bytes_in_git": 6452,
+      "sha256": "198c84b2dbb943c9812f96a010e7183dd51ee70a5bdadcc9f80bd70b80c39fd0",
       "normalization": "lf",
       "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
     },
     {
       "path": "docs/final_video/FULL_REVIEW_ZH.md",
-      "bytes_in_git": 3880,
-      "sha256": "1071dea794b0b83af74b7148b25faa519c4185ce011acaa0d9180219b120b8c8",
+      "bytes_in_git": 3928,
+      "sha256": "299eea5b39e58a20922366a8b4f970dba24a5bdc750114218820c27b4ce34e49",
       "normalization": "lf",
       "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
     },
@@ -1745,20 +1325,6 @@
       "path": "docs/images/baseline_failure_v2.1.0.png",
       "bytes_in_git": 84273,
       "sha256": "b073e32e788e9d2a606fe2993f7a23dccfee28f7abecf433e894a96bc026a63a",
-      "normalization": "none",
-      "purpose": "报告及讲解用的实际仿真截图、数据曲线或点云图"
-    },
-    {
-      "path": "docs/images/clutter_place_v2.0.0.png",
-      "bytes_in_git": 75308,
-      "sha256": "6e5c063c24484d304787078dfeca6e2039410de6f7a2d41dcd435a34ef550ffc",
-      "normalization": "none",
-      "purpose": "报告及讲解用的实际仿真截图、数据曲线或点云图"
-    },
-    {
-      "path": "docs/images/cube_lift.png",
-      "bytes_in_git": 73811,
-      "sha256": "c6f7746b4e2234c1aee9668bd96e499ad54f30847ecd38c825478cc221655ad8",
       "normalization": "none",
       "purpose": "报告及讲解用的实际仿真截图、数据曲线或点云图"
     },
@@ -1938,81 +1504,11 @@
       "purpose": "报告及讲解用的实际仿真截图、数据曲线或点云图"
     },
     {
-      "path": "docs/images/obstacle_place_v1.2.0.png",
-      "bytes_in_git": 71760,
-      "sha256": "59fad67281571fa54624250788d7d5019244963222f15ef7b7b6c96315586922",
-      "normalization": "none",
-      "purpose": "报告及讲解用的实际仿真截图、数据曲线或点云图"
-    },
-    {
-      "path": "docs/images/obstacle_place_v1.3.0.png",
-      "bytes_in_git": 68807,
-      "sha256": "548d924c545d56811822360ecc854b7203e09782cb53a4100aab0e1b458e0dd1",
-      "normalization": "none",
-      "purpose": "报告及讲解用的实际仿真截图、数据曲线或点云图"
-    },
-    {
-      "path": "docs/images/reliability_place_v1.1.0.png",
-      "bytes_in_git": 76455,
-      "sha256": "2a0c7aed6de9ddb2c87d4f3956f6dd2d88ff71e97b6f51dd23333a3f2bcb1216",
-      "normalization": "none",
-      "purpose": "报告及讲解用的实际仿真截图、数据曲线或点云图"
-    },
-    {
-      "path": "docs/images/transparent_place_v1.4.0.png",
-      "bytes_in_git": 77945,
-      "sha256": "fe28db551fea370a9a0c4b59eb77e5a86741342ab69f486b7bf586b951cdfe49",
-      "normalization": "none",
-      "purpose": "报告及讲解用的实际仿真截图、数据曲线或点云图"
-    },
-    {
       "path": "docs/images/ycb_place.png",
       "bytes_in_git": 75710,
       "sha256": "1f0ebcfe98e5403c65255592518638e1ee51a4bbf332620558411698e8f2d834",
       "normalization": "none",
       "purpose": "报告及讲解用的实际仿真截图、数据曲线或点云图"
-    },
-    {
-      "path": "docs/report/baseline_report.pdf",
-      "bytes_in_git": 103278,
-      "sha256": "bbcb5d0435da5c15c2930574a6068e2aeb0432a5bf52cbab7806f4b53e1e59c5",
-      "normalization": "none",
-      "purpose": "报告 PDF；最新报告位于 output/pdf，旧版本报告位于 docs/report"
-    },
-    {
-      "path": "docs/report/clutter_v2.0.0.pdf",
-      "bytes_in_git": 104561,
-      "sha256": "d4a7dfb991ca5818d68fd382ff4156b34c97b522766e433b8ff761ad198ecde1",
-      "normalization": "none",
-      "purpose": "报告 PDF；最新报告位于 output/pdf，旧版本报告位于 docs/report"
-    },
-    {
-      "path": "docs/report/obstacle_reliability_v1.3.0.pdf",
-      "bytes_in_git": 94124,
-      "sha256": "d6b53ad5a1a8125e74815ef7b8131fa01c6eb94ba084dab0d1ec4c2eb88e4882",
-      "normalization": "none",
-      "purpose": "报告 PDF；最新报告位于 output/pdf，旧版本报告位于 docs/report"
-    },
-    {
-      "path": "docs/report/obstacle_report_v1.2.0.pdf",
-      "bytes_in_git": 97911,
-      "sha256": "2a14294ecc435c42b0ec70c46b8e206d20988241039d20f132789628070475f8",
-      "normalization": "none",
-      "purpose": "报告 PDF；最新报告位于 output/pdf，旧版本报告位于 docs/report"
-    },
-    {
-      "path": "docs/report/reliability_report_v1.1.0.pdf",
-      "bytes_in_git": 105654,
-      "sha256": "9b7d66707f9d940861c9e1778dc2ff06ba2d2578833947e974998c0bd5af8bbc",
-      "normalization": "none",
-      "purpose": "报告 PDF；最新报告位于 output/pdf，旧版本报告位于 docs/report"
-    },
-    {
-      "path": "docs/report/transparent_sensing_v1.4.0.pdf",
-      "bytes_in_git": 104667,
-      "sha256": "df105f610dceb186877e90cf23fd4f367025133fb13f55f01440c8362b48d3bc",
-      "normalization": "none",
-      "purpose": "报告 PDF；最新报告位于 output/pdf，旧版本报告位于 docs/report"
     },
     {
       "path": "docs/validation/editing_materials/README.md",
@@ -2074,6 +1570,20 @@
       "path": "docs/validation/editing_materials/visualization_metadata.json",
       "bytes_in_git": 23634,
       "sha256": "c672fa7cb947d0239710647dc2db12584529f0252d4a981ab6a7f4c68ff689e1",
+      "normalization": "lf",
+      "purpose": "按版本保留的实验/开发验证证据，包含失败而非只保留成功"
+    },
+    {
+      "path": "docs/validation/project_cleanup/README.md",
+      "bytes_in_git": 966,
+      "sha256": "86a1334125af964d288a37f5c98ec662e395538a7ce21b78963d65cf1c448170",
+      "normalization": "lf",
+      "purpose": "按版本保留的实验/开发验证证据，包含失败而非只保留成功"
+    },
+    {
+      "path": "docs/validation/project_cleanup/summary.json",
+      "bytes_in_git": 4111,
+      "sha256": "caf9cbb4a11d150625c417c589b90319c1d1aad511027212fcb9d4532db6673b",
       "normalization": "lf",
       "purpose": "按版本保留的实验/开发验证证据，包含失败而非只保留成功"
     },
@@ -3244,56 +2754,56 @@
       "bytes_in_git": 81,
       "sha256": "8127e849a076ff1f9626fb4b7ab778baa0ae36cd0ac52dfa9a2588424b2e70c5",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "exploration/crowding.py",
       "bytes_in_git": 1739,
       "sha256": "1b7efd4f47235330936471e386cdfa70d655be1a6b148b3193dfa96986278902",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "exploration/manipulation.py",
       "bytes_in_git": 13986,
       "sha256": "93ce2ce90a2cb20075f8187d3be9aa718195ea1d6ceb5acce88b7f6295a74b52",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "exploration/protocol.py",
       "bytes_in_git": 1923,
       "sha256": "de1483fcdde7bfa224fd162e18dbacbb3de320e86e68facd3d443cbeb83e639d",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "exploration/provenance.py",
       "bytes_in_git": 652,
       "sha256": "466fb201b6d68892024fed742be5fe157d661b3d9b44d9c6e9a3ec5bd7226fb4",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "exploration/runner.py",
       "bytes_in_git": 4553,
       "sha256": "4a0394fa05da6ec6744cdd48270da20e811e4801cb78f668ba47a09c9002e559",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "exploration/sensing.py",
       "bytes_in_git": 7334,
       "sha256": "894fb7de2dc61ae8269d30dc0888c5f04362e095a58859b56261f69cbbd3931f",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "exploration/workcell.py",
       "bytes_in_git": 13664,
       "sha256": "367a502ee9cb27c02bae464024f05764a0a13aa53e0b3cd8962c4dea6110f737",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "exploration_main.py",
@@ -3314,1559 +2824,19 @@
       "bytes_in_git": 713203,
       "sha256": "98af68141b2a127f002c71998495c19329670ef5a11ee0c5e1b21db848a17b66",
       "normalization": "none",
-      "purpose": "报告 PDF；最新报告位于 output/pdf，旧版本报告位于 docs/report"
-    },
-    {
-      "path": "output/pdf/exploration_report_v3.0.0.pdf",
-      "bytes_in_git": 674002,
-      "sha256": "57c7045586d2ec87f7fbd224f2385b83efe94083c0ce99835336072bc71bfbe3",
-      "normalization": "none",
-      "purpose": "报告 PDF；最新报告位于 output/pdf，旧版本报告位于 docs/report"
-    },
-    {
-      "path": "output/pdf/final_report_v2.1.0.pdf",
-      "bytes_in_git": 86610,
-      "sha256": "daa7ca1f5cc5dc6301b7945ef716a2cd9bef93c9955371d9aae213161f1ac0d0",
-      "normalization": "none",
-      "purpose": "报告 PDF；最新报告位于 output/pdf，旧版本报告位于 docs/report"
+      "purpose": "唯一正式综合报告 PDF；历史报告通过 Git 历史查看"
     },
     {
       "path": "outputs/README.md",
-      "bytes_in_git": 2172,
-      "sha256": "c102cbad759e24b66c1aa9fd3a6a4d9af4107a9afde5c1f2f2d45a40561b9cf9",
+      "bytes_in_git": 467,
+      "sha256": "12719cfe69c725b6a5efc07a2b8d8cf0cbbff50c7456fa8143081132609702f8",
       "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/baseline_failure.mp4",
-      "bytes_in_git": 147267,
-      "sha256": "c663cf3cf4d99190d7ab962c76c5d0ba53c94ecdeb1e4bf3d17327b6f3496354",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/baseline_logs/summary_20261025_011539_013928.json",
-      "bytes_in_git": 3127,
-      "sha256": "a44c757112790c1c17c0b52408ab1d7303ca4edeec30be7e85cac936915a802f",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/baseline_logs/summary_20261025_011539_013928.png",
-      "bytes_in_git": 83289,
-      "sha256": "45443a24c40b72df9db3fa03de4081ce40d42fe922782d2b090f93ee04d3c285",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/baseline_logs/trials_20261025_011539_013928.csv",
-      "bytes_in_git": 262,
-      "sha256": "e8592c4055fb34ce7cb7a4ff6b4831b4d8a09942737d6bfceff749e7165b072d",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/baseline_logs/trials_20261025_011539_013928.jsonl",
-      "bytes_in_git": 16908,
-      "sha256": "de873cf50341b42c2245f55de8b5b7668c9e4ba6f8fd471f92ef772e2e91f34d",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/dense_logs/summary_20261025_011551_229127.json",
-      "bytes_in_git": 3066,
-      "sha256": "bc7bd60deccabb1e9f40c41c29dc9f9d4042e8c64ba8e7882b5b31afad86c8ba",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/dense_logs/summary_20261025_011551_229127.png",
-      "bytes_in_git": 83654,
-      "sha256": "6959662b09e9f9587eb6739e5a7517511ac23bebaa50476c7240822f611262e2",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/dense_logs/trials_20261025_011551_229127.csv",
-      "bytes_in_git": 234,
-      "sha256": "8d5c8e3be992c5cb9b3805ec8968429097a7564919f5abf2bc85243ebae59e92",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/dense_logs/trials_20261025_011551_229127.jsonl",
-      "bytes_in_git": 15691,
-      "sha256": "c5c88579cace5d034133a1a58c3a530929f69ad7034209dd7e58cbc658cf03ad",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/dense_release.mp4",
-      "bytes_in_git": 2758637,
-      "sha256": "0eed6ff0aff2cc948c6bf245bbe1cd01f84f6667f4d34f398f615dcc15498a67",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/local_logs/summary_20261025_011455_260595.json",
-      "bytes_in_git": 3073,
-      "sha256": "af1d4d258e9cfac8ec98350e902e11f23dce77bccd4cdaf7c7e3ec13dadb92ea",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/local_logs/summary_20261025_011455_260595.png",
-      "bytes_in_git": 47198,
-      "sha256": "7f504a57c19f6f2f86661bd0b773d03e6692af9e6fb0494fd37346b440f8f95f",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/local_logs/trials_20261025_011455_260595.csv",
-      "bytes_in_git": 235,
-      "sha256": "d1872d360043e4830d33d4630b53065e696c1cbf2f4f02836f96d0fc05b97e66",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/local_logs/trials_20261025_011455_260595.jsonl",
-      "bytes_in_git": 44904,
-      "sha256": "46cc6b89c858356495e982f3065f8badaca71be3fe285c2cfad52e6ffc24a04e",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo/local_recovery.mp4",
-      "bytes_in_git": 1577701,
-      "sha256": "299e14277e19fafcee7f33a470daaafaa9b4aa696965b68081f3ddca46dbda1a",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo_v21/baseline_failure.json",
-      "bytes_in_git": 29244,
-      "sha256": "9701a4857d79afa67eed610dccc936296e776cb700f10d3d4672e7e94c5e2543",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo_v21/baseline_failure.mp4",
-      "bytes_in_git": 275556,
-      "sha256": "9fc294f7e575dda9896eaedae86f324498bc858648d282fb0ce6b1e23fe05b80",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo_v21/baseline_failure.png",
-      "bytes_in_git": 84273,
-      "sha256": "b073e32e788e9d2a606fe2993f7a23dccfee28f7abecf433e894a96bc026a63a",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo_v21/dense_intro.mp4",
-      "bytes_in_git": 35192,
-      "sha256": "175587f859e65023818e5966b07c079c10df393fc11fe366014ddb9f8bf0a25c",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo_v21/dense_release.json",
-      "bytes_in_git": 27228,
-      "sha256": "c8eca5c2ee89877580ad00801480a9a9947710765d26dc2c0b4835b0b5319e32",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo_v21/dense_release.mp4",
-      "bytes_in_git": 3112411,
-      "sha256": "d2dabd0bffb39934b677b0d06915886fa40abd9e32314ff89397ec53461027c5",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo_v21/dense_release.png",
-      "bytes_in_git": 76081,
-      "sha256": "615c3f827165995cbd3c2b60da68cf118bed3d38e25096f18695c9d597d7b584",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo_v21/failure_intro.mp4",
-      "bytes_in_git": 31410,
-      "sha256": "4c4dade69510d1781919d21b5b46bd84978347c31505c9057d4ab8f91078dac2",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo_v21/intro.mp4",
-      "bytes_in_git": 36009,
-      "sha256": "47f8bf2c8375f73b547586cc34b4f7a189b9c278e7837b98084672293e070c00",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo_v21/local_intro.mp4",
-      "bytes_in_git": 36383,
-      "sha256": "c02726e7308fbf68a7767bd6ed58f3f7d28eedd5f4df71f142c498d606044839",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo_v21/local_recovery.json",
-      "bytes_in_git": 77518,
-      "sha256": "d7ddf580fed444bae41442a6020ed732d448ef050714061a1e87e79650f6c69d",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo_v21/local_recovery.mp4",
-      "bytes_in_git": 2096802,
-      "sha256": "b018761a70334755fbef42272ea1b04024eb80ff264e3334f679a4ec612e1cde",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo_v21/local_recovery.png",
-      "bytes_in_git": 54896,
-      "sha256": "0cc56f338e532e6a26d0aff6629238597af7a624d1c7fa07f5d5d3f1192d6a43",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_demo_v21/outro.mp4",
-      "bytes_in_git": 37875,
-      "sha256": "4c60142a3b09d2582df4082e9843face4bad76d57684e3f357990b975414f658",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/baseline_clutter/run.log",
-      "bytes_in_git": 17486,
-      "sha256": "eed92f7af823c5344fd85edbfb6916c4e2e3bb6b2c73d7d5fb3186b80d70f9c5",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/baseline_clutter/summary_20261025_011240_638177.json",
-      "bytes_in_git": 3584,
-      "sha256": "2e14d99b19bceba96fda264144c0af0e8db42eb8819f76a4229d8243bd29ddf2",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/baseline_clutter/trials_20261025_011240_638177.csv",
-      "bytes_in_git": 6132,
-      "sha256": "77c5055ff73f539f6cbaa56b7cc8f8e38215433431d9c0ab9d6b571c5c31f6b0",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/baseline_clutter/trials_20261025_011240_638177.jsonl",
-      "bytes_in_git": 9735938,
-      "sha256": "3b44c8365382d6b513b3f9db8472b6478f3378416d3841294d8244cd49a88073",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/baseline_dense/run.log",
-      "bytes_in_git": 8550,
-      "sha256": "768503f542df8af2b5f1aef07a31b7d2a3653735a2dbc9c0b735d77360d476b8",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/baseline_dense/summary_20261025_011700_640019.json",
-      "bytes_in_git": 3591,
-      "sha256": "bfa91926d3c5654dcf25cfe928d40ba53860a133f13815489f9c620366d39555",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/baseline_dense/trials_20261025_011700_640019.csv",
-      "bytes_in_git": 3164,
-      "sha256": "4eaac86c7c068c8ae87843676f0ec345359ca6d8866533b67b7da358173bdb92",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/baseline_dense/trials_20261025_011700_640019.jsonl",
-      "bytes_in_git": 3937600,
-      "sha256": "30a51c4ecf8b22f0d2408408851cb27d87c3b333219ff2e8f410052a637f6d51",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/comparison.json",
-      "bytes_in_git": 6024,
-      "sha256": "7e2ba0960543ab08dff6fb59755ff0db19c04a38695c4547d7a7b56ec67acd83",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/local_clutter/run.log",
-      "bytes_in_git": 18379,
-      "sha256": "93fd8540e1c5513ea993154ce4e97b8a4ca10181aa7900d1d7457a419546501d",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/local_clutter/summary_20261025_011700_637295.json",
-      "bytes_in_git": 3594,
-      "sha256": "9e953317c4acf2fe68a86259869ad9b52c357d7be9b4d453eecb8e9835c4a08d",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/local_clutter/trials_20261025_011700_637295.csv",
-      "bytes_in_git": 6040,
-      "sha256": "5f66a3790293624c743f9dcc858de0e45524e885d86fb87e37fba59af74ac241",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/local_clutter/trials_20261025_011700_637295.jsonl",
-      "bytes_in_git": 10051839,
-      "sha256": "512641147d03bfeaa2287a1fb962cf119818428cb911eb6a7e7d0834d6df51a0",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/local_dense/run.log",
-      "bytes_in_git": 9219,
-      "sha256": "7c91284e1d17362491d01772e9573a667ad12ec019a9f9131fb91da6f1ebf7c8",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/local_dense/summary_20261025_011700_645057.json",
-      "bytes_in_git": 3584,
-      "sha256": "531ad9af7414b102793f04c681449037d9f3027f33a0e28ef7435ad8d494de56",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/local_dense/trials_20261025_011700_645057.csv",
-      "bytes_in_git": 3103,
-      "sha256": "e40eed877b48f6f0823bb8ccb9d884d82d87db291a1b1348398a4fe721618883",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/local_dense/trials_20261025_011700_645057.jsonl",
-      "bytes_in_git": 4122109,
-      "sha256": "8a3d590b945eb037f03c21e841049ae49481b285f19d61ecaa6313a0768b936c",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/completion_frozen_20261025/protocol.json",
-      "bytes_in_git": 970,
-      "sha256": "2a03e19761e66900c75b03fd09e14064d38c7d141331ff3e74320f9b7d37a3b8",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/diagnosis_v2.json",
-      "bytes_in_git": 10743,
-      "sha256": "de9ba4502ab70f250eecf947af5773e3802cedf2f4a95388d982a80207a10cfa",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/candidates.mp4",
-      "bytes_in_git": 105855,
-      "sha256": "6496ebc4b4450a44fc9392a709a3806e6f18bebdc3bb6614f62b21173ea3e182",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/object_0.mp4",
-      "bytes_in_git": 65745,
-      "sha256": "9fb65cdaa4be96e89e35b7732c82065f2d4081d280e79b20be6f9fba44986748",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/object_1.mp4",
-      "bytes_in_git": 67731,
-      "sha256": "99d49bf50ae2c76885d52effca3c054cbffa2097ce071a919ee33be627b2287d",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/object_2.mp4",
-      "bytes_in_git": 69215,
-      "sha256": "37f65cf496a4ffe1027e31469f8efdb14377273e316ebaf30033ef8ac3efa802",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/object_3.mp4",
-      "bytes_in_git": 63915,
-      "sha256": "61959ad1645181ae12d5fe8316f735108d3f83e50198d9d5031718f7455f2889",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/object_4.mp4",
-      "bytes_in_git": 65412,
-      "sha256": "811166176aaf3a6ff5f214d1432844df140c21d05bca7a988e9def8589661085",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/object_5.mp4",
-      "bytes_in_git": 65964,
-      "sha256": "8e072ae425bc3ba3ed90f9d35bdca7e46011b48cc47aa1c93f916d9698d724bc",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/pick_place.mp4",
-      "bytes_in_git": 2025679,
-      "sha256": "12b020307adb7ebf4232fa8c988c43eb5f8a92d9aa7bcbbbbd94482bb0d4db91",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/random_objects.mp4",
-      "bytes_in_git": 393946,
-      "sha256": "7deef4bd52f153968a6786886cc6c36b3d052212743ce3ca23b7bd8fd89aac2d",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/random_trials.mp4",
-      "bytes_in_git": 6357902,
-      "sha256": "e49db88946792f828387aff468f54e7962ebf366e209fdf7f245d8e9780d90c2",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/summary_20261025_031250_123140.json",
-      "bytes_in_git": 2113,
-      "sha256": "bb5f301b71b7649cd23c17a5bfdd4119ed0d5f3eccc3abb286898feabf3b2642",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/summary_20261025_031250_797537.json",
-      "bytes_in_git": 3132,
-      "sha256": "5a39008362ef525bd3c75657c14d0086290774cd446574987713d7920ccf3abd",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/trials_20261025_031250_123140.csv",
-      "bytes_in_git": 236,
-      "sha256": "32d1e98df3e41c939d12ea666ebeb44e04680eb4d736da31f943911b63e3f4fa",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/trials_20261025_031250_123140.jsonl",
-      "bytes_in_git": 2175,
-      "sha256": "83fb9abd78bf2794ede452c1a1e016e40d2f518e4241b15e0bd5d2115d6584c9",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/trials_20261025_031250_797537.csv",
-      "bytes_in_git": 724,
-      "sha256": "c53c9d4adf85b232bdcf6fdf2fdd2574f01fe20e210844dd53bb3f7c7a82366a",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/trials_20261025_031250_797537.jsonl",
-      "bytes_in_git": 14637,
-      "sha256": "907ea2a24e07fab8743b85b053cf95732579a6d54788515d33b06c95368dcc30",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/visualization_metadata.json",
-      "bytes_in_git": 24824,
-      "sha256": "b5789cc57142bd0dcdefc7450adb7ba69a950beb2ded8d89ccbc6fe67cbd9083",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/generated/workcell.mp4",
-      "bytes_in_git": 72559,
-      "sha256": "59f39336688f2d5ff79abefe55da2a7e941163b1ec6fd9c2a12f6e14552407ac",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/gui_smoke/baseline_20261025_031625_568414.json",
-      "bytes_in_git": 3201,
-      "sha256": "6fac1ebf35eda0f7a8c2542490ddaabfbf2440bf96124c30067d80db424855a1",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/gui_smoke/soft_adaptive_20261025_031555_806016.json",
-      "bytes_in_git": 6391,
-      "sha256": "d264a427e327c0f0003b992661e56b2751f557123608c3b0cb6f4b05c1bfbb0a",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/editing_materials/gui_smoke/soft_adaptive_20261025_031646_549527.json",
-      "bytes_in_git": 6392,
-      "sha256": "1cc0491df79a4e2fa7efaa167229354447d52decdcc44a82f5cb590f06b6c2c3",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/articulated.mp4",
-      "bytes_in_git": 2296975,
-      "sha256": "92b788e4980628d2bd04e9ee231b296f33399ab34b58487822148270972286bd",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/articulated/articulated_1_grasp.png",
-      "bytes_in_git": 76323,
-      "sha256": "50c5616a1103ddae310bf4f8905cd5a55bf6bc8ed25189c25ab3ac6e088e2a81",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/articulated/articulated_1_lift.png",
-      "bytes_in_git": 77517,
-      "sha256": "31f1f6a39ada6ec93bed0799034c3ac6b85e318b425da93474133dbb3aba5054",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/articulated/articulated_1_place.png",
-      "bytes_in_git": 71303,
-      "sha256": "2ae317e527ddea8d2fcc8d9f2e08ae757185844a37aa60ee03ba2366e9603c01",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/articulated/summary_20261025_023030_714412.json",
-      "bytes_in_git": 993,
-      "sha256": "41a878b87bcc6c04d15cf2fb63324519ae08a591345ccb9797421ab31d8259e0",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/articulated/trials_20261025_023030_714412.jsonl",
-      "bytes_in_git": 4104,
-      "sha256": "f40f88e3e60abb22b60903b152753966ff1a68849dab6ae37540db02f1530ca1",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/articulated/trials_20261025_023030_714412.png",
-      "bytes_in_git": 71303,
-      "sha256": "2ae317e527ddea8d2fcc8d9f2e08ae757185844a37aa60ee03ba2366e9603c01",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/articulated_2x.mp4",
-      "bytes_in_git": 739310,
-      "sha256": "e81a74a1f448d9f9af2dbb8666b98b5833efc610c171ed9e20fef62458007cda",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/articulated_intro.mp4",
-      "bytes_in_git": 37630,
-      "sha256": "8372e5b68c178c16febe96f367569c3d81bca62faf2789c4a04e6da5306feeac",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/articulated_trace.csv",
-      "bytes_in_git": 208714,
-      "sha256": "9063a20fb01575e424fbafb10f3d244f20e535d4200d086ab159a171602d14f1",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/crowding_single.mp4",
-      "bytes_in_git": 3057697,
-      "sha256": "aa217266380c97fa1b9d912cddf19d708aa6f1862f961d14813ca88bd7d5f4ff",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/crowding_single/summary_20261025_022856_336144.json",
-      "bytes_in_git": 994,
-      "sha256": "4110b296acd6fc0c8a1c727cee22b87554d4468fcf355c72b84f19e480c187bc",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/crowding_single/trials_20261025_022856_336144.jsonl",
-      "bytes_in_git": 53579,
-      "sha256": "5de254adaa00a788378192874fe38bbefe93a760133180cecb88bdbc8458bf7c",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/crowding_single/trials_20261025_022856_336144.png",
-      "bytes_in_git": 76032,
-      "sha256": "fcc1a216cb33be683500b1b8368fa6a66155568e429a18564e19844ff82c39cf",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/crowding_single_2x.mp4",
-      "bytes_in_git": 1000792,
-      "sha256": "26631d46cd88a3d2b1bad9ad59e660cbd2b373f067ab1e8ea4d990699ddb7dec",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/crowding_single_intro.mp4",
-      "bytes_in_git": 36825,
-      "sha256": "d64344b2f135e12e85b748e525898d2ccab61867b60a9ad6238fe1586951ab8b",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/crowding_single_trace.csv",
-      "bytes_in_git": 219157,
-      "sha256": "e61445e5b9aedbd8a34eca3047ce3aa6cf2087ea9dc5e5011a35ef16fde90cbe",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/ending.mp4",
-      "bytes_in_git": 32451,
-      "sha256": "86824a00ea091811122dc7cfcf9c8e738b3d5b2ae8a75ee52b448acee7307a5c",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/force_adaptive.mp4",
-      "bytes_in_git": 2417453,
-      "sha256": "9d03cb1bfa2880b86065e4012dd645a420598f53d52fb50d82dbf303d223772f",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/force_adaptive/force_adaptive_1_grasp.png",
-      "bytes_in_git": 76248,
-      "sha256": "e8fdfc491776c2056244665d31fa02e53027a95865335acd11691708407288b4",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/force_adaptive/force_adaptive_1_lift.png",
-      "bytes_in_git": 77086,
-      "sha256": "c87a97285e27b92446f7b9d1b5c3ae69cb6c076bf4d411eae96e8fbfa3cea270",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/force_adaptive/force_adaptive_1_place.png",
-      "bytes_in_git": 71755,
-      "sha256": "669cd0c5b93bc43cf4f92242388e3e55a24c672d37fd57c8e8533b5af7fd8ca7",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/force_adaptive/summary_20261025_023117_981374.json",
-      "bytes_in_git": 1006,
-      "sha256": "3f2d989a8984f3f469f155537c7b08b40e0206d42ab277a75484486cc933a420",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/force_adaptive/trials_20261025_023117_981374.jsonl",
-      "bytes_in_git": 4018,
-      "sha256": "1343d4b0e4277b87ea1b39da34aba92bd1f3c1126b4e38ff1009f383e85e8050",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/force_adaptive/trials_20261025_023117_981374.png",
-      "bytes_in_git": 71755,
-      "sha256": "669cd0c5b93bc43cf4f92242388e3e55a24c672d37fd57c8e8533b5af7fd8ca7",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/force_adaptive_2x.mp4",
-      "bytes_in_git": 767421,
-      "sha256": "d96e08419a92417daa2eb56893c831c9832b3b984d41fb4e8967a4f024caf67a",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/force_adaptive_intro.mp4",
-      "bytes_in_git": 38299,
-      "sha256": "fa74b2a8f947d02eae30e489f12e8bef8d59a9eb52b115aaa717fa18c0075cc9",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/force_adaptive_trace.csv",
-      "bytes_in_git": 191927,
-      "sha256": "a9008761438502e4fe1b4b5781f72e088bab368ed7b5410e64923a66ae28148a",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/intro.mp4",
-      "bytes_in_git": 32179,
-      "sha256": "849759a5f11ad958d3a90a708d3d4267ed1d4bf5442ffe1f730e89d4ccb64bbf",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/novel_points.mp4",
-      "bytes_in_git": 2299594,
-      "sha256": "9004a0e00e8e98d827ea9781f9e6707c4dc458a079c474be513e91132871301f",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/novel_points/novel_points_1_grasp.png",
-      "bytes_in_git": 76297,
-      "sha256": "e44c1407430c1cc0c803c6762f0cbe3fc58b88b20dd6a18593a79235241a327d",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/novel_points/novel_points_1_lift.png",
-      "bytes_in_git": 77301,
-      "sha256": "2578ed3c8bab4eda42fd8c749cac76ee61343e8feea14ab559980383e9d30b1d",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/novel_points/novel_points_1_place.png",
-      "bytes_in_git": 71401,
-      "sha256": "b15cfebfad7fd28b767e1a9e45ddd089a1a41086e8a10782866537665c5c775a",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/novel_points/summary_20261025_023055_534977.json",
-      "bytes_in_git": 983,
-      "sha256": "37138ae1fe457a6203a1b8970cd14d3df5a0d913b3f4f3628fe76dc6f9405db8",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/novel_points/trials_20261025_023055_534977.jsonl",
-      "bytes_in_git": 5738,
-      "sha256": "1aff593f337e6107b2b37afac49786d0bd6dfe901531cbf593b2e3b1abd6d9fd",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/novel_points/trials_20261025_023055_534977.png",
-      "bytes_in_git": 71401,
-      "sha256": "b15cfebfad7fd28b767e1a9e45ddd089a1a41086e8a10782866537665c5c775a",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/novel_points_2x.mp4",
-      "bytes_in_git": 735804,
-      "sha256": "5ba74c3d8c1fef1957f80f20c6d3c5fd1a99ae261f1f864578ec621453f2f762",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/novel_points_intro.mp4",
-      "bytes_in_git": 38461,
-      "sha256": "024b57e801ab936b5fbf1c73c7373e32804b8abbd977cdb9d287ff57d85ff1ec",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/novel_points_trace.csv",
-      "bytes_in_git": 184230,
-      "sha256": "638b069f586e9299737218d3d65acf6f043194ff666d767a7a38e1535c05e147",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/recovery_retry.mp4",
-      "bytes_in_git": 3488584,
-      "sha256": "bac4f8d359273fdb84cd30bc433d52934fe916b060b4da7b873000a00df843f8",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/recovery_retry/recovery_retry_1_grasp.png",
-      "bytes_in_git": 75888,
-      "sha256": "3d7468f0ad9ce5661a005d1d0b29b1874c2f332b73eda4d1636062f8831ae7e6",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/recovery_retry/recovery_retry_1_lift.png",
-      "bytes_in_git": 77816,
-      "sha256": "68ce6378a8e4f6fd929b00cbbd9c44889f2ab8cd37183b3f4af650b472116c17",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/recovery_retry/recovery_retry_1_place.png",
-      "bytes_in_git": 71662,
-      "sha256": "9cfbd958b6bddc17e9d05d1e695e88d457d01fcaab71d539401137e909071c35",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/recovery_retry/summary_20261025_023143_632311.json",
-      "bytes_in_git": 1007,
-      "sha256": "2ad35acebc398bf18912f8c6fc1072db2a7468ec891334ff1da5660dc8d71a04",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/recovery_retry/trials_20261025_023143_632311.jsonl",
-      "bytes_in_git": 4698,
-      "sha256": "954906100b4cf8e350163230ab27d2682688f095129497efbb9a5e0fdee4a311",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/recovery_retry/trials_20261025_023143_632311.png",
-      "bytes_in_git": 71662,
-      "sha256": "9cfbd958b6bddc17e9d05d1e695e88d457d01fcaab71d539401137e909071c35",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/recovery_retry_2x.mp4",
-      "bytes_in_git": 1136415,
-      "sha256": "194c4be0276d3c7e2606f542584440e1ba283dfc20a3e1442ce43dd64cd4f073",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/recovery_retry_intro.mp4",
-      "bytes_in_git": 41103,
-      "sha256": "4702aa6a8cb48540ca9250116802ce07fd727b63bf531e6f1fdf6b4f653d45b5",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/recovery_retry_trace.csv",
-      "bytes_in_git": 274208,
-      "sha256": "acb30b9f0d50cb1b96a3ea91a7d724f73c45aaec3c29886765b36468b85844da",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/sensor_robust.mp4",
-      "bytes_in_git": 2405548,
-      "sha256": "59053d1ffbd667b7cae2d04d7f6f9632a96c42711ea3e5d5442e6c53959848a0",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/sensor_robust/sensor_robust_1_grasp.png",
-      "bytes_in_git": 76552,
-      "sha256": "0877740fa80740b7b1b7a771029a6aad6052fbc32f6fae81d275dc937c1bbc0c",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/sensor_robust/sensor_robust_1_lift.png",
-      "bytes_in_git": 77479,
-      "sha256": "589a9510e45d6bb66e8f0051189eb4a48053e561e77e76415ff9832240443ae7",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/sensor_robust/sensor_robust_1_place.png",
-      "bytes_in_git": 71765,
-      "sha256": "b605b3919ff2ffe3054607e93a9a1715ba0685cbb3b436d384145f2d32eec250",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/sensor_robust/summary_20261025_023218_533955.json",
-      "bytes_in_git": 1011,
-      "sha256": "5a7b79f267185159ce9590eb57b6694c0dfd0c73c7ef2a610cfa6ef02bdb837e",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/sensor_robust/trials_20261025_023218_533955.jsonl",
-      "bytes_in_git": 5735,
-      "sha256": "2efb94a670794306d1ff5eae91ac0ca5c45952d9547c8e89188f49e95d58308d",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/sensor_robust/trials_20261025_023218_533955.png",
-      "bytes_in_git": 71765,
-      "sha256": "b605b3919ff2ffe3054607e93a9a1715ba0685cbb3b436d384145f2d32eec250",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/sensor_robust_2x.mp4",
-      "bytes_in_git": 763678,
-      "sha256": "60c967a36c9b4a9e8fd8fa6c545cc6c79cb1a0928398375bad7a3d90b06e97e9",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/sensor_robust_intro.mp4",
-      "bytes_in_git": 37956,
-      "sha256": "94e8362d74f73ac92919c57761b85c52a848037ad24a6c0e81ead4b71b3a6851",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/sensor_robust_trace.csv",
-      "bytes_in_git": 193026,
-      "sha256": "496b4f1169279ab7d9f89afd4e531379665a3332409932639e044e808e09162f",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/soft_adaptive.mp4",
-      "bytes_in_git": 2272610,
-      "sha256": "f67d358c3547a28eda1f887606117bef89a8bf2c9311eb27821c44a3f8992457",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/soft_adaptive/soft_adaptive_1_grasp.png",
-      "bytes_in_git": 75825,
-      "sha256": "efbcc645a552d0c7586bbeff68309953e182fb0a163c1cf4d0ef523030e4b92f",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/soft_adaptive/soft_adaptive_1_lift.png",
-      "bytes_in_git": 77314,
-      "sha256": "0df3c486a590942648463b8c23eb839a9a1f6f429cb8ba365052fee4edf5d1d7",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/soft_adaptive/soft_adaptive_1_place.png",
-      "bytes_in_git": 71639,
-      "sha256": "f8fa03105fe355f4d83e8b34fdf23ac8d8b821dcaef5d2e384712705a0e8f3dd",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/soft_adaptive/summary_20261025_022949_038892.json",
-      "bytes_in_git": 986,
-      "sha256": "0b24648400f91d73cb68565579c8ae3f2bf27e391f29d749f2d260d23008ddfd",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/soft_adaptive/trials_20261025_022949_038892.jsonl",
-      "bytes_in_git": 4752,
-      "sha256": "232296c2f452004229e3cb31593e54ed2fe0566522343ed81ead5fc3c59420ee",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/soft_adaptive/trials_20261025_022949_038892.png",
-      "bytes_in_git": 71639,
-      "sha256": "f8fa03105fe355f4d83e8b34fdf23ac8d8b821dcaef5d2e384712705a0e8f3dd",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/soft_adaptive_2x.mp4",
-      "bytes_in_git": 731796,
-      "sha256": "1e3032f64a0be0a101d3e6b6837e55bfc5a013199fdc0798dbcd1059536ea0f1",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/soft_adaptive_intro.mp4",
-      "bytes_in_git": 36564,
-      "sha256": "29bce13a078c7fddd0e22563eab2b59b5628de23850ccc7a210fb19784a34051",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_demo/soft_adaptive_trace.csv",
-      "bytes_in_git": 213845,
-      "sha256": "186c30fb2c731051edadea641651ea2ad231447bc64db6556e303e6be6285334",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/articulated.json",
-      "bytes_in_git": 3650,
-      "sha256": "ec260dfb70289491c22574458aafa5dab90ff8819c7134240a3ae6aeaec2fb0f",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/articulated_entry/summary_20261025_021715_794905.json",
-      "bytes_in_git": 991,
-      "sha256": "0064a16723ae83e5c7917bd7eb8a5130d6e9f7f29a36533b2905def829d0f0bf",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/articulated_entry/trials_20261025_021715_794905.jsonl",
-      "bytes_in_git": 4102,
-      "sha256": "16232fbcffd8daa6882f4f27f3a9687136115cddef85c5b02f4d0c149032f373",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/crowding_entry/trials_20261025_021846_079278.jsonl",
-      "bytes_in_git": 1723520,
-      "sha256": "4a2252ed7eff76284fe9fd2f01076a8713508a4fa0078b6d050b21c11d5257b9",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/novel.json",
-      "bytes_in_git": 3590,
-      "sha256": "0bf3bfc15808bd7fde2988cb8a3e3cde0e3cb5ed44b726d938e7b3264f9c4666",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/novel_entry/summary_20261025_021712_925439.json",
-      "bytes_in_git": 986,
-      "sha256": "fc5cbe8e076ee9171f207d37cf74029a847bebd40b3eca65c8458d27eaadaab3",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/novel_entry/trials_20261025_021712_925439.jsonl",
-      "bytes_in_git": 5559,
-      "sha256": "6c1b84bf0cb90b1a1f25a63f03363b0cf3efc83a246f96c6ee35899095d0c093",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/recovery_entry/summary_20261025_021706_975074.json",
-      "bytes_in_git": 1006,
-      "sha256": "01a1b2151040cbc9a2bf832e6a2cb65a40dcfcbdf88cfccd15f76660bb3e8b88",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/recovery_entry/trials_20261025_021706_975074.jsonl",
-      "bytes_in_git": 4697,
-      "sha256": "85b2e5870c33ddf2ad358db05481494babf452273c29b0906aa43e35929659f2",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/rigid.json",
-      "bytes_in_git": 3591,
-      "sha256": "e1a0b6c78c6a072e9b0dc6ec72c671399c75eca84aa14569b1771d5541f2c96d",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/sensor_0_robust.json",
-      "bytes_in_git": 5830,
-      "sha256": "e5137fa20c4a524b2d5308cf8f08756974636ec77e7ed308752597ed520e8bd4",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/sensor_0_single.json",
-      "bytes_in_git": 5817,
-      "sha256": "6dc83c35076d6891490b579a59167585f079f27ddaa78a97e9982a967b3cbfb3",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/sensor_1_robust.json",
-      "bytes_in_git": 5833,
-      "sha256": "d3bdf1bd449bbf4b209914549a0dd1d5ce7570095545522c6f99b48dff1a19eb",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/sensor_1_single.json",
-      "bytes_in_git": 5597,
-      "sha256": "f16d2d6726d41c9b82bea1ee3bbcbdc0a971219df94165693f60df391b825ee4",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/sensor_2_robust.json",
-      "bytes_in_git": 6047,
-      "sha256": "4359e6998583dc0f51ae0698119a35382c0329fcdb6d1f79acf41ddabd486e01",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/sensor_2_single.json",
-      "bytes_in_git": 5727,
-      "sha256": "63f1c5d124bbc807a6fbdb754d724660ebf2701f025b1440d668f8d7180472d0",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/soft.json",
-      "bytes_in_git": 3909,
-      "sha256": "63181575f8929e30ea8cede11974c4b3669b95d8ebbb5bdc269456f09ee573c3",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/soft_adaptive_entry/summary_20261025_022152_958053.json",
-      "bytes_in_git": 987,
-      "sha256": "4945dd72e080cd3e6383e304d7d22b7f575553a0f19067afe2f42be4c21bda9d",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/soft_adaptive_entry/trials_20261025_022152_958053.jsonl",
-      "bytes_in_git": 4753,
-      "sha256": "6d4038e3cb242c90913a400bb65d510cda0af166a5623984ad261ccab2d5d6d3",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/soft_fixed_entry/summary_20261025_022136_020506.json",
-      "bytes_in_git": 961,
-      "sha256": "5605f345039eb22020168e7c2a327c1f804c2ca482964ed7c5be23448bc94da0",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/soft_fixed_entry/trials_20261025_022136_020506.jsonl",
-      "bytes_in_git": 4742,
-      "sha256": "991955c9ce5e819552eb14390c3ca07b73b0d1b6f6274bf1d401a04ac41d3589",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_dev/workcell.xml",
-      "bytes_in_git": 19947,
-      "sha256": "2a4d1d56bc63ac64fc4a6623991263ecf19d12961bac1a264e056931fc7b41bd",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/articulated/run.log",
-      "bytes_in_git": 246,
-      "sha256": "41b1bf07ed7bb2f5463b0b9fb910bf6130ebe8d0fc85c21d73aec85ff76a4501",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/articulated/summary_20261025_022206_292017.json",
-      "bytes_in_git": 1012,
-      "sha256": "ed8ef055cf5bd911445e2af46e4637bd8bf0b80440776b2faf4658fbc8238ad8",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/articulated/trials_20261025_022206_292017.jsonl",
-      "bytes_in_git": 24624,
-      "sha256": "acd17fe02504f6fa9cf31ae3ff23100b9688c505c0d6defdce77f465eb0f1896",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/comparison.json",
-      "bytes_in_git": 21506,
-      "sha256": "7f4e9ed778d53125e68109bb3fb8762f898b9c6603821ada870e9b250b106031",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/crowding_active/run.log",
-      "bytes_in_git": 286,
-      "sha256": "0bee7ba1b314fe4ee21a2e27c4f15b6f159910725c2a85e92d93599496170f06",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/crowding_active/summary_20261025_022206_292017.json",
-      "bytes_in_git": 1065,
-      "sha256": "b67dbb0b65c152495de095d1dc8f70f8ef0822cf85c8573f4a7366cd7310882f",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/crowding_active/trials_20261025_022206_292017.jsonl",
-      "bytes_in_git": 759567,
-      "sha256": "0f5fbae3c0b2baac1d6ebfb25b6476990417d95e9823ffeec3b1465cb3c3a377",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/crowding_single/run.log",
-      "bytes_in_git": 280,
-      "sha256": "8ce2d671abbfd4faea566ba66b878c28956ddda905f32e7c463c799b96efaf4a",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/crowding_single/summary_20261025_022206_291018.json",
-      "bytes_in_git": 1042,
-      "sha256": "6fe6ce31d8f4093a736a57ded22e4e8520591a71edf43455e064ced9d530909b",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/crowding_single/trials_20261025_022206_291018.jsonl",
-      "bytes_in_git": 815743,
-      "sha256": "374fc3cd193a73c35e37a5b8001e341e8885c8b5ea139f1cf358e70297f883b6",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/force_adaptive/run.log",
-      "bytes_in_git": 458,
-      "sha256": "59ecfdc20009b24bff3b2a97f95248cb56f9f68b1b51812fd641bb11e6f74883",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/force_adaptive/summary_20261025_022429_157455.json",
-      "bytes_in_git": 1013,
-      "sha256": "2cbfd58ff0b106eda57357966c275da0010f90ae23daf01d184c440926035f64",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/force_adaptive/trials_20261025_022429_157455.jsonl",
-      "bytes_in_git": 48416,
-      "sha256": "7355f2a651c24b30f57efba0812516a00bf133844b529b40163f2a711fc4dab5",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/force_fixed/run.log",
-      "bytes_in_git": 431,
-      "sha256": "b00b9e20452df082648661a990aceee91956e45231a31ac40810d650a0582208",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/force_fixed/summary_20261025_022413_197525.json",
-      "bytes_in_git": 1031,
-      "sha256": "9eeff29a69af31843fa23a4efbafe18d5bb784949ac1adac0020a4931dac39af",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/force_fixed/trials_20261025_022413_197525.jsonl",
-      "bytes_in_git": 47640,
-      "sha256": "9712efa3649d2d30eab3cff7b93d3b7c5061cdbe1117cb7adf732e0fc9d17202",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/novel_points/run.log",
-      "bytes_in_git": 438,
-      "sha256": "60dda9e7a0b56a7a8cfa537e76f87beeb1486719ab4505acee6bf925ac819852",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/novel_points/summary_20261025_022342_746500.json",
-      "bytes_in_git": 1037,
-      "sha256": "be7084de01e96de90e39da7b92600a27b1fc9b9341b55af50b3938d387e3d126",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/novel_points/trials_20261025_022342_746500.jsonl",
-      "bytes_in_git": 68508,
-      "sha256": "fb69e163c89d07b94ab5aa54cbc4d0648215655aa3198111e90b3ec1f96897be",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/novel_prior/run.log",
-      "bytes_in_git": 425,
-      "sha256": "4abe874e131415bd43c2f3ac605614f71a01a14dcf11dc6be75e039d1e595a0e",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/novel_prior/summary_20261025_022326_495964.json",
-      "bytes_in_git": 1062,
-      "sha256": "ee017e29114b875206f6c0aff796020aa3151d91007f210215a75820e6fa11ea",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/novel_prior/trials_20261025_022326_495964.jsonl",
-      "bytes_in_git": 67696,
-      "sha256": "f96ce989872f0b051f6235d5259856ad28e3110f51cd7ed6c51d339716217cdf",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/protocol.json",
-      "bytes_in_git": 3070,
-      "sha256": "4d248352cace814db4d97c9278e40d5c6aac4d12aec838753590f7da468945cf",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/recovery_retry/run.log",
-      "bytes_in_git": 267,
-      "sha256": "a8a28fc3bc817a05721f3082a09cf241a623c9d0a2f9016f915403782b5058b2",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/recovery_retry/summary_20261025_022520_450796.json",
-      "bytes_in_git": 1026,
-      "sha256": "4517c871528db57818443768722690ba5e663eddbfa711132c22a5d6f6f8a45b",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/recovery_retry/trials_20261025_022520_450796.jsonl",
-      "bytes_in_git": 28114,
-      "sha256": "27569db9fcf77aa112544f4421f35c05fd19eb0aa1367ca7be61c4e46d9fb57a",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/recovery_single/run.log",
-      "bytes_in_git": 292,
-      "sha256": "4a1e085e1be2513277c77e104c28d11c643688341d3d40330ceab040fc8ea45e",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/recovery_single/summary_20261025_022516_150469.json",
-      "bytes_in_git": 1016,
-      "sha256": "ccca34e80189a26a6dca4a158ce7d50581742636deb06d3f80cb166845e0e264",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/recovery_single/trials_20261025_022516_150469.jsonl",
-      "bytes_in_git": 21712,
-      "sha256": "aa9506f1c6770c009dae29e581916454e7962c223dfd9e76684f6c22faf9479a",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/sensor_raw_fusion/run.log",
-      "bytes_in_git": 562,
-      "sha256": "5c65a93a76d5c3b0167e09bbcdcc478161f357116726eaac4de861b105ba0819",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/sensor_raw_fusion/summary_20261025_022544_237539.json",
-      "bytes_in_git": 1072,
-      "sha256": "c649206ee47f0e94fe298884f330e095961f04b13b5d41190af16dbff6c462f0",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/sensor_raw_fusion/trials_20261025_022544_237539.jsonl",
-      "bytes_in_git": 64441,
-      "sha256": "e1b8d69d68e238f4cd707f78f1458d170fd1c0bd0e9ac74a15beaeb7c6281a76",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/sensor_robust/run.log",
-      "bytes_in_git": 462,
-      "sha256": "d113fd61fa1cfad20cdf3cbd104c83ccb749cb204b3e7889083c70d4be6b264f",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/sensor_robust/summary_20261025_022551_849882.json",
-      "bytes_in_git": 1061,
-      "sha256": "62460164289e504a0283795830f05cb22c5ce8bc9b9535ad02424c5441c5e920",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/sensor_robust/trials_20261025_022551_849882.jsonl",
-      "bytes_in_git": 67761,
-      "sha256": "27303d57358bb154a89cf8f779c435480dd425c5744ee6ab66a693f964a57f7c",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/sensor_single/run.log",
-      "bytes_in_git": 492,
-      "sha256": "ef5f25e54c6403b6d25592177b16c793b78636c6f2f57a4e15e0f2d81a285a7c",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/sensor_single/summary_20261025_022543_419965.json",
-      "bytes_in_git": 1062,
-      "sha256": "a66dd7b58aa234e235fd088122d0120ede6c31635fa8475fb18dc10a6a7f7481",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/sensor_single/trials_20261025_022543_419965.jsonl",
-      "bytes_in_git": 55835,
-      "sha256": "8aaf3fa2d519dc5e186db7f94fb6a12a9a9f3f4592c58bb1fca67e0bde3a0692",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/soft_adaptive/run.log",
-      "bytes_in_git": 260,
-      "sha256": "fed613b1d057baaba82a172653efc2686b28f6a4c5305f1692ca1ba0165b8efd",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/soft_adaptive/summary_20261025_022326_154857.json",
-      "bytes_in_git": 1006,
-      "sha256": "6da3fa28f06a63d1a6c71de697e73cbdebd2991bb9d4e725a921273e2c11545f",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/soft_adaptive/trials_20261025_022326_154857.jsonl",
-      "bytes_in_git": 28515,
-      "sha256": "0e02cfc1a5211003560325888b429d939043caab3b5f2190ad640c770a5ed23b",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/soft_fixed/run.log",
-      "bytes_in_git": 263,
-      "sha256": "f6f40e846822e2e6625167ff1928a90ef49514b878bcbc9cb6c86349e6774e3e",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/soft_fixed/summary_20261025_022240_335053.json",
-      "bytes_in_git": 1009,
-      "sha256": "ed5da269288d24d7715b069325bc584822353f955c7d9b044785b8f3af91338b",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploration_frozen_20261026/soft_fixed/trials_20261025_022240_335053.jsonl",
-      "bytes_in_git": 27265,
-      "sha256": "a5dc7ac129eb3a0a7d92bf1f694c1ec463299e239792c6b3eb58acd903d07c6d",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploratory_high.json",
-      "bytes_in_git": 6028,
-      "sha256": "ea0c17470a6f8aa8fb7296fabdada44663398426fd2fb1fbb49b6f1d80791802",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploratory_pitch.json",
-      "bytes_in_git": 3455,
-      "sha256": "7b519f789c235b68a1eb8b054a0aa51c347f730cffcd55d3244d3e6a10e57f2f",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploratory_search.json",
-      "bytes_in_git": 5995,
-      "sha256": "fa06268c66d8d6fc5dc047fc32c3046b43d4ff402615aab9cefc92408ef5cb77",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploratory_shift.json",
-      "bytes_in_git": 4026,
-      "sha256": "8d3954c967882ec762f63f8d129136099d4492745e250e2f3e4a0267281b64a7",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/exploratory_tilt.json",
-      "bytes_in_git": 3455,
-      "sha256": "b70779b4a40cc9035f4239d891dada7bec9115ecbe2d8f802e1d5f3c7f850c68",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/local_dense_development/summary_20261025_011056_768168.json",
-      "bytes_in_git": 3116,
-      "sha256": "f534507592353a6e8d0a13e23b84262928f93b0e001dee7ac0d382ee41c6d6a8",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/local_dense_development/trials_20261025_011056_768168.csv",
-      "bytes_in_git": 263,
-      "sha256": "5f9b7b51332751076f5fde7801c40332a5448af028a7fa60ba6bcbdc0891ab85",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/local_dense_development/trials_20261025_011056_768168.jsonl",
-      "bytes_in_git": 105841,
-      "sha256": "e8975bf8562ca0c2b29f55db781b38a0f8a1bcb9bbd0693c920bc3f4a66d0c56",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/onboarding_failure_v2/summary_20261025_010459_599516.json",
-      "bytes_in_git": 3047,
-      "sha256": "456f972c4c660f814643d3b145ea805b02fdbd985068809d0a3a7f476bc73b99",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/onboarding_failure_v2/trials_20261025_010459_599516.csv",
-      "bytes_in_git": 263,
-      "sha256": "125d9ff773c295421c00eba2d9c27a081090458f99068a88ed63c20c6028355f",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/onboarding_failure_v2/trials_20261025_010459_599516.jsonl",
-      "bytes_in_git": 7751,
-      "sha256": "9f51415b45aa4b2dfdf1b3d3b1b453adf3f8dcc6a919c0c0ac81fc211e02e2f9",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/onboarding_success_v2/summary_20261025_010501_125501.json",
-      "bytes_in_git": 2991,
-      "sha256": "f283a7a32059ee52aea51a93e153c8451a1806ac71063f087650691863ed1ab8",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/onboarding_success_v2/trials_20261025_010501_125501.csv",
-      "bytes_in_git": 234,
-      "sha256": "7561b7e0ba1f0651167d25ba7da622bf7c8147496b5e8d2894dab071add87bca",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
-    },
-    {
-      "path": "outputs/onboarding_success_v2/trials_20261025_010501_125501.jsonl",
-      "bytes_in_git": 11681,
-      "sha256": "60406fecb56d6ca0b128f615e1ff5160d7f69feb85c2c0ab423fa49c79485e8c",
-      "normalization": "none",
-      "purpose": "原始实验、开发诊断或录制中间素材；分类见 outputs/README.md"
+      "purpose": "本地实验、录制、缓存与编译临时输出；仅目录说明受版本控制"
     },
     {
       "path": "requirements-report.txt",
-      "bytes_in_git": 49,
-      "sha256": "94eff36a28f8811fae5ec8cb98f19df81750fa0c252ceedbac4136b6638092ae",
+      "bytes_in_git": 32,
+      "sha256": "943582602253e9b3865298a7dde79799b75e05d8cbd53ec231f9c8a3af8cd558",
       "normalization": "lf",
       "purpose": "Python 依赖版本清单；按核心仿真、视频和报告分开安装"
     },
@@ -4889,413 +2859,357 @@
       "bytes_in_git": 65,
       "sha256": "bcb683b9ce74fa4a49ef58fb748dff87c43b04b3762ab26b102e20002ec91783",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/active_sensing.py",
       "bytes_in_git": 6168,
       "sha256": "b8229da5f02e61950864a7ee71b9f4a09f152a6a5f51235bf9fc9925d357a069",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/clutter.py",
       "bytes_in_git": 6276,
       "sha256": "c3964965aa53d64240796f5c247441c465f45308901cc35f9f52c62ca6b3a5e4",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/clutter_planning.py",
       "bytes_in_git": 4165,
       "sha256": "bcf68e7b1a88f8c4e85dd9b1f0f7f47195d067a663d4a33ea6a8edf399cf0b75",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/config.py",
       "bytes_in_git": 1107,
       "sha256": "5f16135caadea599673476fc04dee0541792e30d7a065f9c5420b76e2ae2a0b2",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/control.py",
       "bytes_in_git": 2858,
       "sha256": "31816f13d7cafac29d1e54116ee66c5a4e781c618a79f2f190652e3825974bd8",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/dataset.py",
       "bytes_in_git": 2881,
       "sha256": "b2a94f94d1bda0c47bd784ca76991b8786ab1cb83843575686f61f1a578b57b6",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/depth_sensing.py",
       "bytes_in_git": 5215,
       "sha256": "a636ea3e528b6bfa7b198b80a9dbb205fb98ac49abe7ffd75ad7357dce730397",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/environment.py",
       "bytes_in_git": 12299,
       "sha256": "382edd504163fe3659ba6503d8515e5f088ee0af3f7c54df09eae01238fda773",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/evaluation.py",
       "bytes_in_git": 4671,
       "sha256": "54ed78fe7c927141241e60b2f4db7db21c027a568c953e658af94c4fefe5037d",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/feedback.py",
       "bytes_in_git": 2766,
       "sha256": "3dddb676fbb2e65989090e5a33f18dcbe95253c25a43c2188e3f1f8706c2d957",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/grasp.py",
       "bytes_in_git": 2427,
       "sha256": "cb4201bc9430c0c714fbd4916d448d1723026d11e7374520a6cd0a95c6512e71",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/local_grasps.py",
       "bytes_in_git": 2104,
       "sha256": "7ce4b2b327428d88bac5aec763d3bb60613d7186a197835107a8f41a22b0a7da",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/obstacle_planning.py",
       "bytes_in_git": 4263,
       "sha256": "198e38857bd5d9688c8f3174c447373a7a3776191373b13a42c9ef59c314d488",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/perception.py",
       "bytes_in_git": 478,
       "sha256": "419cd962bb5c09e3d08f84821c4e38e6325d1d1d0f593fa274152ddfacd0bfac",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/pipeline.py",
       "bytes_in_git": 6492,
       "sha256": "c3076f009aaec325705cf00faa6d5baf3ea2c70169c46704a4c6fc1e2e61df32",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/planning.py",
       "bytes_in_git": 9227,
       "sha256": "82bae84f04c5efe726763013e2c0c251dfbd85204385bd2e284d396331ea1470",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/recovery.py",
       "bytes_in_git": 3297,
       "sha256": "72d8d07c074d6f3b354c77a5ed34678c49ad1f72f26821d562dbc8ea606e9b80",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/robust_obstacles.py",
       "bytes_in_git": 7278,
       "sha256": "f55b2fb8ecfc3ea60f364f6789c1f08c794d5fced8ee94371cb82663eb38eb69",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/search.py",
       "bytes_in_git": 2776,
       "sha256": "8f59b84cf2f124be35cd0aa9caec94f511a70c3a3c15411317c5636eb0b41c2d",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/transforms.py",
       "bytes_in_git": 1018,
       "sha256": "0c307118ea7f843f0ecb74c1ebdc0010be20e99ebb1993470f9cfae5ed3b092b",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/video.py",
       "bytes_in_git": 2160,
       "sha256": "db59f76e3baa94924197c20744dec3c9d7a486ceb12c812daf654971cd817637",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "robot_manipulation/visualization.py",
       "bytes_in_git": 779,
       "sha256": "b5acd64c20fc5556e1f4b3d24387152e5181e065d8f74469f37eeacbcdd066da",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/benchmark_completion.py",
       "bytes_in_git": 4623,
       "sha256": "8f44a3981e16f39486be98dcd48884d6fb1e3c2652211b67d3e7a8be6af78cf7",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/benchmark_exploration.py",
       "bytes_in_git": 2531,
       "sha256": "f580c56c7ad0aa147055ee6cc3b762f3960fb8ec3c441ea07a915aaa3811ebba",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/benchmark_obstacle_reliability.py",
       "bytes_in_git": 2781,
       "sha256": "0219b1bf24fbd2ce40361467dd930dc722da390b070c0127fdfb292725d33649",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/benchmark_obstacles.py",
       "bytes_in_git": 1931,
       "sha256": "c3576fd82566e4bd371da2ea260cd25c1943ed242c578ce47e46316758bbbb4a",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/benchmark_reliability.py",
       "bytes_in_git": 2180,
       "sha256": "99c68655c1d360edaa1956a54af7e247d544cb2de2fba4d70810017fa94dddcb",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/benchmark_sensing.py",
       "bytes_in_git": 962,
       "sha256": "cae7fae6135f0667b4c20522a0d485c2d1e4c701904f57fcc62e0ad6012a64b9",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/benchmark_v2.py",
       "bytes_in_git": 1266,
       "sha256": "bfcdc19a0d0b10ad144c6c5cc09aa97e7f3ea876817811ff5648abbe2e765f95",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
-    },
-    {
-      "path": "scripts/build_completion_report.py",
-      "bytes_in_git": 21445,
-      "sha256": "c2240761efe50bc940aaf3e618f53dcf6e55e9ca2a1fdc8ae54800b2b6613616",
-      "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/build_exploration_figures.py",
       "bytes_in_git": 4378,
       "sha256": "8312c2d2d0698dc9142e27e349a2911bdc5c09a0a16518805440c07c3500206f",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
-    },
-    {
-      "path": "scripts/build_exploration_report.py",
-      "bytes_in_git": 25286,
-      "sha256": "b14a4aa181514d6644a363d9c73112c38c88bd9320ba7b01d0d092d7ce3de805",
-      "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/build_file_inventory.py",
-      "bytes_in_git": 6307,
-      "sha256": "d63d568d75dd9acf63504f12767d8d7bbf2a71d3c830074ce8fef979bf9f1549",
+      "bytes_in_git": 6299,
+      "sha256": "431e5ba71aadfd43ccd4899a93b358a752d1666102c513f035c322f0229191f2",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/build_final_report.py",
-      "bytes_in_git": 9450,
-      "sha256": "fd2664b4db68f12b25d410d65bd3ada65941226744daac04bb5cae895f9c9dfd",
+      "bytes_in_git": 10354,
+      "sha256": "a1bdd64b179f6c1be262896b1c154837253bb1c97a9c6e32e857b9f3cacf6106",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/build_final_video_materials.py",
       "bytes_in_git": 15221,
       "sha256": "9c1ef0880f09148fe61d9268b006bb653552bf50ff9f56103428949f1f790b94",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
-    },
-    {
-      "path": "scripts/build_obstacle_reliability_report.py",
-      "bytes_in_git": 9879,
-      "sha256": "53bacf398f1efdecc33142bb7936b9812624b240ef5df96754b3ad3e9c37b315",
-      "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
-    },
-    {
-      "path": "scripts/build_obstacle_report.py",
-      "bytes_in_git": 10958,
-      "sha256": "b38da685d0e6bf8ea9d6315fc30a54e807d52b92d53de3f221238114e8d8e7c9",
-      "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
-    },
-    {
-      "path": "scripts/build_reliability_report.py",
-      "bytes_in_git": 10906,
-      "sha256": "2f411d7071932b2ed21c0f040e4a2fa519d305cf89a505fa3a056b13c4b25168",
-      "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
-    },
-    {
-      "path": "scripts/build_report.py",
-      "bytes_in_git": 9975,
-      "sha256": "93e2dcb1f7bd332eda3d4402d4b28af06530c7b9e8acf246409b7d7b6605039f",
-      "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
-    },
-    {
-      "path": "scripts/build_sensing_report.py",
-      "bytes_in_git": 7473,
-      "sha256": "d58c388f24e7f91b785e1f1538f186a54d1c21ff407c8fd75627288d7c4597a6",
-      "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
-    },
-    {
-      "path": "scripts/build_v2_report.py",
-      "bytes_in_git": 12285,
-      "sha256": "934545c45e238b3f9d5dfb2370293cd1183393ed8b73edc1ec466e83b6cf3202",
-      "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/check_completion_evidence.py",
       "bytes_in_git": 10007,
       "sha256": "34938bb83a22037b0c96dc61179ce5dc0df8431e57c207586d05156fa1ef49a1",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/check_exploration_evidence.py",
       "bytes_in_git": 9573,
       "sha256": "06027f72da00d3c8470fddde033cd235b71dc94d4ab02bbaa342cb9488ecb3af",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/check_obstacle_evidence.py",
       "bytes_in_git": 4032,
       "sha256": "6942bb63e7e65b951dca3caacd70a830aca49a244287f3f4e30ac6fb5f28e3d7",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/check_obstacle_reliability.py",
       "bytes_in_git": 4931,
       "sha256": "cbf8f1969c2333c1caff9f181cb2f3e7706a70765861bd407a4ff18e62d837f8",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/check_reliability_evidence.py",
       "bytes_in_git": 4044,
       "sha256": "7c5933aa0353cb4eaa73485f8c4d8efabe60078af66c32531d3c14850d3f1a07",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/check_sensing_evidence.py",
       "bytes_in_git": 3693,
       "sha256": "3d400c5636bdac0a6d2a864c2568e23d0c261dc3ca3139d5fd4643d7b3aa2313",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/check_v2_evidence.py",
       "bytes_in_git": 6345,
       "sha256": "f41c711a951bb20130f39b6567e1722700de5bffad3ad37fee5d94826e30f458",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/download.py",
       "bytes_in_git": 659,
       "sha256": "ae770e3fea4bb9811cc4fc2e5d0f22e0e40b117ca3255c0836870904dc0278be",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/package_submission.py",
-      "bytes_in_git": 9924,
-      "sha256": "ea4ed72890e743d308d3e40027035b4df9b9a26aa20454b9e28fba26724dc36c",
+      "bytes_in_git": 6186,
+      "sha256": "0420ca9b8be808542d938ac7e62a10ca873ae947ce238447393f75fbd9569744",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/prepare_editing_materials.py",
-      "bytes_in_git": 11358,
-      "sha256": "8bf0ab3f0af0bbc83cbd21d22a4ca85b9a959212210bbbff167be9f4f6e1a0c6",
+      "bytes_in_git": 12396,
+      "sha256": "a1a3b5ed422123e5d911fd6df8d13008e6dd0646835e6a6de68c63240b12a32c",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/record_clutter_demo.py",
       "bytes_in_git": 2132,
       "sha256": "dff46b721f755b0089ff6ba729a9787b837872cf313abf02a9d5b43f3c22e2e3",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/record_completion_demo.py",
       "bytes_in_git": 8286,
       "sha256": "b641db24ee87559818a1eb019e5b728f26d0932137a136f0c58f9bd18c91b01d",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/record_exploration_demo.py",
       "bytes_in_git": 7463,
       "sha256": "d4184eef2831947ccb3d267512c8185059f94ba8e37edeaaf8f81594d1cc488a",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/record_obstacle_demo.py",
       "bytes_in_git": 2968,
       "sha256": "0981163fb006e17c150d3a082724aff0b66f2a2aed02e4c0f4d8eec576ae9483",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/setup_assets.py",
       "bytes_in_git": 2723,
       "sha256": "c50070eac02979028e67c1959b5b635b95e494e09d2351797865ff591465eecd",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/setup_ycb.py",
       "bytes_in_git": 2662,
       "sha256": "71d4a6b90f05a43fca284e4e55d56634228e4aa152e121cdd99725a60ab77b8c",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "scripts/verify_submission.py",
       "bytes_in_git": 2977,
-      "sha256": "ba124bae3e8412393f5ba7142b8a8b285635ff895f0b108f0b5f5e2a9ea3d81d",
+      "sha256": "8e39acf660b09e808697e963132e78a6599e1d8406975e639da9e21d64f8d7c0",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "sensing_main.py",
@@ -5309,96 +3223,96 @@
       "bytes_in_git": 2461,
       "sha256": "8506ee09488bfc07ee4b779004fce0d479625840a0263b6405e400d541aa9e1c",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "tests/test_asset_setup.py",
       "bytes_in_git": 2592,
       "sha256": "1216437f89a3200fced13005802826d2a1b85ffb6ccb45922fc6684fff09d9c8",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "tests/test_baseline.py",
       "bytes_in_git": 2161,
       "sha256": "bf058ba93c114ed8decd6b0765a6efd3cd95e1b929f44a3ee47c2d83167d0934",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "tests/test_clutter.py",
       "bytes_in_git": 3706,
       "sha256": "69a7cadb229039cec104ec31d695ff7b364f4800cf90ff4fb399145c8067dea4",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "tests/test_completion_evidence.py",
       "bytes_in_git": 1947,
       "sha256": "711c6ae1228ab029bd2d8ee5662ce014f113534ab6ec79d4ef2d960e8fa1d1a1",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "tests/test_dataset.py",
       "bytes_in_git": 3368,
       "sha256": "1ad09473bc9ebb8048c7f648a3bfd1d95f3fea3f801dd1f0627e468f1eb97a8d",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "tests/test_depth_sensing.py",
       "bytes_in_git": 2856,
       "sha256": "e820e20e4e6e3056a2ea9a2be0fe8b7a8bce5df99ecda8d46afaab4d9c3fdd75",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "tests/test_exploration.py",
       "bytes_in_git": 4685,
       "sha256": "6f4bd05ea997389c465859a60fa1839ccd2719f3ab2b5fa6224bf96fd8168fb2",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "tests/test_exploration_evidence.py",
       "bytes_in_git": 1565,
       "sha256": "2488fb1894b1787f5af75247e85ae82e0d6e92ea66433af844953b35ff8e2478",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "tests/test_local_grasps.py",
       "bytes_in_git": 3238,
       "sha256": "36a9996b990061ddbecb84c98882d1b6d1740280422af70127f13da052e743fb",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "tests/test_obstacle_planning.py",
       "bytes_in_git": 4371,
       "sha256": "52cc4f8526c6adf6048cc837bf8674b93717feea9b4c00865afdd407a9a8af5f",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "tests/test_recovery.py",
       "bytes_in_git": 2039,
       "sha256": "828619597d4bbbd8015ef45353e80cb1e6f6142d397eb1b9a466ae35603df325",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "tests/test_robust_obstacles.py",
       "bytes_in_git": 3715,
       "sha256": "c184797376ddc611e5d585c7a3ba5876ad506f993185ba5aab523b67b9606b91",
       "normalization": "lf",
-      "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
+      "purpose": "Python 模块/工具/测试；职责说明见 docs/FILE_GUIDE.md"
     },
     {
       "path": "开始使用.md",
-      "bytes_in_git": 786,
-      "sha256": "9204d9181843457e129617ca75989d66d18ab9f152d9dde51a78ae6b4e1c8776",
+      "bytes_in_git": 651,
+      "sha256": "aae5a87a316f7806ad8180f5ee4bbe9b31315767bfed2c5b12530552d8432447",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },

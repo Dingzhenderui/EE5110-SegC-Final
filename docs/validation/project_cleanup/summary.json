@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-28",
+  "baseline_commit": "8ecb00b",
+  "branch": "feature/final-latex-report-video",
+  "scope": "Project cleanup and build/packaging regression; not a new formal experiment sample",
+  "runtime": {
+    "python": "3.12.4",
+    "mujoco": "3.15.0"
+  },
+  "cleanup": {
+    "tracked_files_before": 773,
+    "tracked_bytes_before": 350556967,
+    "removed_original_paths": 302,
+    "removed_original_bytes_approx": 227090000,
+    "outputs_readme_recreated": true,
+    "git_history_rewritten": false
+  },
+  "preservation": {
+    "sha256_compared_files": 356,
+    "unchanged": true,
+    "scope": [
+      "all assets",
+      "all pre-existing docs/validation",
+      "robot_manipulation and exploration engines",
+      "five frozen main entrypoints",
+      "exploration benchmark and evidence audit",
+      "report.tex and results_table.tex",
+      "published final PDF",
+      "reviewed 300-second preview",
+      "15 original-speed source MP4s"
+    ]
+  },
+  "checks": {
+    "unittest": {
+      "command": "python -m unittest discover -s tests -v",
+      "tests": 49,
+      "seconds": 91.224,
+      "result": "passed"
+    },
+    "source_clips": {
+      "command": "python scripts/prepare_editing_materials.py",
+      "clips": 15,
+      "complete_decode": true,
+      "manifest_hashes": 17,
+      "result": "passed"
+    },
+    "historical_evidence": [
+      {
+        "script": "check_reliability_evidence.py",
+        "source_ref": "v1.1.0",
+        "result": "passed"
+      },
+      {
+        "script": "check_obstacle_evidence.py",
+        "source_ref": "v1.2.0",
+        "result": "passed"
+      },
+      {
+        "script": "check_obstacle_reliability.py",
+        "source_ref": "v1.3.0",
+        "result": "passed"
+      },
+      {
+        "script": "check_sensing_evidence.py",
+        "source_ref": "v1.4.0",
+        "result": "passed"
+      },
+      {
+        "script": "check_v2_evidence.py",
+        "source_ref": "v2.0.0",
+        "result": "passed"
+      }
+    ],
+    "report_and_video_build": {
+      "report_pages": 10,
+      "page_text_characters": [
+        2461,
+        3294,
+        3337,
+        2973,
+        2724,
+        2996,
+        2686,
+        2969,
+        3136,
+        3850
+      ],
+      "report_build_location": "outputs/report_build",
+      "source_zip_entries": 16,
+      "compiled_pdf_excluded_from_source": true,
+      "video_material_generation": "passed"
+    },
+    "reviewed_preview": {
+      "duration_seconds": 300,
+      "width": 1280,
+      "height": 720,
+      "fps": 25,
+      "audio": false,
+      "complete_decode": "passed",
+      "new_visual_review": false
+    },
+    "package": {
+      "command": "python scripts/package_submission.py --review-kit --video deliverables/EE5110_5min_reviewed_preview.mp4",
+      "default_format": "3.1.0",
+      "crc": "passed",
+      "sha256_entries": 469,
+      "result": "passed"
+    },
+    "isolated_submission": {
+      "command": "python scripts/verify_submission.py",
+      "crc_and_all_hashes": "passed",
+      "pinned_panda_ycb_assets": "passed",
+      "v2_1_frozen_180_episode_audit": "passed",
+      "v3_frozen_126_episode_audit": "passed",
+      "physical_release_cases": [
+        {
+          "case": "dense",
+          "seed": 45,
+          "result": "SUCCESS"
+        },
+        {
+          "case": "soft_adaptive",
+          "seed": 43,
+          "result": "SUCCESS"
+        },
+        {
+          "case": "recovery_retry",
+          "seed": 43,
+          "result": "SUCCESS"
+        }
+      ],
+      "result": "passed"
+    },
+    "local_markdown_links": "passed"
+  },
+  "notes": [
+    "Build verification restored the exact previously reviewed report/video source and published PDF bytes after compilation.",
+    "Report compilation completed with existing Underfull hbox and local Fontconfig warnings.",
+    "No new visual review is claimed; the previous full-video review remains authoritative.",
+    "Generated verification archives/extractions/caches are disposable and are not committed.",
+    "PROJECT_FILES.json is generated from the staged files and checked immediately before commit."
+  ]
+}

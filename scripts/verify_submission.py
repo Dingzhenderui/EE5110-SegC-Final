@@ -12,8 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--archive', type=Path, default=ROOT / 'deliverables/EE5110SegC_submission_v3.0.0.zip')
-    parser.add_argument('--extract-to', type=Path, default=ROOT / 'outputs/submission_verification_v3')
+    parser.add_argument('--archive', type=Path, default=ROOT / 'output/packages/EE5110SegC_review_kit_v3.1.0.zip')
+    parser.add_argument('--extract-to', type=Path, default=ROOT / 'outputs/submission_verification')
     args = parser.parse_args()
     destination = args.extract_to.resolve()
     if destination.exists() and any(destination.iterdir()):

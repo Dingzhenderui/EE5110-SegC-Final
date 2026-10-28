@@ -16,7 +16,9 @@ IK、路径规划、控制和任务结果验证职责分开，所有 pose 采用
 保留 failure_stage 和实验配置，报告结果时明确实验适用范围。
 
 不提交 `.venv`、`.idea`、凭据、原始课程附件、本机工具、缓存和临时解压副本。
-按用户 2026-10-25 明确要求，分支现在纳入模型/纹理及原许可证、完整交付视频/ZIP、剪辑素材和原始实验/录制输出。
+按用户 2026-10-28 最新清理要求，保留模型/纹理及许可证、当前报告/审片视频、15 段原速素材和 docs/validation 中的完整冻结记录。
+ZIP 按需生成到 output/packages，不纳入 Git；outputs 仅为本地运行/录制/缓存/编译目录，除 README 外不纳入 Git。
+旧报告、旧视频和重复运行副本通过 Git 历史保留，不重新复制到当前工作树。
 模型版本固定在 assets/panda.lock.json / assets/ycb.lock.json；冻结证据位于 docs/validation。
 assets/panda、assets/ycb、deliverables 和 outputs 使用字节保留属性，不能改变换行而破坏锁文件/素材哈希。
 提交文件变更前先暂存，再运行 scripts/build_file_inventory.py 更新 PROJECT_FILES.json，并暂存索引；CI 会校验完整分支的实际文件内容。

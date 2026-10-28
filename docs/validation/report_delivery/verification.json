@@ -48,5 +48,7 @@
   },
   "final_package_hashes_verified": true,
   "isolated_core_evidence_media_match": 223,
-  "comparison_json_check": "LF-normalized comparison content; original source bytes preserved"
+  "comparison_json_check": "LF-normalized comparison content; original source bytes preserved",
+  "snapshot_commit": "68ed4c6",
+  "scope": "Historical 2026-10-27 delivery; artifact paths refer to Git snapshot 68ed4c6. The revised current video/kit are verified in docs/validation/video_review_20261028."
 }

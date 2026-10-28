@@ -1,93 +1,620 @@
 {
   "duration_s": 300,
-  "canvas": [1280, 720],
+  "canvas": [
+    1280,
+    720
+  ],
   "fps": 25,
   "scope": "Development footage illustrates mechanisms; formal results come from frozen v2.1 and v3.0 studies.",
   "chapters": [
     {
-      "start": 0, "end": 15,
+      "start": 0,
+      "end": 15,
       "title": "Beyond a successful grasp",
-      "points": ["MuJoCo + Franka Panda", "Public YCB objects", "Geometry, sensing, contact"],
-      "narration": "Our project studies autonomous robot manipulation beyond a successful grasp. Using a Franka Panda in MuJoCo, we ask where a complete pick-and-place pipeline breaks, and which targeted changes recover the task."
+      "points": [
+        "MuJoCo + Franka Panda",
+        "Public YCB objects",
+        "Geometry, sensing, contact"
+      ],
+      "narration": "Our project studies complete physical pick-and-place with a Franka Panda in MuJoCo. We investigate blocked approaches, corrupted geometry and contact retention. The aim is to explain task failures and test bounded interventions."
     },
     {
-      "start": 15, "end": 40,
+      "start": 15,
+      "end": 45,
       "title": "A complete physical baseline",
-      "points": ["Six public dataset models", "Seeded random trials", "Physical grasp and release"],
-      "narration": "The baseline loads six public YCB models and supports seeded random object selection and placement. The robot proposes grasps, checks motion, closes its fingers, lifts, transports and physically releases the object. We evaluate repeated randomized trials and retain failures. The object moves through simulated contact dynamics, without a robot-object weld or teleportation."
+      "points": [
+        "Six public dataset models",
+        "Seeded random trials",
+        "Physical grasp and release"
+      ],
+      "narration": "The baseline loads six public YCB models and supports seeded random object selection and placement. This complete run starts with a checked approach and physical finger closure. Contact lifts and holds the target before the robot begins its transfer. The arm carries the object to the destination, lowers it and opens the fingers. Release and table support are checked; failures remain in the evaluation."
     },
     {
-      "start": 40, "end": 70,
+      "start": 45,
+      "end": 70,
       "title": "Verify the whole task",
-      "points": ["Observe / propose / preflight", "Actuate / verify", "80 mm lift; 1 s hold", "55 mm placement tolerance"],
-      "narration": "Our modules separate observation, candidate generation, inverse kinematics, collision checking and execution. Success requires an eighty-millimeter lift, one-second hold, sustained bilateral contact, stable release and placement within fifty-five millimeters. Clutter tests also limit neighbor displacement. Some observers use measured points, but planning still uses simulator geometry. This is a controlled simulation study, rather than an end-to-end real-camera system."
+      "points": [
+        "Observe / propose / preflight",
+        "Actuate / verify",
+        "80 mm lift; 1 s hold",
+        "55 mm placement tolerance"
+      ],
+      "narration": "Mesh-based candidates are proposals. Inverse kinematics and collision checks decide which can execute. Complete success requires an eighty-millimeter lift, a one-second hold and sustained bilateral contact. Release must be stable, within fifty-five millimeters of the destination. Planning still uses simulator geometry; sensing is synthetic."
     },
     {
-      "start": 70, "end": 100,
+      "start": 70,
+      "end": 100,
       "title": "RQ1: escape a blocked approach",
-      "points": ["Original grasps: palm collision", "Add at most 16 alternatives", "Tilt +/-30 or 45 degrees", "Same scene; same safety gates"],
-      "narration": "First, a nearby can blocks the robot's palm. The original candidates are safely rejected before motion. In the same scene, we append a bounded family of inclined and offset grasps while preserving all collision checks. The new candidate completes the transfer. This development example illustrates the mechanism; the separate paired experiment measures how often it helps."
+      "points": [
+        "Original grasps: palm collision",
+        "Add at most 16 alternatives",
+        "Tilt +/-30 or 45 degrees",
+        "Same scene; same safety gates"
+      ],
+      "narration": "The original candidates are rejected because a nearby can blocks the palm. We keep the scene and safety checks, adding bounded inclined and offset grasp alternatives. The chosen alternative lifts the target and carries it through the checked corridor. The robot lowers and releases it. This development demonstration is separate from the paired evaluation."
     },
     {
-      "start": 100, "end": 145,
+      "start": 100,
+      "end": 145,
       "title": "RQ3: retention versus deformation",
-      "points": ["Genuine 3D elastic flex", "Measured bilateral normal force", "Soft: 2/6 to 6/6", "Rigid load: 10/12 to 12/12", "Higher strain remains a tradeoff"],
-      "narration": "Next, we replace the rigid target with a genuine three-dimensional elastic solid. The controller measures normal force at both fingers and adjusts bounded preload using the weaker contact. Fixed preload completes two of six soft-object tasks; force regulation completes six of six. Under randomized rigid-object mass, friction and actuator delay, completion changes from ten of twelve to twelve of twelve. However, average peak elastic strain increases from about three-point-seven to four-point-nine percent. The result supports retention within the tested limits, not reduced deformation. The force and strain curves shown here are from an illustrative development run."
+      "points": [
+        "Genuine 3D elastic flex",
+        "Measured bilateral normal force",
+        "Soft: 2/6 to 6/6",
+        "Rigid load: 10/12 to 12/12",
+        "Higher strain remains a tradeoff"
+      ],
+      "narration": "This elastic model genuinely deforms; the YCB foam brick in the baseline remains rigid. The controller regulates the weaker finger contact to retain the object during lift and transfer. Fixed preload completes two of six soft-object tasks; regulation completes six of six. These force and strain curves illustrate one development run, rather than a group average. Across formal trials, mean peak strain rises from about three-point-seven to four-point-nine percent. Retention improves within the tested limits; reduced deformation is not demonstrated. A separate rigid-load study randomizes mass, friction and actuator delay. Regulation changes completion from ten of twelve to twelve of twelve."
     },
     {
-      "start": 145, "end": 185,
+      "start": 145,
+      "end": 185,
       "title": "RQ2: more frames can be worse",
-      "points": ["Dropout, stripes, drift, outliers", "Single packet: 6/12", "Raw fusion: 1/12", "Cross-packet support: 9/12", "Residual failures: wedge slips"],
-      "narration": "More observations do not automatically improve manipulation. We add missing stripes, drift, outliers and calibration bias to synthetic depth. A single packet completes six of twelve tasks, while raw twenty-four-packet fusion completes only one: accumulated outliers can distort foreground geometry. Requiring each voxel to receive support from three different packets raises completion to nine of twelve. All remaining failures are wedge-shaped objects losing contact. The bottleneck moves from obtaining usable geometry toward retaining the object, although shape and estimation effects are not separately isolated."
+      "points": [
+        "Dropout, stripes, drift, outliers",
+        "Single packet: 6/12",
+        "Raw fusion: 1/12",
+        "Cross-packet support: 9/12",
+        "Residual failures: wedge slips"
+      ],
+      "narration": "Synthetic depth includes missing stripes, drift, outliers and a persistent calibration bias. The single-packet method completes six of twelve tasks; naive fusion completes only one. Cross-packet voxel support rejects transient outliers and reaches nine successes in twelve trials. This successful development example uses the robust observer, without target CAD or instance labels in grasp estimation. Planning still uses simulator geometry; measured observations do not make the entire system vision-only. The robot carries and releases the object in this illustration. The formal failures remain wedge slips, in separate trials."
     },
     {
-      "start": 185, "end": 220,
+      "start": 185,
+      "end": 220,
       "title": "Detect, withdraw, reobserve, retry",
-      "points": ["Injected transient closure fault", "First attempt fails physically", "Checked retreat; no scene reset", "Final recovery: 6/6"],
-      "narration": "For recovery, we inject a transient closure fault: the first commanded opening remains wider than the target. Missing bilateral contact triggers a real grasp failure. The robot opens, performs a checked withdrawal, reobserves and physically grasps again. The scene is initialized once and never reset between attempts. All six first attempts fail, and all six retry episodes succeed. This verifies recovery from the specified temporary fault, rather than a universal recovery rate for natural failures."
+      "points": [
+        "Injected transient closure fault",
+        "First attempt fails physically",
+        "Checked retreat; no scene reset",
+        "Final recovery: 6/6"
+      ],
+      "narration": "A transient command fault leaves the first closure wider than the target. No bilateral contact is detected; the grasp is rejected. The robot opens and withdraws safely. It reobserves and makes a second grasp in the same evolving scene. The second grasp holds through lift and transfer; the scene was never reset. After lowering and release, table support and final placement are verified. All six controlled episodes recover; broader recovery remains unproven."
     },
     {
-      "start": 220, "end": 245,
+      "start": 220,
+      "end": 245,
       "title": "Additional directions, honest boundaries",
-      "points": ["Passive hinge: 6/6", "Procedural shapes: 11/12 tie", "Stronger clutter: 5/6 to 3/6", "Keep unfavorable outcomes"],
-      "narration": "Additional studies carry a freely hinged assembly and estimate grasps for procedural objects without supplying target CAD. The shape methods tie at eleven of twelve. In stronger clutter, active observation actually falls from five of six to three of six because of additional placement failures. We keep these unfavorable results instead of presenting every extension as an improvement."
+      "points": [
+        "Passive hinge: 6/6",
+        "Procedural shapes: 11/12 tie",
+        "Stronger clutter: 5/6 to 3/6",
+        "Keep unfavorable outcomes"
+      ],
+      "narration": "A passive hinge remains dynamic while the whole assembly is transported. All six assembly tasks succeed; deliberate lid opening is not demonstrated. Measured points propose grasps for procedural instances without target CAD. Both methods tie at eleven of twelve, with one shared slip. In separate stronger-clutter trials, active sensing changes completion from five of six to three of six."
     },
     {
-      "start": 245, "end": 280,
+      "start": 245,
+      "end": 280,
       "title": "Paired evidence, not selected successes",
-      "points": ["Candidate study: 180 episodes", "Separate screening: 126 episodes", "Paired scenes; all failures retained", "95% Wilson intervals", "Small samples limit conclusions"],
-      "narration": "The candidate study contains one hundred eighty physical episodes. Local alternatives change completion from fifty-four to fifty-eight out of sixty with three neighbors, and from twenty-six to twenty-nine out of thirty with five. The exploratory study separately contains one hundred twenty-six episodes. We pair initial scenes and physics, preserve failures and report confidence intervals. No comparison passes its stated statistical threshold. Development footage is excluded from these denominators, and the two studies are never pooled into one success rate."
+      "points": [
+        "Candidate study: 180 episodes",
+        "Separate screening: 126 episodes",
+        "Paired scenes; all failures retained",
+        "95% Wilson intervals",
+        "Small samples limit conclusions"
+      ],
+      "narration": "The candidate study contains one hundred eighty paired physical episodes. With three neighbors, local alternatives change success from fifty-four to fifty-eight out of sixty. With five neighbors, success changes from twenty-six to twenty-nine out of thirty. The separate exploratory screening contains one hundred twenty-six episodes across fourteen conditions. The intervals show substantial uncertainty; none of the comparisons passes its stated statistical threshold. Initial scenes and physics are paired, with all failures retained. Development demonstrations are excluded from both evaluation denominators."
     },
     {
-      "start": 280, "end": 300,
+      "start": 280,
+      "end": 300,
       "title": "What the experiments teach us",
-      "points": ["Diagnose the limiting stage", "Test bounded interventions", "Verify physical completion", "49 tests + frozen evidence audits", "Source, report and run instructions"],
-      "narration": "Our main finding is that geometry, observation quality and contact retention must be evaluated together. The deliverables include runnable source, frozen records, a ten-page report and reproduction instructions. Forty-nine tests and both evidence audits pass. Future work targets wedge stability, deformation-aware control and less ideal sensing."
+      "points": [
+        "Diagnose the limiting stage",
+        "Test bounded interventions",
+        "Verify physical completion",
+        "49 tests + frozen evidence audits",
+        "Source, report and run instructions"
+      ],
+      "narration": "The main finding is to diagnose geometry, sensing and contact retention together. Source code, frozen records and the ten-page report provide reproduction instructions. Forty-nine tests and both evidence audits pass. Next steps target wedge stability, deformation-aware control and less ideal sensing."
     }
   ],
   "shots": [
-    {"start":0,"end":8,"kind":"video","source":"deliverables/editing_materials/01_baseline/01_workcell.mp4","in":0,"out":8,"speed":1},
-    {"start":8,"end":15,"kind":"card","source":"title"},
-    {"start":15,"end":24,"kind":"video","source":"deliverables/editing_materials/01_baseline/02_random_YCB_objects.mp4","in":0,"out":18,"speed":2},
-    {"start":24,"end":40,"kind":"video","source":"deliverables/editing_materials/01_baseline/04_pick_and_place.mp4","in":8,"out":40,"speed":2},
-    {"start":40,"end":52,"kind":"video","source":"deliverables/editing_materials/01_baseline/03_grasp_candidates.mp4","in":0,"out":12,"speed":1},
-    {"start":52,"end":60,"kind":"video","source":"deliverables/editing_materials/01_baseline/04_pick_and_place.mp4","in":0,"out":16,"speed":2},
-    {"start":60,"end":70,"kind":"card","source":"gates"},
-    {"start":70,"end":75,"kind":"video","source":"deliverables/editing_materials/03_comparisons/01_rejected_grasps.mp4","in":0,"out":3.95,"speed":1},
-    {"start":75,"end":100,"kind":"video","source":"deliverables/editing_materials/03_comparisons/02_improved_grasps.mp4","in":0,"out":48.3,"speed":2},
-    {"start":100,"end":121,"kind":"video","source":"deliverables/editing_materials/02_explorations/02_deformable.mp4","in":0,"out":40.3,"speed":2},
-    {"start":121,"end":135,"kind":"image","source":"docs/final_report/figures/soft_trace.png"},
-    {"start":135,"end":145,"kind":"video","source":"deliverables/editing_materials/02_explorations/05_force_feedback.mp4","in":0,"out":20,"speed":2},
-    {"start":145,"end":163,"kind":"image","source":"docs/final_report/figures/corrupted_points.png"},
-    {"start":163,"end":185,"kind":"video","source":"deliverables/editing_materials/02_explorations/07_robust_sensing.mp4","in":0,"out":41.9,"speed":2},
-    {"start":185,"end":216,"kind":"video","source":"deliverables/editing_materials/02_explorations/06_failure_recovery.mp4","in":0,"out":60.9,"speed":2},
-    {"start":216,"end":220,"kind":"card","source":"recovery"},
-    {"start":220,"end":230,"kind":"video","source":"deliverables/editing_materials/02_explorations/03_articulated.mp4","in":0,"out":20,"speed":2},
-    {"start":230,"end":238,"kind":"video","source":"deliverables/editing_materials/02_explorations/04_unseen_shapes.mp4","in":0,"out":16,"speed":2},
-    {"start":238,"end":245,"kind":"video","source":"deliverables/editing_materials/02_explorations/01_crowding_occlusion.mp4","in":0,"out":14,"speed":2},
-    {"start":245,"end":263,"kind":"image","source":"docs/final_report/figures/candidate_results.png"},
-    {"start":263,"end":280,"kind":"image","source":"docs/final_report/figures/exploration_results.png"},
-    {"start":280,"end":293,"kind":"card","source":"closing"},
-    {"start":293,"end":300,"kind":"video","source":"deliverables/editing_materials/01_baseline/01_workcell.mp4","in":0,"out":7,"speed":1}
+    {
+      "start": 0,
+      "end": 8,
+      "kind": "video",
+      "source": "deliverables/editing_materials/01_baseline/01_workcell.mp4",
+      "in": 0,
+      "out": 8,
+      "speed": 1
+    },
+    {
+      "start": 8,
+      "end": 15,
+      "kind": "card",
+      "source": "title"
+    },
+    {
+      "start": 15,
+      "end": 24,
+      "kind": "video",
+      "source": "deliverables/editing_materials/01_baseline/02_random_YCB_objects.mp4",
+      "in": 0,
+      "out": 18,
+      "speed": 2
+    },
+    {
+      "start": 24,
+      "end": 45,
+      "kind": "video",
+      "source": "deliverables/editing_materials/01_baseline/04_pick_and_place.mp4",
+      "in": 0,
+      "out": 40.75,
+      "speed": 2
+    },
+    {
+      "start": 45,
+      "end": 55,
+      "kind": "video",
+      "source": "deliverables/editing_materials/01_baseline/03_grasp_candidates.mp4",
+      "in": 0,
+      "out": 10,
+      "speed": 1
+    },
+    {
+      "start": 55,
+      "end": 70,
+      "kind": "card",
+      "source": "gates"
+    },
+    {
+      "start": 70,
+      "end": 75,
+      "kind": "video",
+      "source": "deliverables/editing_materials/03_comparisons/01_rejected_grasps.mp4",
+      "in": 0,
+      "out": 3.95,
+      "speed": 1
+    },
+    {
+      "start": 75,
+      "end": 100,
+      "kind": "video",
+      "source": "deliverables/editing_materials/03_comparisons/02_improved_grasps.mp4",
+      "in": 0,
+      "out": 48.3,
+      "speed": 2
+    },
+    {
+      "start": 100,
+      "end": 121,
+      "kind": "video",
+      "source": "deliverables/editing_materials/02_explorations/02_deformable.mp4",
+      "in": 0,
+      "out": 40.3,
+      "speed": 2
+    },
+    {
+      "start": 121,
+      "end": 135,
+      "kind": "image",
+      "source": "docs/final_report/figures/soft_trace.png"
+    },
+    {
+      "start": 135,
+      "end": 145,
+      "kind": "video",
+      "source": "deliverables/editing_materials/02_explorations/05_force_feedback.mp4",
+      "in": 12,
+      "out": 32,
+      "speed": 2
+    },
+    {
+      "start": 145,
+      "end": 160,
+      "kind": "image",
+      "source": "docs/final_report/figures/corrupted_points.png"
+    },
+    {
+      "start": 160,
+      "end": 181,
+      "kind": "video",
+      "source": "deliverables/editing_materials/02_explorations/07_robust_sensing.mp4",
+      "in": 0,
+      "out": 41.9,
+      "speed": 2
+    },
+    {
+      "start": 181,
+      "end": 185,
+      "kind": "card",
+      "source": "sensor_limits"
+    },
+    {
+      "start": 185,
+      "end": 216,
+      "kind": "video",
+      "source": "deliverables/editing_materials/02_explorations/06_failure_recovery.mp4",
+      "in": 0,
+      "out": 60.9,
+      "speed": 2
+    },
+    {
+      "start": 216,
+      "end": 220,
+      "kind": "card",
+      "source": "recovery"
+    },
+    {
+      "start": 220,
+      "end": 230,
+      "kind": "video",
+      "source": "deliverables/editing_materials/02_explorations/03_articulated.mp4",
+      "in": 10,
+      "out": 30,
+      "speed": 2
+    },
+    {
+      "start": 230,
+      "end": 238,
+      "kind": "video",
+      "source": "deliverables/editing_materials/02_explorations/04_unseen_shapes.mp4",
+      "in": 12,
+      "out": 28,
+      "speed": 2
+    },
+    {
+      "start": 238,
+      "end": 245,
+      "kind": "video",
+      "source": "deliverables/editing_materials/02_explorations/01_crowding_occlusion.mp4",
+      "in": 0,
+      "out": 14,
+      "speed": 2
+    },
+    {
+      "start": 245,
+      "end": 263,
+      "kind": "image",
+      "source": "docs/final_report/figures/candidate_results.png"
+    },
+    {
+      "start": 263,
+      "end": 280,
+      "kind": "image",
+      "source": "docs/final_report/figures/exploration_results.png"
+    },
+    {
+      "start": 280,
+      "end": 293,
+      "kind": "card",
+      "source": "closing"
+    },
+    {
+      "start": 293,
+      "end": 300,
+      "kind": "video",
+      "source": "deliverables/editing_materials/01_baseline/01_workcell.mp4",
+      "in": 0,
+      "out": 7,
+      "speed": 1
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 6,
+      "text": "Our project studies complete physical pick-and-place with a Franka Panda in MuJoCo."
+    },
+    {
+      "start": 6,
+      "end": 10,
+      "text": "We investigate blocked approaches, corrupted geometry and contact retention."
+    },
+    {
+      "start": 10,
+      "end": 15,
+      "text": "The aim is to explain task failures and test bounded interventions."
+    },
+    {
+      "start": 15,
+      "end": 24,
+      "text": "The baseline loads six public YCB models and supports seeded random object selection and placement."
+    },
+    {
+      "start": 24,
+      "end": 30,
+      "text": "This complete run starts with a checked approach and physical finger closure."
+    },
+    {
+      "start": 30,
+      "end": 35,
+      "text": "Contact lifts and holds the target before the robot begins its transfer."
+    },
+    {
+      "start": 35,
+      "end": 41,
+      "text": "The arm carries the object to the destination, lowers it and opens the fingers."
+    },
+    {
+      "start": 41,
+      "end": 45,
+      "text": "Release and table support are checked; failures remain in the evaluation."
+    },
+    {
+      "start": 45,
+      "end": 55,
+      "text": "Mesh-based candidates are proposals. Inverse kinematics and collision checks decide which can execute."
+    },
+    {
+      "start": 55,
+      "end": 62,
+      "text": "Complete success requires an eighty-millimeter lift, a one-second hold and sustained bilateral contact."
+    },
+    {
+      "start": 62,
+      "end": 66,
+      "text": "Release must be stable, within fifty-five millimeters of the destination."
+    },
+    {
+      "start": 66,
+      "end": 70,
+      "text": "Planning still uses simulator geometry; sensing is synthetic."
+    },
+    {
+      "start": 70,
+      "end": 75,
+      "text": "The original candidates are rejected because a nearby can blocks the palm."
+    },
+    {
+      "start": 75,
+      "end": 84,
+      "text": "We keep the scene and safety checks, adding bounded inclined and offset grasp alternatives."
+    },
+    {
+      "start": 84,
+      "end": 93,
+      "text": "The chosen alternative lifts the target and carries it through the checked corridor."
+    },
+    {
+      "start": 93,
+      "end": 100,
+      "text": "The robot lowers and releases it. This development demonstration is separate from the paired evaluation."
+    },
+    {
+      "start": 100,
+      "end": 106,
+      "text": "This elastic model genuinely deforms; the YCB foam brick in the baseline remains rigid."
+    },
+    {
+      "start": 106,
+      "end": 114,
+      "text": "The controller regulates the weaker finger contact to retain the object during lift and transfer."
+    },
+    {
+      "start": 114,
+      "end": 121,
+      "text": "Fixed preload completes two of six soft-object tasks; regulation completes six of six."
+    },
+    {
+      "start": 121,
+      "end": 127,
+      "text": "These force and strain curves illustrate one development run, rather than a group average."
+    },
+    {
+      "start": 127,
+      "end": 131,
+      "text": "Across formal trials, mean peak strain rises from about three-point-seven to four-point-nine percent."
+    },
+    {
+      "start": 131,
+      "end": 135,
+      "text": "Retention improves within the tested limits; reduced deformation is not demonstrated."
+    },
+    {
+      "start": 135,
+      "end": 140,
+      "text": "A separate rigid-load study randomizes mass, friction and actuator delay."
+    },
+    {
+      "start": 140,
+      "end": 145,
+      "text": "Regulation changes completion from ten of twelve to twelve of twelve."
+    },
+    {
+      "start": 145,
+      "end": 150,
+      "text": "Synthetic depth includes missing stripes, drift, outliers and a persistent calibration bias."
+    },
+    {
+      "start": 150,
+      "end": 155,
+      "text": "The single-packet method completes six of twelve tasks; naive fusion completes only one."
+    },
+    {
+      "start": 155,
+      "end": 160,
+      "text": "Cross-packet voxel support rejects transient outliers and reaches nine successes in twelve trials."
+    },
+    {
+      "start": 160,
+      "end": 169,
+      "text": "This successful development example uses the robust observer, without target CAD or instance labels in grasp estimation."
+    },
+    {
+      "start": 169,
+      "end": 176,
+      "text": "Planning still uses simulator geometry; measured observations do not make the entire system vision-only."
+    },
+    {
+      "start": 176,
+      "end": 181,
+      "text": "The robot carries and releases the object in this illustration."
+    },
+    {
+      "start": 181,
+      "end": 185,
+      "text": "The formal failures remain wedge slips, in separate trials."
+    },
+    {
+      "start": 185,
+      "end": 190,
+      "text": "A transient command fault leaves the first closure wider than the target."
+    },
+    {
+      "start": 190,
+      "end": 193.5,
+      "text": "No bilateral contact is detected; the grasp is rejected."
+    },
+    {
+      "start": 193.5,
+      "end": 196,
+      "text": "The robot opens and withdraws safely."
+    },
+    {
+      "start": 196,
+      "end": 201,
+      "text": "It reobserves and makes a second grasp in the same evolving scene."
+    },
+    {
+      "start": 201,
+      "end": 209,
+      "text": "The second grasp holds through lift and transfer; the scene was never reset."
+    },
+    {
+      "start": 209,
+      "end": 216,
+      "text": "After lowering and release, table support and final placement are verified."
+    },
+    {
+      "start": 216,
+      "end": 220,
+      "text": "All six controlled episodes recover; broader recovery remains unproven."
+    },
+    {
+      "start": 220,
+      "end": 225,
+      "text": "A passive hinge remains dynamic while the whole assembly is transported."
+    },
+    {
+      "start": 225,
+      "end": 230,
+      "text": "All six assembly tasks succeed; deliberate lid opening is not demonstrated."
+    },
+    {
+      "start": 230,
+      "end": 234,
+      "text": "Measured points propose grasps for procedural instances without target CAD."
+    },
+    {
+      "start": 234,
+      "end": 238,
+      "text": "Both methods tie at eleven of twelve, with one shared slip."
+    },
+    {
+      "start": 238,
+      "end": 245,
+      "text": "In separate stronger-clutter trials, active sensing changes completion from five of six to three of six."
+    },
+    {
+      "start": 245,
+      "end": 250,
+      "text": "The candidate study contains one hundred eighty paired physical episodes."
+    },
+    {
+      "start": 250,
+      "end": 256,
+      "text": "With three neighbors, local alternatives change success from fifty-four to fifty-eight out of sixty."
+    },
+    {
+      "start": 256,
+      "end": 263,
+      "text": "With five neighbors, success changes from twenty-six to twenty-nine out of thirty."
+    },
+    {
+      "start": 263,
+      "end": 268,
+      "text": "The separate exploratory screening contains one hundred twenty-six episodes across fourteen conditions."
+    },
+    {
+      "start": 268,
+      "end": 273,
+      "text": "The intervals show substantial uncertainty; none of the comparisons passes its stated statistical threshold."
+    },
+    {
+      "start": 273,
+      "end": 277,
+      "text": "Initial scenes and physics are paired, with all failures retained."
+    },
+    {
+      "start": 277,
+      "end": 280,
+      "text": "Development demonstrations are excluded from both evaluation denominators."
+    },
+    {
+      "start": 280,
+      "end": 286,
+      "text": "The main finding is to diagnose geometry, sensing and contact retention together."
+    },
+    {
+      "start": 286,
+      "end": 292,
+      "text": "Source code, frozen records and the ten-page report provide reproduction instructions."
+    },
+    {
+      "start": 292,
+      "end": 296,
+      "text": "Forty-nine tests and both evidence audits pass."
+    },
+    {
+      "start": 296,
+      "end": 300,
+      "text": "Next steps target wedge stability, deformation-aware control and less ideal sensing."
+    }
+  ],
+  "revision": "2026-10-28 full-picture review; 300 one-second positions and 60 dense action positions",
+  "annotations": [
+    {
+      "start": 190,
+      "end": 193.5,
+      "label": "ATTEMPT 1 - NO BILATERAL CONTACT (LOGGED GRASP FAILURE)"
+    },
+    {
+      "start": 193.5,
+      "end": 196,
+      "label": "OPEN + CHECKED WITHDRAWAL - TARGET STAYS ON TABLE"
+    },
+    {
+      "start": 196,
+      "end": 201,
+      "label": "ATTEMPT 2 - REOBSERVE + REGRASP - SAME EVOLVING SCENE"
+    },
+    {
+      "start": 201,
+      "end": 209,
+      "label": "ATTEMPT 2 - PHYSICAL LIFT + TRANSFER"
+    },
+    {
+      "start": 209,
+      "end": 213,
+      "label": "LOWERING TO THE PLACEMENT REGION"
+    },
+    {
+      "start": 213,
+      "end": 216,
+      "label": "PHYSICAL RELEASE + PLACEMENT VERIFICATION"
+    }
   ]
 }

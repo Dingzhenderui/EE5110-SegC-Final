@@ -7,8 +7,8 @@
 1. `output/pdf/EE5110_Final_Report.pdf`：唯一综合主报告，英文10页，有完整基线、局部候选、软体/力控、受损感知、恢复和全部结果，含统计/局限。
 2. `docs/final_video/NARRATION_EN.md`：635词英文口播，300秒/10段。
 3. `docs/final_video/EDITING_GUIDE_ZH.md`：中文剪辑指南。
-4. `docs/final_video/shot_list.csv`：23镜头的素材源/切点/倍速/静帧时间；`narration.srt`：61段英文字幕草稿。
-5. `deliverables/EE5110_5min_captioned_preview.mp4`：严格300秒的字幕版预览，**没有口播音轨**。直接配上实际录音即可作为成片基础。
+4. `docs/final_video/shot_list.csv`：23镜头的素材源/切点/倍速/静帧时间；`narration.srt`：54段按画面确定时点的英文字幕。
+5. `deliverables/EE5110_5min_reviewed_preview.mp4`：严格300秒的字幕版预览，**没有口播音轨**。直接配上实际录音即可作为成片基础。
 6. `docs/CODE_REVIEW_ZH.md`：详细代码审读和结果边界。
 7. `docs/final_report/report.tex`：自包含LaTeX主文件；同目录含图/表和编译说明，可上传Overleaf。
 
@@ -42,10 +42,10 @@
 
 ## 打包与核验
 
-当前review kit有报告/源代码/全部必要模型和许可证/正式证据/运行说明/LaTeX/讲稿/字幕/预览；预览未录音这一状态会写进`START_HERE.txt`。代码已修复旧包遗漏GUI入口的问题，历史打包选项不变。
+当前review kit有报告/源代码/全部必要模型和许可证/正式证据/运行说明/LaTeX/讲稿/字幕/预览；预览未录音这一状态会写进`START_HERE.txt`。全片审读和修改记录见`docs/final_video/FULL_REVIEW_ZH.md`。当前字幕按画面安排，录音后仍需校准语音。代码已修复旧包遗漏GUI入口的问题，历史打包选项不变。
 
 ```powershell
-.venv\Scripts\python scripts/package_submission.py --version 3.1.0 --video deliverables/EE5110_5min_captioned_preview.mp4 --review-kit
+.venv\Scripts\python scripts/package_submission.py --version 3.1.0 --video deliverables/EE5110_5min_reviewed_preview.mp4 --review-kit
 ```
 
 小组录音、加音轨后再显式创建最终提交包：

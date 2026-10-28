@@ -2,8 +2,8 @@
   "schema_version": 1,
   "scope": "Every staged branch file except this self-referential manifest",
   "text_hashing": "LF canonicalization only when normalization=lf; other files use exact bytes",
-  "file_count": 768,
-  "total_bytes_in_git": 346028355,
+  "file_count": 772,
+  "total_bytes_in_git": 350298932,
   "files": [
     {
       "path": ".gitattributes",
@@ -42,8 +42,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes_in_git": 10224,
-      "sha256": "1b006ab7d24198120d5262ae2450502fcd547caab63a261f074d5d48b14f5dfb",
+      "bytes_in_git": 10856,
+      "sha256": "69db45c90104a046297fb0b957e232974f67dea0a94d91dc7b65ee6e5353c9b3",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
@@ -63,15 +63,15 @@
     },
     {
       "path": "PROGRESS.md",
-      "bytes_in_git": 16078,
-      "sha256": "ff8a500ce93f829d0493461ea63844f1cd5f8894b50345a86e3c15cad36173b0",
+      "bytes_in_git": 16767,
+      "sha256": "8fdd23f719cc1a5686131c2478e003239d1ec1fed04ebaf8b0697a4bc08ad744",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
     {
       "path": "README.md",
-      "bytes_in_git": 11383,
-      "sha256": "59e14d14adaea3004b9215378cc9c6ae53e8652221225708ed2ed27a3709e9dd",
+      "bytes_in_git": 11381,
+      "sha256": "d7db91f2b83fd308dc9a19b1caaa45fce52dfc747ddc27f0fcdbf0c86e95da7d",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
@@ -973,8 +973,8 @@
     },
     {
       "path": "deliverables/EE5110SegC_review_kit_v3.1.0.zip",
-      "bytes_in_git": 49155184,
-      "sha256": "303b041a465d7ca412fc1649562cc9303da6de8a4d6264e51b494d6f06f20966",
+      "bytes_in_git": 49045458,
+      "sha256": "61fcc0fad98810d1fa2de2e8c957ade01d146ca5de3d354810ccb852832dc743",
       "normalization": "none",
       "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
     },
@@ -1000,6 +1000,13 @@
       "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
     },
     {
+      "path": "deliverables/EE5110_5min_reviewed_preview.mp4",
+      "bytes_in_git": 4336586,
+      "sha256": "c7331efdd0d389dbd3df7a992bbe7af9378c223c8b7287858f8f91e72721d2ba",
+      "normalization": "none",
+      "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
+    },
+    {
       "path": "deliverables/EE5110_LaTeX_Source.zip",
       "bytes_in_git": 905190,
       "sha256": "5ef3864d47aa38cdf278f2a99bcab8e8e7dd099d0a55a5fb53e2515c49179857",
@@ -1008,8 +1015,8 @@
     },
     {
       "path": "deliverables/README.md",
-      "bytes_in_git": 2573,
-      "sha256": "3ed2ab00f7258af7a21e8708dc18c2e5d88363e04641fa6f2e8a10e5777378b8",
+      "bytes_in_git": 2766,
+      "sha256": "f5ba821a43f7fad7b4bb02f79733d6e09a521110dba96a38dd38c2fac70caec2",
       "normalization": "none",
       "purpose": "演示/提交成品或交付物导航，具体版本与用途见 deliverables/README.md"
     },
@@ -1526,8 +1533,8 @@
     },
     {
       "path": "docs/FINAL_DELIVERY.md",
-      "bytes_in_git": 3930,
-      "sha256": "48e103f64659f83554cd4d24f130b2e505d3b2993c2d80eab6c2d975aedd138d",
+      "bytes_in_git": 4075,
+      "sha256": "88e4fc818321a88eaaf36079a30d0b0e3de6848036c228a265b789640ebdeabc",
       "normalization": "lf",
       "purpose": "项目入口、使用/维护说明或 Git 配置；中文说明见 README.md 与 docs/FILE_GUIDE.md"
     },
@@ -1687,43 +1694,50 @@
     },
     {
       "path": "docs/final_video/EDITING_GUIDE_ZH.md",
-      "bytes_in_git": 6104,
-      "sha256": "714dd1f4c4d29e6da3a14dd113762905f318d53ad20ed36ae93ef0d6118efad6",
+      "bytes_in_git": 6381,
+      "sha256": "d2bd623bd7607d3120c6f9c7eebf8c7d2f6b0f7869855afec328e3cdf2bc4347",
+      "normalization": "lf",
+      "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
+    },
+    {
+      "path": "docs/final_video/FULL_REVIEW_ZH.md",
+      "bytes_in_git": 3880,
+      "sha256": "1071dea794b0b83af74b7148b25faa519c4185ce011acaa0d9180219b120b8c8",
       "normalization": "lf",
       "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
     },
     {
       "path": "docs/final_video/NARRATION_EN.md",
-      "bytes_in_git": 5782,
-      "sha256": "26b61346f9ddfa9f5df9735fa774ce52a56dbed3e64e98dd76da05120eafacb7",
+      "bytes_in_git": 11916,
+      "sha256": "01a136de70adda642354a95efdfeb0604830674cdd059fb1582c77c07e1cff78",
       "normalization": "lf",
       "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
     },
     {
       "path": "docs/final_video/narration.srt",
-      "bytes_in_git": 6588,
-      "sha256": "7bfe98e558c8678910b6cd61c666a30d907a5856a8951783100b3d92a2d0464a",
+      "bytes_in_git": 6253,
+      "sha256": "f5a43ae5525e4868e32853f441df9bc30294e4a734bb41d2fa60a1b4a9f65366",
       "normalization": "lf",
       "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
     },
     {
       "path": "docs/final_video/shot_list.csv",
-      "bytes_in_git": 2314,
-      "sha256": "889463ca1732a90a57698410ac141f03b623552a54da1acf09fecd75bd3b11dd",
+      "bytes_in_git": 2269,
+      "sha256": "1c18e644e0cc16d6a32fa53c123285b58cda8d192b52c7aadfb116d6fc20936b",
       "normalization": "lf",
       "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
     },
     {
       "path": "docs/final_video/storyboard.json",
-      "bytes_in_git": 10183,
-      "sha256": "d958eeeeccccec26f9bdbe333aaa178557e91143cf59595202057edf6e8ebc65",
+      "bytes_in_git": 20536,
+      "sha256": "19659f330698797a9752f64dfaba135557c462b9da20ff197871064c47e3249e",
       "normalization": "lf",
       "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
     },
     {
       "path": "docs/final_video/timing_check.json",
-      "bytes_in_git": 1109,
-      "sha256": "9bc7fb82a691442c069cd2efee5e801974e39fb2c713dbea7f6126437127a790",
+      "bytes_in_git": 1216,
+      "sha256": "31a69b8ac265b362627e1b7b7b6b9a7110ea15e7bed0e1a517be03bb5d90330f",
       "normalization": "lf",
       "purpose": "5分钟演示的英文讲稿、字幕、镜头切点、时间轴或中文剪辑说明"
     },
@@ -2072,8 +2086,8 @@
     },
     {
       "path": "docs/validation/report_delivery/verification.json",
-      "bytes_in_git": 1688,
-      "sha256": "9b3df5cbb039469e9afe7e8e808904dd4eacc8bdd8a099f63830409d2e5b8c94",
+      "bytes_in_git": 1897,
+      "sha256": "017a6e3bcabdc51077c45686681aedb7d60b8716355bd353e7ceb2863e0241a2",
       "normalization": "lf",
       "purpose": "按版本保留的实验/开发验证证据，包含失败而非只保留成功"
     },
@@ -3208,6 +3222,20 @@
       "path": "docs/validation/v3.0.0/soft_fixed/trials_20261025_022240_335053.jsonl",
       "bytes_in_git": 27259,
       "sha256": "1fc2a16d89b90d89019522cd6efeee7c5cc1732c8c31b63684d1926eba9430b7",
+      "normalization": "lf",
+      "purpose": "按版本保留的实验/开发验证证据，包含失败而非只保留成功"
+    },
+    {
+      "path": "docs/validation/video_review_20261028/caption_review.json",
+      "bytes_in_git": 17646,
+      "sha256": "aa4b6f460b6b6c078ded777c95a24a2ed95087bcb0b8cbf1d2e37e7f9e5d848b",
+      "normalization": "lf",
+      "purpose": "按版本保留的实验/开发验证证据，包含失败而非只保留成功"
+    },
+    {
+      "path": "docs/validation/video_review_20261028/verification.json",
+      "bytes_in_git": 1448,
+      "sha256": "00b37be4b3198099be66fc4ac30b74d69027f2fb5ed7c121ea3e141b5458df08",
       "normalization": "lf",
       "purpose": "按版本保留的实验/开发验证证据，包含失败而非只保留成功"
     },
@@ -5103,8 +5131,8 @@
     },
     {
       "path": "scripts/build_final_video_materials.py",
-      "bytes_in_git": 12835,
-      "sha256": "1c45195248ca7bffa8c619d496bf594fd73a15aba8ddcd72003abf267354a0b9",
+      "bytes_in_git": 15221,
+      "sha256": "9c1ef0880f09148fe61d9268b006bb653552bf50ff9f56103428949f1f790b94",
       "normalization": "lf",
       "purpose": "Python 模块/工具/测试；逐文件中文说明见 docs/FILE_GUIDE.md#源码与工具"
     },

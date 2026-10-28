@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-28",
+  "input_video": "deliverables/EE5110_5min_captioned_preview.mp4",
+  "input_sha256": "80de76cab567eee56e36d1dade6a4d51c447c10fdf4d3236fb513cd6bfce4c1a",
+  "output_video": "deliverables/EE5110_5min_reviewed_preview.mp4",
+  "output_sha256": "c7331efdd0d389dbd3df7a992bbe7af9378c223c8b7287858f8f91e72721d2ba",
+  "decoded_frames": 7500,
+  "duration_s": 300,
+  "fps": 25,
+  "resolution": [
+    1280,
+    720
+  ],
+  "audio_present": false,
+  "original_visual_review": {
+    "every_second_positions": 300,
+    "sequential_sheets": 25,
+    "dense_action_positions": 60,
+    "dense_spacing_s": 0.2
+  },
+  "revised_visual_review": {
+    "caption_midpoints": 54,
+    "shot_boundary_positions": 48,
+    "recovery_label_layout_checked": true
+  },
+  "caption_timing": "explicit_picture_aligned_cues",
+  "original_caption_count": 61,
+  "original_subsecond_cues": 6,
+  "revised_caption_count": 54,
+  "revised_minimum_duration_s": 2.5,
+  "maximum_text_lines": 2,
+  "narration_words": 635,
+  "frozen_engine_changed": false,
+  "new_randomized_experiments": 0,
+  "audio_alignment_checked": false,
+  "scope": "Full decode; visual checks at all stated temporal positions; not a claim of 7500 manual frame judgments.",
+  "review_kit": {
+    "path": "deliverables/EE5110SegC_review_kit_v3.1.0.zip",
+    "bytes": 49045458,
+    "sha256": "61fcc0fad98810d1fa2de2e8c957ade01d146ca5de3d354810ccb852832dc743",
+    "manifest_hashes_verified": 414
+  }
+}

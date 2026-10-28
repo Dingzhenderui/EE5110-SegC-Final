@@ -55,43 +55,56 @@ def prepare():
                           'freeze_tail_s':round(max(0,freeze),3)})
     with (SOURCE/'shot_list.csv').open('w',newline='',encoding='utf-8-sig') as stream:
         writer = csv.DictWriter(stream,fieldnames=list(shot_rows[0])); writer.writeheader(); writer.writerows(shot_rows)
-    narration = ['# Five-minute English narration', '',
-                 'Read at approximately 125–140 words per minute. Chapter timings are editing targets; align subtitle timing to the final recording.', '',
+    cues = data.get('cues')
+    if not cues:
+        raise ValueError('Explicit picture-aligned cues are required; word-count timing is not accepted')
+    previous = 0
+    for cue in cues:
+        if abs(cue['start']-previous) > .001 or cue['end']-cue['start'] < 2.5:
+            raise ValueError(f'Caption gap, overlap or unreadably short cue: {cue}')
+        lines = textwrap.wrap(cue['text'], width=72, break_long_words=False, break_on_hyphens=False)
+        if len(lines) > 2:
+            raise ValueError(f'Caption exceeds two lines: {cue["text"]}')
+        previous = cue['end']
+    if previous != 300:
+        raise ValueError('Picture-aligned captions must cover the complete 300 seconds')
+    narration = ['# Five-minute English narration — picture-aligned revision', '',
+                 'Read each timed cue within its allotted interval. Times were assigned to the reviewed pictures, not estimated from chapter word counts.', '',
                  'The generated preview is silent. Record this narration separately.', '']
     subtitles = []; number = 1; words_total = 0; timing_rows = []
     for chapter in data['chapters']:
+        chapter_cues = [c for c in cues if chapter['start'] <= c['start'] < chapter['end']]
+        if not chapter_cues or chapter_cues[-1]['end'] != chapter['end']:
+            raise ValueError('Caption boundaries must agree with chapter boundaries')
+        chapter['narration'] = ' '.join(c['text'] for c in chapter_cues)
         words = chapter['narration'].split(); words_total += len(words)
         wpm = len(words)*60/(chapter['end']-chapter['start'])
         narration.extend([f'## {timestamp(chapter["start"])[:8]}–{timestamp(chapter["end"])[:8]} | {chapter["title"]}', '',
-                          chapter['narration'], '', f'*{len(words)} words; target {wpm:.0f} words/minute.*', ''])
+                          chapter['narration'], '', f'*{len(words)} words; target {wpm:.0f} words/minute.*', '',
+                          '| Time | Read this cue |', '|---|---|'])
         timing_rows.append({'start_s':chapter['start'],'end_s':chapter['end'],'words':len(words),'target_wpm':round(wpm,1)})
-        # Short blocks provide <=2 readable caption lines; times are a draft.
-        sentences = re.split(r'(?<=[.!?])\s+', chapter['narration'])
-        blocks = []
-        for sentence in sentences:
-            tokens = sentence.split()
-            for start in range(0,len(tokens),16):
-                blocks.append(tokens[start:start+16])
-        cumulative = 0
-        for tokens in blocks:
-            start = chapter['start']+(chapter['end']-chapter['start'])*cumulative/len(words)
-            cumulative += len(tokens)
-            end = chapter['start']+(chapter['end']-chapter['start'])*cumulative/len(words)
-            lines = textwrap.wrap(' '.join(tokens),width=68)
-            subtitles.extend([str(number),f'{timestamp(start,True)} --> {timestamp(end,True)}','\n'.join(lines),''])
+        for cue in chapter_cues:
+            lines = textwrap.wrap(cue['text'],width=72,break_long_words=False,break_on_hyphens=False)
+            subtitles.extend([str(number),f'{timestamp(cue["start"],True)} --> {timestamp(cue["end"],True)}','\n'.join(lines),''])
+            begin_label=timestamp(cue['start']).rstrip('0').rstrip('.')
+            end_label=timestamp(cue['end']).rstrip('0').rstrip('.')
+            narration.append(f'| {begin_label}–{end_label} | {cue["text"]} |')
             number += 1
+        narration.append('')
     narration.extend([f'**Total: {words_total} words in 300 seconds ({words_total/5:.1f} words/minute).**',''])
     if not 600 <= words_total <= 720:
         raise ValueError(f'Narration is outside the intended five-minute range: {words_total} words')
     (SOURCE/'NARRATION_EN.md').write_text('\n'.join(narration),encoding='utf-8')
     (SOURCE/'narration.srt').write_text('\n'.join(subtitles),encoding='utf-8')
     (SOURCE/'timing_check.json').write_text(json.dumps({'duration_s':300,'words':words_total,
-        'overall_wpm':words_total/5,'captions':number-1,'shots':len(shot_rows),'chapters':timing_rows},indent=2)+'\n')
+        'overall_wpm':words_total/5,'captions':number-1,'shots':len(shot_rows),'chapters':timing_rows,
+        'timing_method':'explicit_picture_aligned_cues','minimum_cue_s':min(c['end']-c['start'] for c in cues),
+        'maximum_caption_lines':2},indent=2)+'\n')
     print(f'Validated 300 seconds, {len(shot_rows)} shots, {words_total} narration words, {number-1} captions')
     return data
 
 
-def render(data):
+def render(data, output):
     from PIL import Image, ImageDraw, ImageFont
     import imageio_ffmpeg
     ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
@@ -108,6 +121,7 @@ def render(data):
         'title':('Beyond a successful grasp', ['A complete physical pipeline', 'Three bottlenecks:', '1. Blocked approaches', '2. Corrupted geometry', '3. Contact retention']),
         'gates':('Complete-task verification', ['Lift >80 mm; hold 1 second', 'Bilateral contact >=95%', 'Placement error <55 mm', 'Physical release + table support', 'Actuator force <=40 N']),
         'recovery':('One scene, two physical attempts', ['Attempt 1: controlled closure fault', 'Missing contacts -> GRASP_FAIL', 'Open -> checked retreat -> observe', 'Attempt 2: physical grasp and release', 'First: 0/6 | Final with retry: 6/6']),
+        'sensor_limits':('Remaining failure: contact stability', ['Formal sensing results: 6/12, 1/12, 9/12', 'Three robust-method failures were wedges', 'These are separate from the successful clip', 'Geometry and contact errors are not isolated']),
         'closing':('Find the limiting stage', ['Geometry: bounded local alternatives', 'Sensing: consistent cross-packet support', 'Contact: retention / deformation tradeoff', 'Next: wedge stability, nonideal sensing', 'Runnable source + report + frozen evidence'])}
     rendered=[]
     for index,shot in enumerate(data['shots']):
@@ -128,6 +142,10 @@ def render(data):
             provenance='Illustrative development trace | Not an experimental group average'
         elif shot['source'].endswith('corrupted_points.png'):
             provenance='Illustrative development observations | No target instance labels'
+        elif shot['source']=='sensor_limits':
+            provenance='Frozen sensing study | Residual wedge failures are different trials from the successful illustration'
+        elif shot['start']==238:
+            provenance='Single-view clutter illustration | Active-view placement failures belong to separate formal trials'
         draw.text((28,72),provenance,font=font(14),fill='#a9c5ce')
         speed=shot.get('speed',1)
         if shot['kind']=='video':
@@ -163,6 +181,14 @@ def render(data):
         normalize='tpad=stop_mode=clone:stop_duration=2,fps=25'
         if freeze>.001:
             normalize+=f",drawtext=text='freeze frame':fontfile='C\\:/Windows/Fonts/arial.ttf':fontcolor=white:fontsize=17:x=940:y=586:enable='gte(t,{duration-freeze})'"
+        for event in data.get('annotations',[]):
+            if shot['start']<=event['start']<shot['end']:
+                if event['end']>shot['end']:
+                    raise ValueError('Action annotation crosses a shot boundary')
+                if not re.fullmatch(r'[A-Za-z0-9 /+()\-]+',event['label']):
+                    raise ValueError('Unsupported action-label character')
+                lo,hi=event['start']-shot['start'],event['end']-shot['start']
+                normalize+=f",drawtext=text='{event['label']}':fontfile='C\\:/Windows/Fonts/arial.ttf':fontcolor=white:fontsize=16:x=30:y=600:box=1:boxcolor=0x163746@0.95:boxborderw=3:enable='gte(t,{lo})*lt(t,{hi})'"
         subprocess.run([ffmpeg,'-y','-v','error','-i',str(raw_segment),'-vf',normalize,
                         '-t',str(duration),'-frames:v',str(duration*25),'-an','-c:v','libx264',
                         '-preset','veryfast','-crf','22','-pix_fmt','yuv420p','-threads','4',str(segment)],check=True)
@@ -171,7 +197,7 @@ def render(data):
     concat.write_text('\n'.join("file '"+p.as_posix()+"'" for p in rendered)+'\n',encoding='utf-8')
     joined=temporary/'joined.mp4'
     subprocess.run([ffmpeg,'-y','-v','error','-f','concat','-safe','0','-i',str(concat),'-c','copy',str(joined)],check=True)
-    output=ROOT/'deliverables/EE5110_5min_captioned_preview.mp4'
+    output=output.resolve();output.parent.mkdir(parents=True,exist_ok=True)
     subprocess.run([ffmpeg,'-y','-v','error','-i',str(joined),'-vf',
         "subtitles=docs/final_video/narration.srt:force_style='FontName=Arial,FontSize=15,MarginV=12,Outline=1,Alignment=2'",
         '-t','300','-an','-c:v','libx264','-preset','veryfast','-crf','22','-threads','4','-pix_fmt','yuv420p','-movflags','+faststart',str(output)],cwd=ROOT,check=True)
@@ -189,5 +215,6 @@ def render(data):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--render-preview',action='store_true')
+    parser.add_argument('--output',type=Path,default=ROOT/'deliverables/EE5110_5min_reviewed_preview.mp4')
     args=parser.parse_args();data=prepare()
-    if args.render_preview:render(data)
+    if args.render_preview:render(data,args.output)

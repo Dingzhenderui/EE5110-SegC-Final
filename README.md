@@ -12,7 +12,7 @@
 | 修改LaTeX/上传Overleaf | [`docs/final_report/`](docs/final_report/)；主文件`report.tex`，图/表全部本地化。 |
 | 录制5分钟英文口播 | [`docs/final_video/NARRATION_EN.md`](docs/final_video/NARRATION_EN.md)，635词、10段、300秒。 |
 | 按镜头剪辑/导入字幕 | [`docs/final_video/EDITING_GUIDE_ZH.md`](docs/final_video/EDITING_GUIDE_ZH.md)、`shot_list.csv`和`narration.srt`。 |
-| 直接审看5分钟字幕预览 | [`deliverables/EE5110_5min_captioned_preview.mp4`](deliverables/EE5110_5min_captioned_preview.mp4)，未录音，需另加口播。 |
+| 直接审看5分钟字幕预览 | [`deliverables/EE5110_5min_reviewed_preview.mp4`](deliverables/EE5110_5min_reviewed_preview.mp4)，未录音，需另加口播。 |
 | 看详细代码审读 | [`docs/CODE_REVIEW_ZH.md`](docs/CODE_REVIEW_ZH.md)，含调用链、结果边界和改进建议。 |
 | 打开交互演示界面 | 双击 [`OPEN_DEMO.cmd`](OPEN_DEMO.cmd)，输入菜单序号并按 Enter。 |
 | 自己剪视频 | [`deliverables/editing_materials/`](deliverables/editing_materials/)；整体下载用 [`editing_materials.zip`](deliverables/editing_materials.zip)。 |
